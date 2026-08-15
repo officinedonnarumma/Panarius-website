@@ -134,7 +134,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       <div className="product-card__body">
         <div className="product-card__intro">
           <p className="product-feature">{product.feature}</p>
-          <h3>{baseName}{wheelLabel !== undefined && <sup>Wheel</sup>}</h3>
+          <h3>{baseName}{wheelLabel !== undefined && <span className="product-wheel">Wheel</span>}</h3>
         </div>
         <div className="spec-list" aria-label={`Specifiche ${product.name}`}>
           <div><span>Capacità</span><strong>{product.capacity}</strong></div>
