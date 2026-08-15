@@ -27,6 +27,7 @@
 - [x] Sostituire il titolo hero con “Il tuo carico, sempre al sicuro.”.
 - [ ] Ricostruire il cesto reale nella composizione industriale del secondo hero, senza aggiungere meccanica non presente nei riferimenti.
 - [x] Sincronizzare l’anteprima con l’ultima versione del progetto condiviso.
+- [x] Semplificare la fascia introduttiva delle varianti: rimuovere il monogramma “P” e il link ridondante al catalogo.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
 - [x] Attenuare l’arancio in un terracotta più equilibrato nei corsivi e richiami caldi.

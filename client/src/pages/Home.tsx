@@ -212,9 +212,7 @@ export default function Home() {
         </section>
 
         <section className="intro-strip" aria-label="Introduzione Panarius">
-          <div className="intro-strip__mark">P</div>
           <p>Una struttura essenziale, pensata per lavori reali.</p>
-          <a href="#panarius">Vai al catalogo <ArrowRight size={17} /></a>
         </section>
 
         <section id="panarius" className="catalogue section-space">
