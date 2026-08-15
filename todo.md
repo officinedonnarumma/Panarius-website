@@ -36,6 +36,7 @@
 - [x] Ripristinare il carattere editoriale originale della fascia e sospendere ulteriori variazioni tipografiche.
 - [x] Preparare e associare le quattro fotografie reali alle schede delle varianti Panarius.
 - [x] Riportare “Wheel” in linea con il nome della variante e differenziarlo con il rame ocra.
+- [x] Compattare la spaziatura delle lettere di “Wheel” nelle due varianti con ruote.
 - [x] Ripristinare la tipografia originale della fascia introduttiva, modificata per errore.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
