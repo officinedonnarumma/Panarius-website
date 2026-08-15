@@ -13,6 +13,7 @@
 - [x] Integrare piccoli accenti di rosso pompeiano nella pagina, in dialogo con il rame ocra.
 - [x] Correggere il logo del sito: trasparenza reale, nitidezza e dimensioni coerenti in header e footer.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
+- [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
 - [x] Integrare il logo approvato nell’header e nel footer del sito Panarius.
 - [ ] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
 - [ ] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius.
