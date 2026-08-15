@@ -17,6 +17,7 @@
 - [x] Rimuovere il callout “01 · Sistema di sollevamento autoequilibrante” dal banner hero.
 - [x] Rielaborare l’immagine hero usando la foto reale del prodotto Panarius in costruzione.
 - [x] Generare un hero con il cesto microforato reale riconoscibile e spazio scuro per i contenuti testuali.
+- [x] Rigenerare il hero con Panarius finito, sospeso al sistema di sollevamento e pronto all’uso.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
 - [x] Attenuare l’arancio in un terracotta più equilibrato nei corsivi e richiami caldi.
