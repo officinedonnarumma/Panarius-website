@@ -116,6 +116,8 @@ function MarketplaceButton({ channel, href }: { channel: "Amazon" | "eBay"; href
 }
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
+  const [baseName, wheelLabel] = product.name.split(" Wheel");
+
   return (
     <article className={`product-card product-card--${index + 1} ${index === 0 ? "product-card--lead" : ""}`}>
       <div
@@ -132,7 +134,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       <div className="product-card__body">
         <div className="product-card__intro">
           <p className="product-feature">{product.feature}</p>
-          <h3>{product.name}</h3>
+          <h3>{baseName}{wheelLabel !== undefined && <small>Wheel</small>}</h3>
         </div>
         <div className="spec-list" aria-label={`Specifiche ${product.name}`}>
           <div><span>Capacità</span><strong>{product.capacity}</strong></div>
