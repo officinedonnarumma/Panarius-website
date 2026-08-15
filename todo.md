@@ -23,6 +23,8 @@
 - [ ] Rigenerare il hero con paranco e binario chiaramente visibili nella parte superiore della scena.
 - [x] Ricreare da zero il hero con paranco e cesto Panarius fedeli alle foto reali, senza artefatti o dettagli meccanici inventati.
 - [x] Ripristinare il secondo hero Panarius preferito dal cliente prima di apportare altri ritocchi tecnici.
+- [x] Correggere il hero usando esclusivamente la geometria delle nuove foto reali: bracci snodati, ruote e aggancio centrale compatto.
+- [x] Sincronizzare l’anteprima con l’ultima versione del progetto condiviso.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
 - [x] Attenuare l’arancio in un terracotta più equilibrato nei corsivi e richiami caldi.
