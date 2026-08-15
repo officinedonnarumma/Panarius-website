@@ -35,6 +35,8 @@
 
 :root {
   --primary: #b75e36;
+  --copper-ochre: #b75e36;
+  --pompeian-red: #a33b2b;
   --primary-foreground: #fffdf9;
   --radius: .1rem;
   --background: #f7f4ed;
@@ -108,10 +110,10 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 850px) { .desktop-nav { display: none; }.menu-button { display: grid; place-items: center; }.mobile-menu { position: fixed; z-index: 35; top: 115px; left: 0; right: 0; display: grid; grid-template-rows: 0fr; overflow: hidden; background: #fffdf9; border-bottom: 1px solid transparent; transition: grid-template-rows .25s cubic-bezier(.23,1,.32,1),border-color .25s cubic-bezier(.23,1,.32,1); }.mobile-menu--open { grid-template-rows: 1fr; border-color: #d9d2c5; }.mobile-menu > * { overflow: hidden; }.mobile-menu a { display: flex; align-items: center; justify-content: space-between; padding: 17px 6.1vw; border-bottom: 1px solid #e3ddd1; font-size: 12px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }.hero { min-height: 650px; }.hero__caption { display: none; }.hero__content { margin-left: 0; }.intro-strip { grid-template-columns: 44px 1fr; }.intro-strip a { grid-column: 2; justify-self: start; }.catalogue__top,.material-section__heading { grid-template-columns: 1fr; }.catalogue__anchor,.material-proof { justify-self: start; }.project-section { grid-template-columns: 1fr; }.project-image { min-height: 450px; }.material-images { grid-template-columns: 1fr 1fr; }.material-statement { min-height: 240px; }.contact-section { grid-template-columns: 1fr; }.site-footer { grid-template-columns: 1fr 1fr; }.site-footer p:last-child { grid-column: 1 / -1; text-align: left; } }
 @media (max-width: 600px) { .utility-bar { padding: 0 20px; }.utility-bar p { display: none; }.utility-bar a { margin-left: auto; }.site-header { height: 67px; padding: 0 20px; }.mobile-menu { top: 104px; }.brand img { width: 30px; height: 30px; }.hero { height: calc(100svh - 104px); min-height: 580px; padding: 25px 20px; }.hero__content { width: 100%; margin-bottom: 41px; }.hero h1 { font-size: clamp(56px,17vw,82px); }.hero__copy { font-size: 13px; margin: 23px 0; }.hero__actions { align-items: flex-start; flex-direction: column; gap: 18px; }.hero__scroll { display: none; }.intro-strip { padding: 29px 20px; gap: 5px 12px; }.intro-strip__mark { font-size: 40px; }.intro-strip p { font-size: 25px; }.section-space { padding: 77px 20px; }.catalogue__top { margin-bottom: 36px; }.section-heading h2 { font-size: clamp(43px,13vw,60px); }.section-copy { font-size: 13px; }.product-grid { grid-template-columns: 1fr; gap: 34px; }.product-photo { height: 275px; background-size: 210% auto; }.product-card__body { padding: 21px 18px 19px; }.product-card__buy { align-items: flex-start; flex-direction: column; }.buy-actions { justify-content: flex-start; }.project-image { min-height: 314px; }.project-image__label { left: 20px; bottom: 19px; }.project-content { padding: 77px 20px; }.process-list { margin-top: 38px; }.material-images { grid-template-columns: 1fr; margin-top: 42px; }.material-images figure { min-height: 280px; }.material-statement { min-height: 220px; }.buy-section { padding: 78px 20px; }.channel-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 39px; }.channel-grid article { min-height: 175px; }.contact-section { padding: 76px 20px; gap: 37px; }.site-footer { padding: 28px 20px; grid-template-columns: 1fr; gap: 17px; }.site-footer p:nth-child(2),.site-footer p:last-child { grid-column: auto; text-align: left; } }
 
-/* Linea di lavorazione e tavole prodotto: firma visiva Panarius. */
+/* Linea di lavorazione e tavole prodotto: rame ocra per l’azione, rosso pompeiano per i giunti identitari. */
 .brand img { width: 42px; height: 42px; }
 .eyebrow::before { background: #b75e36; opacity: 1; }
-.eyebrow::after { content: ""; width: 10px; height: 10px; margin-left: 2px; border: 1px solid #b75e36; transform: rotate(45deg); }
+.eyebrow::after { content: ""; width: 10px; height: 10px; margin-left: 2px; border: 1px solid var(--pompeian-red); transform: rotate(45deg); }
 .product-grid { grid-template-columns: repeat(12, minmax(0,1fr)); }
 .product-card { grid-column: span 6; position: relative; }
 .product-card--lead { grid-column: span 7; }
@@ -125,7 +127,7 @@ a { color: inherit; text-decoration: none; }
 .product-code { display: flex; align-items: center; gap: 8px; }
 .product-code i { width: 22px; height: 1px; background: #d9926e; }
 .product-index { display: flex; align-items: center; gap: 6px; }
-.product-index i { width: 8px; height: 8px; border: 1px solid #d9926e; transform: rotate(45deg); }
+.product-index i { width: 8px; height: 8px; border: 1px solid var(--pompeian-red); transform: rotate(45deg); }
 .product-card--lead .product-card__body { display: grid; grid-template-columns: 1fr 1.25fr; column-gap: 30px; }
 .product-card--lead .product-card__intro { grid-row: span 2; }
 .product-card--lead .product-card__buy { grid-column: 2; }
@@ -156,3 +158,12 @@ a { color: inherit; text-decoration: none; }
   .mobile-menu { display: block; height: 0; max-height: 0; grid-template-rows: none; transition: max-height .25s cubic-bezier(.23,1,.32,1), border-color .25s cubic-bezier(.23,1,.32,1); }
   .mobile-menu--open { height: auto; max-height: 320px; }
 }
+
+/* Accenti pompeiani: pochi segni di giunzione, mai superfici predominanti. */
+.intro-strip__mark { color: var(--pompeian-red); }
+.material-statement { position: relative; overflow: hidden; }
+.material-statement::before { content: ""; position: absolute; top: 0; left: 0; width: 5px; height: 100%; background: var(--pompeian-red); }
+.material-statement > * { position: relative; z-index: 1; }
+.channel-grid article::before { content: ""; position: absolute; top: 13px; right: 13px; width: 7px; height: 7px; border: 1px solid var(--pompeian-red); transform: rotate(45deg); }
+.direct-link { border-color: var(--pompeian-red); color: var(--pompeian-red); }
+.direct-link:hover { background: var(--pompeian-red); border-color: var(--pompeian-red); }

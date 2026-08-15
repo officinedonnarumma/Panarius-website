@@ -10,6 +10,7 @@
 - [ ] Approvare il lock-up minimale basato sul simbolo circolare, con scritta “Officine Donnarumma”.
 - [ ] Sostituire il logo del sito con la versione approvata su sfondo trasparente e con accenti rame più visibili.
 - [x] Integrare nel logo un accento di rosso pompeiano, mantenendo blu e rame come colori principali.
+- [x] Integrare piccoli accenti di rosso pompeiano nella pagina, in dialogo con il rame ocra.
 - [x] Integrare il logo approvato nell’header e nel footer del sito Panarius.
 - [ ] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
 - [ ] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius.
