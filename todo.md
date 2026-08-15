@@ -5,6 +5,11 @@
 - [ ] Approvare il mockup completo della pagina con i riferimenti a Pompei prima dell’implementazione.
 - [ ] Valutare una proposta di logo intermedio che conservi Vesuvio, struttura e riferimento a Pompei.
 - [ ] Valutare le varianti cromatiche del marchio: blu officina, rame e monocromatico.
+- [ ] Approvare un nuovo logo minimale senza testo prima di sostituire il logotipo completo applicato al sito.
+- [ ] Approvare il restyling minimale del logo storico con Vesuvio, struttura a T e Pompei.
+- [ ] Approvare il lock-up minimale basato sul simbolo circolare, con scritta “Officine Donnarumma”.
+- [ ] Sostituire il logo del sito con la versione approvata su sfondo trasparente e con accenti rame più visibili.
+- [x] Integrare nel logo un accento di rosso pompeiano, mantenendo blu e rame come colori principali.
 - [x] Integrare il logo approvato nell’header e nel footer del sito Panarius.
 - [ ] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
 - [ ] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius.

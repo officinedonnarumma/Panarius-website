@@ -173,7 +173,7 @@ export default function Home() {
 
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
         <a className="brand" href="#top" aria-label="Officine Donnarumma — torna all'inizio">
-          <img className="brand__logo" src={asset("officine-donnarumma-logo.png")} alt="Officine Donnarumma, Pompei" />
+          <img className="brand__logo" src="/manus-storage/officine-donnarumma-logo-transparent-pompeian-red_42d832e7.png" alt="Officine Donnarumma, Pompei" />
         </a>
         <nav className="desktop-nav" aria-label="Navigazione principale">
           <a href="#panarius">Panarius</a>
@@ -291,7 +291,7 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="site-footer__brand"><img className="site-footer__logo" src={asset("officine-donnarumma-logo.png")} alt="Officine Donnarumma, Pompei" /></div>
+        <div className="site-footer__brand"><img className="site-footer__logo" src="/manus-storage/officine-donnarumma-logo-transparent-pompeian-red_42d832e7.png" alt="Officine Donnarumma, Pompei" /></div>
         <p>Panarius · Cesti per montacarichi</p>
         <p>© {new Date().getFullYear()} Officine Donnarumma. Tutti i diritti riservati.</p>
       </footer>
