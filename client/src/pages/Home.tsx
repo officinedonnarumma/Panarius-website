@@ -201,7 +201,7 @@ export default function Home() {
           <div className="hero__veil" />
           <div className="hero__content">
             <p className="eyebrow eyebrow--light"><span>Officine Donnarumma · Italia</span></p>
-            <h1 id="hero-title">Il carico,<br /><em>in equilibrio.</em></h1>
+            <h1 id="hero-title">Il tuo carico,<br /><em>sempre al sicuro.</em></h1>
             <p className="hero__copy">Panarius è il cesto per montacarichi progettato per distribuire il carico e rendere ogni movimentazione più semplice.</p>
             <div className="hero__actions">
               <a href="#panarius" className="button button--copper">Scopri le varianti <ArrowRight size={17} /></a>
