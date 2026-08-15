@@ -31,6 +31,7 @@
 - [x] Definire e approvare un nuovo titolo per la fascia introduttiva delle varianti.
 - [ ] Definire una nuova direzione e integrare un marchio Panarius color rame nella fascia introduttiva delle varianti.
 - [x] Rimuovere il marchio Panarius non approvato dalla fascia introduttiva delle varianti.
+- [x] Eliminare l’effetto grassetto dalla frase della fascia introduttiva, senza modificare carattere, testo o layout.
 - [x] Ripristinare la tipografia originale della fascia introduttiva, modificata per errore.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
