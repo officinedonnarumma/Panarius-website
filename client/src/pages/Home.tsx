@@ -33,6 +33,8 @@ const asset = (filename: keyof typeof previewAssets) => {
   return import.meta.env.DEV ? previewAssets[filename] : `/assets/${filename}`;
 };
 
+const heroImage = "/manus-storage/panarius-hero-real-product_42266210.png";
+
 type Product = {
   code: string;
   name: string;
@@ -195,7 +197,7 @@ export default function Home() {
 
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
-          <div className="hero__image" aria-hidden="true" style={{ backgroundImage: `url("${asset("officine-hero-fabrication.jpg")}")` }} />
+          <div className="hero__image" aria-hidden="true" style={{ backgroundImage: `url("${heroImage}")` }} />
           <div className="hero__veil" />
           <div className="hero__content">
             <p className="eyebrow eyebrow--light"><span>Officine Donnarumma · Italia</span></p>
