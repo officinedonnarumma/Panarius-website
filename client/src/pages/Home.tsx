@@ -178,7 +178,7 @@ export default function Home() {
         <nav className="desktop-nav" aria-label="Navigazione principale">
           <a href="#panarius">Panarius</a>
           <a href="#progetto">Il progetto</a>
-          <a href="#materia">Made in Italy</a>
+          <a href="#materia">Made in Pompei</a>
           <a href="#acquista" className="nav-cta"><ShoppingBag size={15} /> Acquista</a>
         </nav>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Apri menu" aria-expanded={menuOpen}>
@@ -189,7 +189,7 @@ export default function Home() {
       <div className={`mobile-menu ${menuOpen ? "mobile-menu--open" : ""}`}>
         <a href="#panarius" onClick={closeMenu}>Panarius <ChevronRight size={16} /></a>
         <a href="#progetto" onClick={closeMenu}>Il progetto <ChevronRight size={16} /></a>
-        <a href="#materia" onClick={closeMenu}>Made in Italy <ChevronRight size={16} /></a>
+        <a href="#materia" onClick={closeMenu}>Made in Pompei <ChevronRight size={16} /></a>
         <a href="#acquista" onClick={closeMenu}>Scegli la variante <ChevronRight size={16} /></a>
       </div>
 
@@ -258,7 +258,7 @@ export default function Home() {
               title="Progettato qui. Lavorato qui."
               copy="Ogni Panarius nasce da lavorazioni artigianali e da una scelta precisa dei materiali. La produzione locale non è un dettaglio: è parte del controllo sul risultato."
             />
-            <div className="material-proof"><Check size={18} /><span>Artigianato<br /><b>Made in Italy</b></span></div>
+            <div className="material-proof"><Check size={18} /><span>Artigianato<br /><b>Made in Pompei</b></span></div>
           </div>
           <div className="material-images">
             <figure className="material-images__large"><img src={asset("officine-detail-weld.jpg")} alt="Dettaglio di lavorazione metallica in officina" /><figcaption>La lavorazione</figcaption></figure>
