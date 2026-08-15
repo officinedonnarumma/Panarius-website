@@ -43,7 +43,7 @@ type Product = {
   external: string;
   base: string;
   price: string;
-  position: string;
+  image: string;
   feature: string;
 };
 
@@ -56,7 +56,7 @@ const products: Product[] = [
     external: "60 × 40 × 68 cm",
     base: "Ruote sterzanti con freno",
     price: "€ 215,00",
-    position: "25% 43%",
+    image: "/manus-storage/panarius-variant-01_b9e16593.jpg",
     feature: "Mobilità controllata",
   },
   {
@@ -67,7 +67,7 @@ const products: Product[] = [
     external: "60 × 40 × 60 cm",
     base: "Piedini fissi",
     price: "€ 185,00",
-    position: "73% 43%",
+    image: "/manus-storage/panarius-variant-02_01f381e7.jpg",
     feature: "Assetto essenziale",
   },
   {
@@ -78,7 +78,7 @@ const products: Product[] = [
     external: "60 × 40 × 58 cm",
     base: "Ruote sterzanti con freno",
     price: "€ 175,00",
-    position: "25% 76%",
+    image: "/manus-storage/panarius-variant-03_e9d7ffc2.jpg",
     feature: "Volume compatto, massima libertà",
   },
   {
@@ -89,7 +89,7 @@ const products: Product[] = [
     external: "60 × 40 × 50 cm",
     base: "Piedini fissi",
     price: "€ 145,00",
-    position: "73% 76%",
+    image: "/manus-storage/panarius-variant-04_d5920e0f.jpg",
     feature: "Leggero e funzionale",
   },
 ];
@@ -123,8 +123,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         role="img"
         aria-label={`${product.name}, cesto per montacarichi Panarius`}
         style={{
-          backgroundImage: `url("${asset("panarius-shop-source.webp")}")`,
-          backgroundPosition: product.position,
+          backgroundImage: `url("${product.image}")`,
         } as CSSProperties}
       >
         <span className="product-code"><i />{product.code}</span>
