@@ -1,5 +1,7 @@
 # Attività — nuovo sito Officine Donnarumma / Panarius
 
+- [ ] Raccogliere e applicare le migliorie prioritarie richieste dopo la prima revisione del sito.
+- [ ] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
 - [ ] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius.
 - [ ] Ricevere e associare gli URL definitivi per Amazon, eBay e acquisto diretto per ogni variante.
 - [ ] Raccogliere immagini prodotto e immagini di lavorazione adatte alla nuova vetrina.
