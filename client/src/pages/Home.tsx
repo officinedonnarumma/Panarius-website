@@ -206,7 +206,6 @@ export default function Home() {
               <a href="#progetto" className="text-link">Come è costruito <MoveUpRight size={15} /></a>
             </div>
           </div>
-          <div className="hero__caption"><span>01</span><p>Sistema di sollevamento<br />autoequilibrante</p></div>
           <div className="hero__scroll"><span>Scorri per scoprire</span><i /></div>
         </section>
 
