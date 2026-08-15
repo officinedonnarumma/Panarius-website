@@ -23,6 +23,7 @@ const previewAssets: Record<string, string> = {
   "officine-detail-weld.jpg": "/manus-storage/officine-detail-weld_fdce4c89.jpg",
   "officine-technical-blueprint.jpg": "/manus-storage/officine-technical-blueprint_3c2d5d0f.jpg",
   "officine-d-symbol.png": "/manus-storage/officine-d-symbol_994bcfab.png",
+  "officine-donnarumma-logo.png": "/assets/officine-donnarumma-logo.png",
   "panarius-shop-source.webp": "/manus-storage/panarius-shop-source_506fa902.webp",
 };
 
@@ -172,8 +173,7 @@ export default function Home() {
 
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
         <a className="brand" href="#top" aria-label="Officine Donnarumma — torna all'inizio">
-          <img src={asset("officine-d-symbol.png")} alt="" />
-          <span><b>Officine</b><b>Donnarumma</b></span>
+          <img className="brand__logo" src={asset("officine-donnarumma-logo.png")} alt="Officine Donnarumma, Pompei" />
         </a>
         <nav className="desktop-nav" aria-label="Navigazione principale">
           <a href="#panarius">Panarius</a>
@@ -291,7 +291,7 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="site-footer__brand"><img src={asset("officine-d-symbol.png")} alt="" /><span>Officine<br /><b>Donnarumma</b></span></div>
+        <div className="site-footer__brand"><img className="site-footer__logo" src={asset("officine-donnarumma-logo.png")} alt="Officine Donnarumma, Pompei" /></div>
         <p>Panarius · Cesti per montacarichi</p>
         <p>© {new Date().getFullYear()} Officine Donnarumma. Tutti i diritti riservati.</p>
       </footer>

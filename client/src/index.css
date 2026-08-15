@@ -141,3 +141,18 @@ a { color: inherit; text-decoration: none; }
   .product-grid { grid-template-columns: 1fr; }
   .product-card--lead .product-photo { height: 275px; background-size: 210% auto; }
 }
+
+/* Logotipo Officine Donnarumma: patrimonio Vesuvio/T reso leggibile nel sistema editoriale. */
+.brand { gap: 0; }
+.brand img.brand__logo { width: 188px; height: 52px; object-fit: contain; }
+.site-footer__brand { width: max-content; padding: 7px 10px; background: #f7f4ed; }
+.site-footer__brand img.site-footer__logo { width: 168px; height: 49px; object-fit: contain; }
+@media (max-width: 600px) {
+  .brand img.brand__logo { width: 139px; height: 42px; }
+  .site-footer__brand img.site-footer__logo { width: 150px; height: 44px; }
+}
+
+@media (max-width: 850px) {
+  .mobile-menu { display: block; height: 0; max-height: 0; grid-template-rows: none; transition: max-height .25s cubic-bezier(.23,1,.32,1), border-color .25s cubic-bezier(.23,1,.32,1); }
+  .mobile-menu--open { height: auto; max-height: 320px; }
+}

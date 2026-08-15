@@ -1,6 +1,11 @@
 # Attività — nuovo sito Officine Donnarumma / Panarius
 
 - [ ] Raccogliere e applicare le migliorie prioritarie richieste dopo la prima revisione del sito.
+- [ ] Approvare un riferimento discreto a Pompei esclusivamente nella sezione “Progettato qui. Lavorato qui.”.
+- [ ] Approvare il mockup completo della pagina con i riferimenti a Pompei prima dell’implementazione.
+- [ ] Valutare una proposta di logo intermedio che conservi Vesuvio, struttura e riferimento a Pompei.
+- [ ] Valutare le varianti cromatiche del marchio: blu officina, rame e monocromatico.
+- [x] Integrare il logo approvato nell’header e nel footer del sito Panarius.
 - [ ] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
 - [ ] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius.
 - [ ] Ricevere e associare gli URL definitivi per Amazon, eBay e acquisto diretto per ogni variante.
