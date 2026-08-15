@@ -12,6 +12,7 @@
 - [x] Integrare nel logo un accento di rosso pompeiano, mantenendo blu e rame come colori principali.
 - [x] Integrare piccoli accenti di rosso pompeiano nella pagina, in dialogo con il rame ocra.
 - [x] Correggere il logo del sito: trasparenza reale, nitidezza e dimensioni coerenti in header e footer.
+- [x] Sostituire il logo ricostruito con l’asset originale corretto fornito dal cliente.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
 - [x] Attenuare l’arancio in un terracotta più equilibrato nei corsivi e richiami caldi.
