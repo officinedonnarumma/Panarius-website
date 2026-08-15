@@ -20,6 +20,8 @@
 - [x] Rigenerare il hero con Panarius finito, sospeso al sistema di sollevamento e pronto all’uso.
 - [x] Rigenerare il hero senza saldature del telaio visibili e con quattro ruote piroettanti sotto il cesto.
 - [x] Rappresentare i bracci incernierati ai quattro angoli e il collegamento superiore con due anelli triangolari contrapposti.
+- [ ] Rigenerare il hero con paranco e binario chiaramente visibili nella parte superiore della scena.
+- [x] Ricreare da zero il hero con paranco e cesto Panarius fedeli alle foto reali, senza artefatti o dettagli meccanici inventati.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
 - [x] Attenuare l’arancio in un terracotta più equilibrato nei corsivi e richiami caldi.
