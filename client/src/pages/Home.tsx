@@ -115,23 +115,6 @@ function MarketplaceButton({ channel, href }: { channel: "Amazon" | "eBay"; href
   );
 }
 
-function PanariusMark() {
-  return (
-    <div className="panarius-mark" role="img" aria-label="Marchio Panarius">
-      <svg viewBox="0 0 88 82" aria-hidden="true">
-        <path d="M35 23 44 12l9 11H35Z" />
-        <path d="M35 23 44 34l9-11H35Z" />
-        <path d="M20 43 35 23M68 43 53 23M25 43 38 29M63 43 50 29" />
-        <rect x="17" y="43" width="54" height="24" rx="1" />
-        <path d="M17 49h54M17 55h54M17 61h54M27 43v24M38 43v24M50 43v24M61 43v24" />
-        <circle cx="27" cy="73" r="4" />
-        <circle cx="61" cy="73" r="4" />
-      </svg>
-      <span>Panarius</span>
-    </div>
-  );
-}
-
 function ProductCard({ product, index }: { product: Product; index: number }) {
   return (
     <article className={`product-card product-card--${index + 1} ${index === 0 ? "product-card--lead" : ""}`}>
@@ -229,7 +212,6 @@ export default function Home() {
         </section>
 
         <section className="intro-strip" aria-label="Introduzione Panarius">
-          <PanariusMark />
           <p>Robustezza concreta che ti accompagna ad ogni carico.</p>
         </section>
 
