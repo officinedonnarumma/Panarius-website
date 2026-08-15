@@ -32,6 +32,7 @@
 - [ ] Definire una nuova direzione e integrare un marchio Panarius color rame nella fascia introduttiva delle varianti.
 - [x] Rimuovere il marchio Panarius non approvato dalla fascia introduttiva delle varianti.
 - [x] Ripristinare esattamente la regola tipografica originaria della frase, senza peso o colore forzati.
+- [x] Applicare alla frase della fascia un peso normale effettivo, senza modificare testo, colore o layout.
 - [x] Ripristinare la tipografia originale della fascia introduttiva, modificata per errore.
 - [x] Sostituire i corsivi salmone con un ocra minerale ispirato agli affreschi di Pompei.
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
