@@ -33,7 +33,7 @@ const asset = (filename: keyof typeof previewAssets) => {
   return import.meta.env.DEV ? previewAssets[filename] : `/assets/${filename}`;
 };
 
-const heroImage = "/manus-storage/panarius-hero-authentic-installation_a901e83c.png";
+const heroImage = "/manus-storage/panarius-hero-finished-in-use_6e8b018a.png";
 
 type Product = {
   code: string;
