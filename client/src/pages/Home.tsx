@@ -201,7 +201,7 @@ export default function Home() {
           <div className="hero__image" aria-hidden="true" style={{ backgroundImage: `url("${heroImage}")` }} />
           <div className="hero__veil" />
           <div className="hero__content">
-            <p className="eyebrow eyebrow--light"><span>Officine Donnarumma · Italia</span></p>
+            <p className="eyebrow eyebrow--light"><span>Officine Donnarumma · Pompei</span></p>
             <h1 id="hero-title">Il tuo carico,<br /><em>sempre al sicuro.</em></h1>
             <p className="hero__copy">Panarius è il cesto per montacarichi progettato per distribuire il carico in maniera uniforme e rendere ogni movimentazione più semplice e sicura.</p>
             <div className="hero__actions">

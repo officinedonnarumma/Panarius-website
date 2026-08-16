@@ -57,3 +57,4 @@
 - [ ] Pubblicare i file dell’archivio asset su Cloudflare R2 oppure includerli in `client/public/assets/` prima del deploy.
 - [x] Ridurre ulteriormente l’H1 hero a circa 96px e riportare i testi descrittivi principali a 16px.
 - [x] Portare a 16px anche l’ultimo testo descrittivo principale rimasto a 18px e riverificare build e anteprima.
+- [x] Sostituire nell’hero il riferimento territoriale “Italia” con “Pompei”.
