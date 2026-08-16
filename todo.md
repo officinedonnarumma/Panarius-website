@@ -152,3 +152,5 @@
 - [x] Sostituire la tavola tecnica con l’ultima immagine aggiornata dal cliente, applicando solo la veste grafica senza alterare testi, viste e proporzioni.
 
 - [x] Impostare a 14px i titoli della sezione tecnica e a 11px i numeretti progressivi.
+
+- [x] Portare titoli e descrizioni del blocco tecnico a 14px, mantenendo i numeri 01, 02 e 03 a 11px e allineandoli in una colonna uniforme.
