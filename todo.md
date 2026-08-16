@@ -194,3 +194,11 @@
 - [x] Integrare la nuova cornice senza alterare disegno, viste o annotazioni.
 - [x] Verificare responsive, check, test Vitest e build prima del checkpoint.
 - [x] Verificare esplicitamente che viste, annotazioni e cartiglio siano preservati nella tavola ISO; confronto interno superato.
+- [x] Ridurre il bianco sopra e sotto e ingrandire leggermente il contenuto della tavola tecnica.
+- [x] Evitare l’accavallamento di testo, annotazioni e riferimenti con la cornice tecnica.
+- [x] Verificare desktop/mobile, check, test Vitest e build dopo la regolazione della tavola.
+- [x] Applicare una scala controllata all’asset ISO integro per ridurre visivamente il bianco superiore/inferiore senza ritagliare annotazioni o cartiglio.
+- [x] Verificare esplicitamente che la distanza relativa tra testi e cornice resti invariata dopo la scala.
+- [x] Salvare un checkpoint dopo la correzione verificabile della tavola finale.
+- [x] Verificare deterministicamente i margini del riquadro dopo la scala, evitando clipping di bordi, annotazioni e cartiglio.
+- [x] Confermare post-scale la separazione misurabile tra contenuto tecnico e cornice.
