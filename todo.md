@@ -104,3 +104,5 @@
 
 - [x] Salvare e pubblicare un nuovo checkpoint dopo il ripristino definitivo del banner a #8f2d24.
 - [x] Verificare nella versione pubblicata che il banner superiore mostri effettivamente #8f2d24 su desktop e mobile.
+
+- [x] Sostituire l’eyebrow hero con “Panarius · Cesta per montacarichi” e correggere “Made in Pompei” in “Made in Pompeii”.
