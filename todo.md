@@ -180,3 +180,5 @@
 - [x] Aggiornare il testo della voce 02 “Telaio e fondo rinforzati” con la formulazione corretta approvata dal cliente.
 
 - [x] Aggiornare il testo della voce 03 con la formulazione corretta sulle paratie laterali in lamiera microforata presso-piegata.
+
+- [x] Aggiornare nuovamente il testo della voce 02 “Telaio e fondo rinforzati” con la formulazione sulla resistenza senza eguali.
