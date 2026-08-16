@@ -46,11 +46,11 @@
 - [x] Integrare il logo approvato nell’header e nel footer del sito Panarius.
 - [x] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
 - [ ] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius.
-- [ ] Ricevere e associare gli URL definitivi per Amazon, eBay e acquisto diretto per ogni variante.
+- [x] Ricevere e associare gli URL definitivi per Amazon, eBay e acquisto diretto per ogni variante.
 - [x] Raccogliere immagini prodotto e immagini di lavorazione adatte alla nuova vetrina.
 - [ ] Verificare contatti aziendali, dati legali e canale preferito per le richieste dirette.
 - [x] Definire i testi SEO essenziali della homepage e la struttura del catalogo in pagina.
-- [ ] Implementare il sito responsive con pagine prodotto e collegamenti di acquisto tracciabili.
+- [ ] Implementare pagine prodotto dedicate oppure ottenere approvazione esplicita per il catalogo in homepage; rendere tracciabili i collegamenti di acquisto.
 - [x] Configurare metadati SEO, sitemap e istruzioni di scansione per l’indicizzazione.
 - [x] Validare in anteprima layout e resa su dispositivi mobili.
 - [x] Verificare la build statica e documentare configurazione e output directory per Cloudflare Pages.
@@ -60,3 +60,4 @@
 - [x] Sostituire nell’hero il riferimento territoriale “Italia” con “Pompei”.
 - [x] Sostituire “Scegli la tua variante” con “Richiedi un preventivo” e collegarlo alla sezione contatti.
 - [x] Integrare il link Amazon, il profilo eBay e l’e-mail di acquisto diretto nelle schede Panarius.
+- [x] Sostituire l’eyebrow hero con “Panarius · Pompei” e impostare questa tipologia di contenuto a 11px.
