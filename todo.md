@@ -166,3 +166,5 @@
 - [x] Correggere e pubblicare il testo della terza voce tecnica sulle paratie laterali in lamiera microforata.
 
 - [x] Aggiornare il titolo della sezione tecnica in “Una geometria al servizio di ogni carico.”.
+
+- [x] Correggere il contenitore della tavola tecnica per evitare il ritaglio dei lati su desktop e mantenere la leggibilità su mobile.
