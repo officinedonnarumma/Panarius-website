@@ -178,3 +178,5 @@
 - [x] Aggiornare il testo della voce 01 “Sistema di sollevamento auto-equilibrante” con la formulazione corretta approvata dal cliente.
 
 - [x] Aggiornare il testo della voce 02 “Telaio e fondo rinforzati” con la formulazione corretta approvata dal cliente.
+
+- [x] Aggiornare il testo della voce 03 con la formulazione corretta sulle paratie laterali in lamiera microforata presso-piegata.
