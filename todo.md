@@ -130,3 +130,5 @@
 - [x] Ridurre leggermente l’altezza dei riquadri fotografici mantenendo proporzioni e leggibilità.
 
 - [x] Correggere l’overlay del codice modello: linea ocra a sinistra e rombo rosso pompeiano a destra.
+
+- [x] Ridurre a 11px il testo del pulsante “Acquista” nelle card prodotto.
