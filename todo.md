@@ -176,3 +176,5 @@
 - [x] Aggiornare il testo introduttivo in “La struttura del cesto e i suoi maniglioni sono progettati...” con la formulazione corretta approvata dal cliente.
 
 - [x] Aggiornare il testo della voce 01 “Sistema di sollevamento auto-equilibrante” con la formulazione corretta approvata dal cliente.
+
+- [x] Aggiornare il testo della voce 02 “Telaio e fondo rinforzati” con la formulazione corretta approvata dal cliente.
