@@ -206,3 +206,5 @@
 - [x] Correggere e inserire il nuovo testo sull’artigianalità, i materiali locali e il controllo diretto della produzione.
 - [x] Rimuovere l’etichetta interna “Artigianato Made in Pompei” perché ridondante.
 - [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento della sezione.
+- [x] Eliminare gli spazi verticali tra i paragrafi della sezione “Artigianato Made in Pompeii”.
+- [x] Verificare desktop/mobile, check, test Vitest e build dopo la regolazione.
