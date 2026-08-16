@@ -132,3 +132,5 @@
 - [x] Correggere l’overlay del codice modello: linea ocra a sinistra e rombo rosso pompeiano a destra.
 
 - [x] Ridurre a 11px il testo del pulsante “Acquista” nelle card prodotto.
+
+- [x] Ridurre lo spazio sotto il nome del prodotto nelle card, avvicinando la linea divisoria e le specifiche.
