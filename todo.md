@@ -134,3 +134,5 @@
 - [x] Ridurre a 11px il testo del pulsante “Acquista” nelle card prodotto.
 
 - [x] Ridurre lo spazio sotto il nome del prodotto nelle card, avvicinando la linea divisoria e le specifiche.
+
+- [x] Aggiornare gli slogan delle quattro varianti Panarius con i testi forniti dal cliente.

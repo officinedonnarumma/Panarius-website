@@ -53,7 +53,7 @@ const products: Product[] = [
     base: "Ruote sterzanti con freno",
     price: "€ 215,00",
     image: "/manus-storage/panarius-variant-01_b9e16593.jpg",
-    feature: "Mobilità controllata",
+    feature: "TUTTO, OVUNQUE SERVA",
   },
   {
     code: "PNR-100",
@@ -64,7 +64,7 @@ const products: Product[] = [
     base: "Piedini fissi",
     price: "€ 185,00",
     image: "/manus-storage/panarius-variant-02_01f381e7.jpg",
-    feature: "Assetto essenziale",
+    feature: "L'ESSENZIALE, IN GRANDE",
   },
   {
     code: "PNR-80-W",
@@ -75,7 +75,7 @@ const products: Product[] = [
     base: "Ruote sterzanti con freno",
     price: "€ 175,00",
     image: "/manus-storage/panarius-variant-03_e9d7ffc2.jpg",
-    feature: "Volume compatto, massima libertà",
+    feature: "PICCOLO INGOMBRO, MASSIMA LIBERTÀ",
   },
   {
     code: "PNR-80",
@@ -86,7 +86,7 @@ const products: Product[] = [
     base: "Piedini fissi",
     price: "€ 145,00",
     image: "/manus-storage/panarius-variant-04_d5920e0f.jpg",
-    feature: "Leggero e funzionale",
+    feature: "COMPATTO E FUNZIONALE",
   },
 ];
 
