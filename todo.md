@@ -89,3 +89,5 @@
 - [x] Valutare il crop parziale del paranco come tentativo intermedio; non è il deliverable finale ed è stato superato dalla variante approvata con il solo filo verticale.
 
 - [x] Rimuovere il paranco visibile dall’hero e lasciare soltanto il filo/cavo verticale fino all’aggancio, senza alterare il cesto.
+
+- [x] Cambiare il bannerino superiore da nero a rosso pompeiano, mantenendo invariati contenuti, layout e collegamenti.

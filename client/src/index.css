@@ -67,7 +67,7 @@ button:not(:disabled), [role="button"]:not([aria-disabled="true"]), a[href] { cu
 a { color: inherit; text-decoration: none; }
 
 .site-shell { overflow: clip; background: #f7f4ed; color: #182625; }
-.utility-bar { height: 37px; display: flex; align-items: center; justify-content: space-between; padding: 0 4.7vw; background: #121a1a; color: #f7f4ed; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.utility-bar { height: 37px; display: flex; align-items: center; justify-content: space-between; padding: 0 4.7vw; background: var(--pompeian-red); color: #fffdf9; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
 .utility-bar p { margin: 0; opacity: .78; }
 .utility-bar a { display: inline-flex; gap: 7px; align-items: center; transition: color .2s cubic-bezier(.23,1,.32,1); }
 .utility-bar a:hover { color: var(--pompeian-ochre); }
