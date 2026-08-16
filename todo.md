@@ -162,3 +162,5 @@
 - [x] Sostituire il testo introduttivo della sezione tecnica con la nuova formulazione approvata dal cliente.
 
 - [x] Aggiornare la seconda voce tecnica in “Telaio e fondo rinforzati” con il testo italiano corretto approvato dal cliente.
+
+- [x] Correggere e pubblicare il testo della terza voce tecnica sulle paratie laterali in lamiera microforata.
