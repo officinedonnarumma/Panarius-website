@@ -90,9 +90,11 @@ const products: Product[] = [
 ];
 
 const purchaseLinks = {
-  amazon: "",
-  ebay: "",
+  amazon: "https://www.amazon.it/dp/B0HF5124YB",
+  ebay: "https://www.ebay.it/usr/officinedonnarumma",
 };
+
+const directPurchaseEmail = "officinedonnarumma@gmail.com";
 
 function MarketplaceButton({ channel, href }: { channel: "Amazon" | "eBay"; href: string }) {
   if (!href) {
@@ -142,7 +144,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
           <div className="buy-actions">
             <MarketplaceButton channel="Amazon" href={purchaseLinks.amazon} />
             <MarketplaceButton channel="eBay" href={purchaseLinks.ebay} />
-            <a className="direct-link" href="#contatti">Diretto <ArrowRight size={15} /></a>
+            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`}>Diretto <ArrowRight size={15} /></a>
           </div>
         </div>
       </div>
@@ -281,7 +283,7 @@ export default function Home() {
 
         <section id="contatti" className="contact-section">
           <div><p className="eyebrow"><span>Parliamone</span></p><h2>Ti serve una mano<br /><em>nella scelta?</em></h2></div>
-          <div className="contact-section__right"><p>Per una richiesta sul prodotto o per l’acquisto diretto, contatta Officine Donnarumma. Inseriremo qui i recapiti ufficiali prima della pubblicazione.</p><a href="#top" className="button button--dark">Torna all'inizio <ArrowRight size={17} /></a></div>
+          <div className="contact-section__right"><p>Per una richiesta sul prodotto o per l’acquisto diretto, scrivi a Officine Donnarumma: <a href={`mailto:${directPurchaseEmail}`}>{directPurchaseEmail}</a>.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} className="button button--dark">Richiedi un preventivo <ArrowRight size={17} /></a></div>
         </section>
       </main>
 

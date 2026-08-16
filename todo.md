@@ -59,3 +59,4 @@
 - [x] Portare a 16px anche l’ultimo testo descrittivo principale rimasto a 18px e riverificare build e anteprima.
 - [x] Sostituire nell’hero il riferimento territoriale “Italia” con “Pompei”.
 - [x] Sostituire “Scegli la tua variante” con “Richiedi un preventivo” e collegarlo alla sezione contatti.
+- [x] Integrare il link Amazon, il profilo eBay e l’e-mail di acquisto diretto nelle schede Panarius.
