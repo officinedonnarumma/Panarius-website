@@ -106,3 +106,5 @@
 - [x] Verificare nella versione pubblicata che il banner superiore mostri effettivamente #8f2d24 su desktop e mobile.
 
 - [x] Sostituire l’eyebrow hero con “Panarius · Cesta per montacarichi” e correggere “Made in Pompei” in “Made in Pompeii”.
+
+- [x] Ridurre leggermente gli H2 e portare a 14px le descrizioni testuali delle card prodotto, verificando desktop e mobile.
