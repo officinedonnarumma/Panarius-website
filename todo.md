@@ -144,3 +144,5 @@
 - [x] Rifare il disegno costruttivo Panarius coerente con il prodotto reale mostrato nell’hero e integrarlo nella sezione “Il progetto”.
 
 - [x] Rigenerare il disegno tecnico con Nano Banana 2 usando l’immagine reale allegata come riferimento prioritario e sostituire l’asset precedente.
+
+- [x] Rendere gradevole graficamente il disegno costruttivo reale fornito dal cliente, senza alterarne geometria e viste.
