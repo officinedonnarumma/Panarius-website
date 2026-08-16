@@ -170,3 +170,5 @@
 - [x] Correggere il contenitore della tavola tecnica per evitare il ritaglio dei lati su desktop e mantenere la leggibilità su mobile.
 
 - [x] Sostituire la tavola tecnica con il nuovo formato più largo e ripristinare il layout precedente nel riquadro, evitando ritagli laterali e spazi vuoti eccessivi.
+
+- [x] Ripristinare l’adattamento della tavola tecnica all’altezza del riquadro e reinserire la cornice editoriale originale.
