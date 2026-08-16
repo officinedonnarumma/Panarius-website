@@ -174,3 +174,5 @@
 - [x] Ripristinare l’adattamento della tavola tecnica all’altezza del riquadro e reinserire la cornice editoriale originale.
 
 - [x] Aggiornare il testo introduttivo in “La struttura del cesto e i suoi maniglioni sono progettati...” con la formulazione corretta approvata dal cliente.
+
+- [x] Aggiornare il testo della voce 01 “Sistema di sollevamento auto-equilibrante” con la formulazione corretta approvata dal cliente.
