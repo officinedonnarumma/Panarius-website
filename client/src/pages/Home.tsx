@@ -240,7 +240,7 @@ export default function Home() {
               inverted
             />
             <div className="process-list">
-              <article><span>01</span><div><h3>Sollevamento autoequilibrante</h3><p>Gli ampi maniglioni reclinabili distribuiscono il carico sui quattro punti della struttura portante.</p></div></article>
+              <article><span>01</span><div><h3>Sistema di sollevamento auto-equilibrante</h3><p>Gli ampi maniglioni reclinabili sono progettati per distribuire equamente il carico su quattro punti della struttura portante. Impediscono qualsiasi rotazione delle cerniere in fase di salita garantendo la massima sicurezza.</p><p>Una volta a terra, possono essere inoltre reclinati per dare piena libertà di accesso alla zona di carico senza nessun intralcio agevolando l’inserimento dei tuoi oggetti all’interno del cesto.</p></div></article>
               <article><span>02</span><div><h3>Telaio con fondo rinforzato</h3><p>Profili angolari e lamiera zincata lavorano insieme per offrire resistenza in fase di movimentazione.</p></div></article>
               <article><span>03</span><div><h3>Sponde microforate</h3><p>La microforatura lascia respirare il contenuto e protegge anche gli oggetti più piccoli durante il trasporto.</p></div></article>
             </div>

@@ -154,3 +154,5 @@
 - [x] Impostare a 14px i titoli della sezione tecnica e a 11px i numeretti progressivi.
 
 - [x] Portare titoli e descrizioni del blocco tecnico a 14px, mantenendo i numeri 01, 02 e 03 a 11px e allineandoli in una colonna uniforme.
+
+- [x] Aggiornare il primo elemento tecnico in “Sistema di sollevamento auto-equilibrante” con il testo completo fornito dal cliente.
