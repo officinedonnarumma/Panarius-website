@@ -172,3 +172,5 @@
 - [x] Sostituire la tavola tecnica con il nuovo formato più largo e ripristinare il layout precedente nel riquadro, evitando ritagli laterali e spazi vuoti eccessivi.
 
 - [x] Ripristinare l’adattamento della tavola tecnica all’altezza del riquadro e reinserire la cornice editoriale originale.
+
+- [x] Aggiornare il testo introduttivo in “La struttura del cesto e i suoi maniglioni sono progettati...” con la formulazione corretta approvata dal cliente.
