@@ -156,3 +156,5 @@
 - [x] Portare titoli e descrizioni del blocco tecnico a 14px, mantenendo i numeri 01, 02 e 03 a 11px e allineandoli in una colonna uniforme.
 
 - [x] Aggiornare il primo elemento tecnico in “Sistema di sollevamento auto-equilibrante” con il testo completo fornito dal cliente.
+
+- [x] Sostituire il testo della prima voce tecnica con la versione italiana corretta approvata dal cliente.
