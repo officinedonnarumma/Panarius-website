@@ -144,9 +144,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         <div className="product-card__buy">
           <p><span>Prezzo indicato</span><strong>{product.price}</strong></p>
           <div className="buy-actions">
-            <MarketplaceButton channel="Amazon" href={purchaseLinks.amazon} productCode={product.code} />
-            <MarketplaceButton channel="eBay" href={purchaseLinks.ebay} productCode={product.code} />
-            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} onClick={() => trackPurchaseClick("direct", product.code)}>Diretto <ArrowRight size={15} /></a>
+            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} onClick={() => trackPurchaseClick("direct", product.code)}>Acquista <ArrowRight size={15} /></a>
           </div>
         </div>
       </div>
@@ -272,13 +270,11 @@ export default function Home() {
             <SectionHeading
               eyebrow="Acquista come preferisci"
               title="Hai scelto la variante. Ora scegli il canale."
-              copy="Stiamo preparando i collegamenti ai marketplace per ciascun modello. L’acquisto diretto resterà sempre disponibile per richieste specifiche."
+              copy="Per richieste, configurazioni e acquisti diretti, scegli la variante e contattaci direttamente."
               inverted
             />
             <div className="channel-grid">
-              <article><span className="channel-number">01</span><h3>Amazon</h3><p>Acquisto tramite marketplace Amazon.</p><MarketplaceButton channel="Amazon" href={purchaseLinks.amazon} /></article>
-              <article><span className="channel-number">02</span><h3>eBay</h3><p>Acquisto tramite marketplace eBay.</p><MarketplaceButton channel="eBay" href={purchaseLinks.ebay} /></article>
-              <article><span className="channel-number">03</span><h3>Direttamente</h3><p>Per richieste, configurazioni e acquisti diretti.</p><a href="#contatti" className="channel-link">Contattaci <ArrowRight size={15} /></a></article>
+              <article><span className="channel-number">01</span><h3>Acquista</h3><p>Per richieste, configurazioni e acquisti diretti.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} className="channel-link" onClick={() => trackPurchaseClick("direct", "contact")}>Acquista <ArrowRight size={15} /></a></article>
             </div>
           </div>
         </section>

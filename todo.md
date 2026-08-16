@@ -120,3 +120,7 @@
 
 - [x] Portare a 14px anche i testi dei pulsanti e link nell’area acquisto delle card, mantenendo a 11px soltanto le label sintetiche delle varianti.
 - [x] Rieseguire la verifica desktop/mobile dopo l’allineamento tipografico completo delle card.
+
+- [x] Ripristinare il prezzo nella gerarchia precedente, rimuovere Amazon ed eBay e sostituire “Diretto” con un unico pulsante “Acquista”.
+
+- [x] Rimuovere Amazon ed eBay anche dalla sezione canali d’acquisto e lasciare un unico canale diretto “Acquista”, coerente con le schede prodotto.
