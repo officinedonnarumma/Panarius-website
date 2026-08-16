@@ -150,3 +150,5 @@
 - [x] Sostituire il disegno costruttivo con la nuova tavola aggiornata dal cliente, applicando solo una veste grafica coerente senza alterare testi, viste o geometria.
 
 - [x] Sostituire la tavola tecnica con l’ultima immagine aggiornata dal cliente, applicando solo la veste grafica senza alterare testi, viste e proporzioni.
+
+- [x] Impostare a 14px i titoli della sezione tecnica e a 11px i numeretti progressivi.
