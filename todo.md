@@ -142,3 +142,5 @@
 - [x] Correggere la specifica della base nelle varianti con ruote in “Ruote sterzanti”, rimuovendo il riferimento ai freni.
 
 - [x] Rifare il disegno costruttivo Panarius coerente con il prodotto reale mostrato nell’hero e integrarlo nella sezione “Il progetto”.
+
+- [x] Rigenerare il disegno tecnico con Nano Banana 2 usando l’immagine reale allegata come riferimento prioritario e sostituire l’asset precedente.
