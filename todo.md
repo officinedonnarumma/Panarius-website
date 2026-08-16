@@ -168,3 +168,5 @@
 - [x] Aggiornare il titolo della sezione tecnica in “Una geometria al servizio di ogni carico.”.
 
 - [x] Correggere il contenitore della tavola tecnica per evitare il ritaglio dei lati su desktop e mantenere la leggibilità su mobile.
+
+- [x] Sostituire la tavola tecnica con il nuovo formato più largo e ripristinare il layout precedente nel riquadro, evitando ritagli laterali e spazi vuoti eccessivi.
