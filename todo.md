@@ -208,3 +208,6 @@
 - [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento della sezione.
 - [x] Eliminare gli spazi verticali tra i paragrafi della sezione “Artigianato Made in Pompeii”.
 - [x] Verificare desktop/mobile, check, test Vitest e build dopo la regolazione.
+- [x] Sostituire l’immagine della lavorazione con la nuova fotografia della saldatura.
+- [x] Sostituire l’immagine della materia con la nuova fotografia della piegatura.
+- [x] Verificare responsive, check, test Vitest e build dopo la sostituzione delle immagini.

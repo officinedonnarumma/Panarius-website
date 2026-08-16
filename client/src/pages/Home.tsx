@@ -20,8 +20,8 @@ import { useEffect, useState, type CSSProperties } from "react";
 
 const previewAssets: Record<string, string> = {
   "officine-hero-fabrication.jpg": "/manus-storage/officine-hero-fabrication_5f47ba3b.jpg",
-  "officine-detail-perforated-steel.jpg": "/manus-storage/officine-detail-perforated-steel_ca3d53e1.jpg",
-  "officine-detail-weld.jpg": "/manus-storage/officine-detail-weld_d923685e.jpg",
+  "officine-detail-perforated-steel.jpg": "/manus-storage/officine-bending-new_fdd2dfa0.png",
+  "officine-detail-weld.jpg": "/manus-storage/officine-welding-new_5b2042e7.jpg",
   "officine-technical-blueprint.jpg": "/manus-storage/panarius-technical-drawing-iso_4a4ee796.png",
   "officine-d-symbol.png": "/manus-storage/officine-d-symbol_2f7ead5c.png",
   "panarius-shop-source.webp": "/manus-storage/panarius-shop-source_4e57ba40.webp",
