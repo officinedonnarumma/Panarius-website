@@ -148,3 +148,5 @@
 - [x] Rendere gradevole graficamente il disegno costruttivo reale fornito dal cliente, senza alterarne geometria e viste.
 
 - [x] Sostituire il disegno costruttivo con la nuova tavola aggiornata dal cliente, applicando solo una veste grafica coerente senza alterare testi, viste o geometria.
+
+- [x] Sostituire la tavola tecnica con l’ultima immagine aggiornata dal cliente, applicando solo la veste grafica senza alterare testi, viste e proporzioni.
