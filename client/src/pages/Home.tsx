@@ -235,7 +235,7 @@ export default function Home() {
           <div className="project-content">
             <SectionHeading
               eyebrow="Il concept"
-              title="Una geometria che lavora insieme al carico."
+              title="Una geometria al servizio di ogni carico."
               copy="La struttura del cesto e il suo sistema di bracci sono pensati per accompagnare le operazioni quotidiane di sollevamento con una soluzione solida e funzionale."
               inverted
             />
