@@ -218,7 +218,7 @@ export default function Home() {
         <section id="panarius" className="catalogue section-space">
           <div className="catalogue__top">
             <SectionHeading
-              eyebrow="La collezione"
+              eyebrow="La collezione Panarius"
               title="Quattro varianti, una sola logica costruttiva."
               copy="Scegli il modello in base al volume di carico e alla necessità di spostamento a terra. Tutte le dimensioni indicate si riferiscono al singolo cesto."
             />

@@ -108,3 +108,5 @@
 - [x] Sostituire l’eyebrow hero con “Panarius · Cesta per montacarichi” e correggere “Made in Pompei” in “Made in Pompeii”.
 
 - [x] Ridurre leggermente gli H2 e portare a 14px le descrizioni testuali delle card prodotto, verificando desktop e mobile.
+
+- [x] Correggere il titolo della sezione catalogo in “La collezione Panarius”, mantenendo invariati stile, dimensioni e layout.
