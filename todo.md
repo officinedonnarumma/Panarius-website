@@ -91,3 +91,5 @@
 - [x] Rimuovere il paranco visibile dall’hero e lasciare soltanto il filo/cavo verticale fino all’aggancio, senza alterare il cesto.
 
 - [x] Cambiare il bannerino superiore da nero a rosso pompeiano, mantenendo invariati contenuti, layout e collegamenti.
+
+- [x] Scurire il rosso pompeiano del bannerino superiore, mantenendo invariati testo, layout e collegamenti.
