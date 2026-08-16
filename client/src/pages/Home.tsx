@@ -128,7 +128,6 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         } as CSSProperties}
       >
         <span className="product-code"><i />{product.code}</span>
-        <span className="product-index"><i />0{index + 1}</span>
       </div>
       <div className="product-card__body">
         <div className="product-card__intro">

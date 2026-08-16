@@ -124,3 +124,7 @@
 - [x] Ripristinare il prezzo nella gerarchia precedente, rimuovere Amazon ed eBay e sostituire “Diretto” con un unico pulsante “Acquista”.
 
 - [x] Rimuovere Amazon ed eBay anche dalla sezione canali d’acquisto e lasciare un unico canale diretto “Acquista”, coerente con le schede prodotto.
+
+- [x] Portare a 11px le label delle card e il codice modello sulle foto, aggiungendo il rombo accanto al codice.
+- [x] Rimuovere la numerazione 01/02/03/04 dalle foto delle card.
+- [x] Ridurre leggermente l’altezza dei riquadri fotografici mantenendo proporzioni e leggibilità.
