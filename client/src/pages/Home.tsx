@@ -18,20 +18,15 @@ import {
 import { useEffect, useState, type CSSProperties } from "react";
 
 const previewAssets: Record<string, string> = {
-  "officine-hero-fabrication.jpg": "/manus-storage/officine-hero-fabrication_ced098d3.jpg",
-  "officine-detail-perforated-steel.jpg": "/manus-storage/officine-detail-perforated-steel_ee49f097.jpg",
-  "officine-detail-weld.jpg": "/manus-storage/officine-detail-weld_fdce4c89.jpg",
-  "officine-technical-blueprint.jpg": "/manus-storage/officine-technical-blueprint_3c2d5d0f.jpg",
-  "officine-d-symbol.png": "/manus-storage/officine-d-symbol_994bcfab.png",
-  "officine-donnarumma-logo.png": "/assets/officine-donnarumma-logo.png",
-  "panarius-shop-source.webp": "/manus-storage/panarius-shop-source_506fa902.webp",
+  "officine-hero-fabrication.jpg": "/manus-storage/officine-hero-fabrication_5f47ba3b.jpg",
+  "officine-detail-perforated-steel.jpg": "/manus-storage/officine-detail-perforated-steel_ca3d53e1.jpg",
+  "officine-detail-weld.jpg": "/manus-storage/officine-detail-weld_d923685e.jpg",
+  "officine-technical-blueprint.jpg": "/manus-storage/officine-technical-blueprint_cd691003.jpg",
+  "officine-d-symbol.png": "/manus-storage/officine-d-symbol_2f7ead5c.png",
+  "panarius-shop-source.webp": "/manus-storage/panarius-shop-source_4e57ba40.webp",
 };
 
-const configuredAssetBase = import.meta.env.VITE_ASSET_BASE_URL?.replace(/\/$/, "");
-const asset = (filename: keyof typeof previewAssets) => {
-  if (configuredAssetBase) return `${configuredAssetBase}/assets/${filename}`;
-  return import.meta.env.DEV ? previewAssets[filename] : `/assets/${filename}`;
-};
+const asset = (filename: keyof typeof previewAssets) => previewAssets[filename];
 
 const heroImage = "/manus-storage/panarius-hero-real-installation-composite_f5585258.png";
 
@@ -171,7 +166,7 @@ export default function Home() {
     <div className="site-shell">
       <div className="utility-bar">
         <p>Panarius · Cesti per montacarichi</p>
-        <a href="#acquista">Scegli la tua variante <ArrowDownRight size={15} /></a>
+        <a href="#contatti">Richiedi un preventivo <ArrowDownRight size={15} /></a>
       </div>
 
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
@@ -193,7 +188,7 @@ export default function Home() {
         <a href="#panarius" onClick={closeMenu}>Panarius <ChevronRight size={16} /></a>
         <a href="#progetto" onClick={closeMenu}>Il progetto <ChevronRight size={16} /></a>
         <a href="#materia" onClick={closeMenu}>Made in Pompei <ChevronRight size={16} /></a>
-        <a href="#acquista" onClick={closeMenu}>Scegli la variante <ChevronRight size={16} /></a>
+        <a href="#contatti" onClick={closeMenu}>Richiedi un preventivo <ChevronRight size={16} /></a>
       </div>
 
       <main id="top">

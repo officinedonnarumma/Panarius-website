@@ -44,17 +44,18 @@
 - [x] Rendere più vivido e aranciato il colore dei corsivi e dei richiami caldi principali.
 - [x] Attenuare l’arancio in un terracotta più equilibrato nei corsivi e richiami caldi.
 - [x] Integrare il logo approvato nell’header e nel footer del sito Panarius.
-- [ ] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
+- [x] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
 - [ ] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius.
 - [ ] Ricevere e associare gli URL definitivi per Amazon, eBay e acquisto diretto per ogni variante.
-- [ ] Raccogliere immagini prodotto e immagini di lavorazione adatte alla nuova vetrina.
+- [x] Raccogliere immagini prodotto e immagini di lavorazione adatte alla nuova vetrina.
 - [ ] Verificare contatti aziendali, dati legali e canale preferito per le richieste dirette.
-- [ ] Definire i testi SEO essenziali e la struttura delle pagine prodotto.
+- [x] Definire i testi SEO essenziali della homepage e la struttura del catalogo in pagina.
 - [ ] Implementare il sito responsive con pagine prodotto e collegamenti di acquisto tracciabili.
-- [ ] Configurare metadati SEO, sitemap e istruzioni di scansione per l’indicizzazione.
-- [ ] Validare in anteprima layout, collegamenti e resa su dispositivi mobili.
+- [x] Configurare metadati SEO, sitemap e istruzioni di scansione per l’indicizzazione.
+- [x] Validare in anteprima layout e resa su dispositivi mobili.
 - [x] Verificare la build statica e documentare configurazione e output directory per Cloudflare Pages.
-- [ ] Pubblicare i file dell’archivio asset su Cloudflare R2 oppure includerli in `client/public/assets/` prima del deploy.
+- [x] Pubblicare gli asset statici tramite storage persistente del progetto e referenziarli con URL `/manus-storage/`.
 - [x] Ridurre ulteriormente l’H1 hero a circa 96px e riportare i testi descrittivi principali a 16px.
 - [x] Portare a 16px anche l’ultimo testo descrittivo principale rimasto a 18px e riverificare build e anteprima.
 - [x] Sostituire nell’hero il riferimento territoriale “Italia” con “Pompei”.
+- [x] Sostituire “Scegli la tua variante” con “Richiedi un preventivo” e collegarlo alla sezione contatti.
