@@ -182,3 +182,10 @@
 - [x] Aggiornare il testo della voce 03 con la formulazione corretta sulle paratie laterali in lamiera microforata presso-piegata.
 
 - [x] Aggiornare nuovamente il testo della voce 02 “Telaio e fondo rinforzati” con la formulazione sulla resistenza senza eguali.
+
+- [x] Rimuovere il rigo arancio dalla tavola tecnica e sostituirlo con una cornice tecnica standard, sottile e discreta.
+- [x] Migliorare la nitidezza del testo della tavola tecnica senza alterare il disegno reale.
+- [x] Ripristinare l’adattamento verticale della tavola tecnica nel riquadro, evitando ritagli laterali eccessivi.
+- [x] Verificare desktop/mobile, check, test Vitest e build dopo la correzione della tavola tecnica.
+- [x] Ripristinare nel CSS un adattamento reale della tavola all’altezza del riquadro, mantenendo i lati visibili e la tavola leggibile.
+- [x] Salvare un checkpoint dopo la correzione finale della tavola tecnica e la verifica responsive.
