@@ -137,6 +137,6 @@
 
 - [x] Aggiornare gli slogan delle quattro varianti Panarius con i testi forniti dal cliente.
 
-- [ ] Portare a 11px la label “Prezzo indicato” e a 22px l’importo del prezzo nelle card.
+- [x] Portare a 11px la label “Prezzo indicato” e a 22px l’importo del prezzo nelle card.
 
 - [x] Correggere la specifica della base nelle varianti con ruote in “Ruote sterzanti”, rimuovendo il riferimento ai freni.
