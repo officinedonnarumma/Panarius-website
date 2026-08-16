@@ -128,3 +128,5 @@
 - [x] Portare a 11px le label delle card e il codice modello sulle foto, aggiungendo il rombo accanto al codice.
 - [x] Rimuovere la numerazione 01/02/03/04 dalle foto delle card.
 - [x] Ridurre leggermente l’altezza dei riquadri fotografici mantenendo proporzioni e leggibilità.
+
+- [x] Correggere l’overlay del codice modello: linea ocra a sinistra e rombo rosso pompeiano a destra.

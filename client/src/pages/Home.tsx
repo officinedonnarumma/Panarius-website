@@ -127,7 +127,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
           backgroundImage: `url("${product.image}")`,
         } as CSSProperties}
       >
-        <span className="product-code"><i />{product.code}</span>
+        <span className="product-code"><i className="product-code__line" /><span>{product.code}</span><b className="product-code__diamond" aria-hidden="true" /></span>
       </div>
       <div className="product-card__body">
         <div className="product-card__intro">
