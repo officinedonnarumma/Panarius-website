@@ -93,3 +93,14 @@
 - [x] Cambiare il bannerino superiore da nero a rosso pompeiano, mantenendo invariati contenuti, layout e collegamenti.
 
 - [x] Scurire il rosso pompeiano del bannerino superiore, mantenendo invariati testo, layout e collegamenti.
+
+- [x] Applicare al bannerino superiore una resa digitale coerente con Pantone 18-1658 TPX Pompeian Red; il cliente ha scelto come resa finale #8f2d24.
+
+- [x] Correggere la dominante rosata del banner Pantone verso una resa digitale più calda, terrosa e meno magenta; tonalità finale confermata a #8f2d24.
+
+- [x] Scurire ulteriormente il rosso pompeiano come iterazione intermedia; la tonalità finale approvata è #8f2d24.
+
+- [x] Impostare definitivamente il bannerino superiore sul rosso pompeiano #8f2d24 e pubblicare l’aggiornamento.
+
+- [x] Salvare e pubblicare un nuovo checkpoint dopo il ripristino definitivo del banner a #8f2d24.
+- [x] Verificare nella versione pubblicata che il banner superiore mostri effettivamente #8f2d24 su desktop e mobile.
