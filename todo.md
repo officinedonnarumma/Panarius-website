@@ -202,3 +202,7 @@
 - [x] Salvare un checkpoint dopo la correzione verificabile della tavola finale.
 - [x] Verificare deterministicamente i margini del riquadro dopo la scala, evitando clipping di bordi, annotazioni e cartiglio.
 - [x] Confermare post-scale la separazione misurabile tra contenuto tecnico e cornice.
+- [x] Rinominare la sezione “Materia e metodo” in “Artigianato Made in Pompeii”.
+- [x] Correggere e inserire il nuovo testo sull’artigianalità, i materiali locali e il controllo diretto della produzione.
+- [x] Rimuovere l’etichetta interna “Artigianato Made in Pompei” perché ridondante.
+- [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento della sezione.

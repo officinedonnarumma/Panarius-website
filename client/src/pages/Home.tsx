@@ -250,11 +250,10 @@ export default function Home() {
         <section id="materia" className="material-section section-space">
           <div className="material-section__heading">
             <SectionHeading
-              eyebrow="Materia e metodo"
+              eyebrow="Artigianato Made in Pompeii"
               title="Progettato qui. Lavorato qui."
-              copy="Ogni Panarius nasce da lavorazioni artigianali e da una scelta precisa dei materiali. La produzione locale non è un dettaglio: è parte del controllo sul risultato."
+              copy={'Ogni Panarius nasce nella Valle di Pompei come pezzo unico, realizzato artigianalmente. Non è un prodotto industriale, ma l’espressione di un mestiere.\n\nLavorazioni di precisione e cura per ogni dettaglio danno vita a un prodotto solido, fatto per durare.\n\nVengono impiegati esclusivamente materiali di alta qualità, selezionati da fornitori locali: non è un vincolo, ma la base del risultato che vogliamo ottenere.\n\nOgni fase della produzione viene seguita da vicino, passo dopo passo. È questo controllo diretto a fare la differenza.'}
             />
-            <div className="material-proof"><Check size={18} /><span>Artigianato<br /><b>Made in Pompeii</b></span></div>
           </div>
           <div className="material-images">
             <figure className="material-images__large"><img src={asset("officine-detail-weld.jpg")} alt="Dettaglio di lavorazione metallica in officina" /><figcaption>La lavorazione</figcaption></figure>
