@@ -140,3 +140,5 @@
 - [x] Portare a 11px la label “Prezzo indicato” e a 22px l’importo del prezzo nelle card.
 
 - [x] Correggere la specifica della base nelle varianti con ruote in “Ruote sterzanti”, rimuovendo il riferimento ai freni.
+
+- [x] Rifare il disegno costruttivo Panarius coerente con il prodotto reale mostrato nell’hero e integrarlo nella sezione “Il progetto”.
