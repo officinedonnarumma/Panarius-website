@@ -158,3 +158,5 @@
 - [x] Aggiornare il primo elemento tecnico in “Sistema di sollevamento auto-equilibrante” con il testo completo fornito dal cliente.
 
 - [x] Sostituire il testo della prima voce tecnica con la versione italiana corretta approvata dal cliente.
+
+- [x] Sostituire il testo introduttivo della sezione tecnica con la nuova formulazione approvata dal cliente.
