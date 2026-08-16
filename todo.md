@@ -110,3 +110,13 @@
 - [x] Ridurre leggermente gli H2 e portare a 14px le descrizioni testuali delle card prodotto, verificando desktop e mobile.
 
 - [x] Correggere il titolo della sezione catalogo in “La collezione Panarius”, mantenendo invariati stile, dimensioni e layout.
+
+- [x] Portare a 14px le etichette delle specifiche delle card e mantenere a 11px i valori sottostanti, lasciando a 14px le descrizioni sintetiche delle varianti.
+
+- [x] Impostare a 14px tutti i testi informativi delle schede prodotto e riportare a 11px le etichette sintetiche come “Mobilità controllata”.
+
+- [x] Portare a 14px anche le informazioni dell’area prezzo/acquisto delle card, mantenendo a 11px soltanto le etichette sintetiche delle varianti.
+- [x] Riverificare desktop e mobile dopo l’allineamento tipografico completo delle card.
+
+- [x] Portare a 14px anche i testi dei pulsanti e link nell’area acquisto delle card, mantenendo a 11px soltanto le label sintetiche delle varianti.
+- [x] Rieseguire la verifica desktop/mobile dopo l’allineamento tipografico completo delle card.
