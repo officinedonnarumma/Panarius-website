@@ -3,6 +3,7 @@
  * Grafite, carta e Rame Officina guidano il percorso: scoperta, confronto, canale di acquisto.
  */
 import { SectionHeading } from "@/components/SectionHeading";
+import { trackPurchaseClick, type PurchaseChannel } from "@/lib/analytics";
 import {
   ArrowDownRight,
   ArrowRight,
@@ -28,7 +29,7 @@ const previewAssets: Record<string, string> = {
 
 const asset = (filename: keyof typeof previewAssets) => previewAssets[filename];
 
-const heroImage = "/manus-storage/panarius-hero-real-installation-composite_f5585258.png";
+const heroImage = "/manus-storage/panarius-hero-cable-only-gpt_164f15a6.png";
 
 type Product = {
   code: string;
@@ -96,7 +97,8 @@ const purchaseLinks = {
 
 const directPurchaseEmail = "officinedonnarumma@gmail.com";
 
-function MarketplaceButton({ channel, href }: { channel: "Amazon" | "eBay"; href: string }) {
+function MarketplaceButton({ channel, href, productCode }: { channel: "Amazon" | "eBay"; href: string; productCode?: string }) {
+  const analyticsChannel: PurchaseChannel = channel === "Amazon" ? "amazon" : "ebay";
   if (!href) {
     return (
       <span className="channel-link channel-link--pending" title="Il collegamento verrà configurato prima della pubblicazione">
@@ -106,7 +108,7 @@ function MarketplaceButton({ channel, href }: { channel: "Amazon" | "eBay"; href
   }
 
   return (
-    <a className="channel-link" href={href} target="_blank" rel="noreferrer">
+    <a className="channel-link" href={href} target="_blank" rel="noreferrer" onClick={() => trackPurchaseClick(analyticsChannel, productCode)}>
       {channel}<ExternalLink size={14} strokeWidth={1.7} />
     </a>
   );
@@ -142,9 +144,9 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         <div className="product-card__buy">
           <p><span>Prezzo indicato</span><strong>{product.price}</strong></p>
           <div className="buy-actions">
-            <MarketplaceButton channel="Amazon" href={purchaseLinks.amazon} />
-            <MarketplaceButton channel="eBay" href={purchaseLinks.ebay} />
-            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`}>Diretto <ArrowRight size={15} /></a>
+            <MarketplaceButton channel="Amazon" href={purchaseLinks.amazon} productCode={product.code} />
+            <MarketplaceButton channel="eBay" href={purchaseLinks.ebay} productCode={product.code} />
+            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} onClick={() => trackPurchaseClick("direct", product.code)}>Diretto <ArrowRight size={15} /></a>
           </div>
         </div>
       </div>

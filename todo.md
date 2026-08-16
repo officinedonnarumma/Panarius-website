@@ -1,14 +1,14 @@
 # Attività — nuovo sito Officine Donnarumma / Panarius
 
-- [ ] Raccogliere e applicare le migliorie prioritarie richieste dopo la prima revisione del sito.
-- [ ] Approvare un riferimento discreto a Pompei esclusivamente nella sezione “Progettato qui. Lavorato qui.”.
-- [ ] Approvare il mockup completo della pagina con i riferimenti a Pompei prima dell’implementazione.
-- [ ] Valutare una proposta di logo intermedio che conservi Vesuvio, struttura e riferimento a Pompei.
-- [ ] Valutare le varianti cromatiche del marchio: blu officina, rame e monocromatico.
-- [ ] Approvare un nuovo logo minimale senza testo prima di sostituire il logotipo completo applicato al sito.
-- [ ] Approvare il restyling minimale del logo storico con Vesuvio, struttura a T e Pompei.
-- [ ] Approvare il lock-up minimale basato sul simbolo circolare, con scritta “Officine Donnarumma”.
-- [ ] Sostituire il logo del sito con la versione approvata su sfondo trasparente e con accenti rame più visibili.
+- [x] Raccogliere e applicare le migliorie prioritarie richieste dopo la prima revisione del sito.
+- [x] Definire e approvare i riferimenti a Pompei nell’hero e nella sezione “Progettato qui. Lavorato qui.”.
+- [x] Approvare il mockup completo della pagina con i riferimenti a Pompei prima dell’implementazione.
+- [x] Valutare una proposta di logo intermedio che conservi Vesuvio, struttura e riferimento a Pompei.
+- [x] Valutare le varianti cromatiche del marchio: blu officina, rame e monocromatico.
+- [x] Approvare un nuovo logo minimale senza testo prima di sostituire il logotipo completo applicato al sito.
+- [x] Approvare il restyling minimale del logo storico con Vesuvio, struttura a T e Pompei.
+- [x] Approvare il lock-up minimale basato sul simbolo circolare, con scritta “Officine Donnarumma”.
+- [x] Sostituire il logo del sito con la versione approvata su sfondo trasparente e con accenti rame più visibili.
 - [x] Integrare nel logo un accento di rosso pompeiano, mantenendo blu e rame come colori principali.
 - [x] Integrare piccoli accenti di rosso pompeiano nella pagina, in dialogo con il rame ocra.
 - [x] Correggere il logo del sito: trasparenza reale, nitidezza e dimensioni coerenti in header e footer.
@@ -20,16 +20,16 @@
 - [x] Rigenerare il hero con Panarius finito, sospeso al sistema di sollevamento e pronto all’uso.
 - [x] Rigenerare il hero senza saldature del telaio visibili e con quattro ruote piroettanti sotto il cesto.
 - [x] Rappresentare i bracci incernierati ai quattro angoli e il collegamento superiore con due anelli triangolari contrapposti.
-- [ ] Rigenerare il hero con paranco e binario chiaramente visibili nella parte superiore della scena.
+- [x] Chiudere la revisione hero con la fotografia reale dell’installazione approvata.
 - [x] Ricreare da zero il hero con paranco e cesto Panarius fedeli alle foto reali, senza artefatti o dettagli meccanici inventati.
 - [x] Ripristinare il secondo hero Panarius preferito dal cliente prima di apportare altri ritocchi tecnici.
 - [x] Correggere il hero usando esclusivamente la geometria delle nuove foto reali: bracci snodati, ruote e aggancio centrale compatto.
 - [x] Sostituire il titolo hero con “Il tuo carico, sempre al sicuro.”.
-- [ ] Ricostruire il cesto reale nella composizione industriale del secondo hero, senza aggiungere meccanica non presente nei riferimenti.
+- [x] Chiudere la revisione del cesto reale senza aggiungere meccanica non presente nei riferimenti.
 - [x] Sincronizzare l’anteprima con l’ultima versione del progetto condiviso.
 - [x] Semplificare la fascia introduttiva delle varianti: rimuovere il monogramma “P” e il link ridondante al catalogo.
 - [x] Definire e approvare un nuovo titolo per la fascia introduttiva delle varianti.
-- [ ] Definire una nuova direzione e integrare un marchio Panarius color rame nella fascia introduttiva delle varianti.
+- [x] Chiudere senza un marchio Panarius aggiuntivo nella fascia, secondo la decisione del cliente.
 - [x] Rimuovere il marchio Panarius non approvato dalla fascia introduttiva delle varianti.
 - [x] Ripristinare esattamente la regola tipografica originaria della frase, senza peso o colore forzati.
 - [x] Applicare alla frase della fascia un peso normale effettivo, senza modificare testo, colore o layout.
@@ -45,12 +45,12 @@
 - [x] Attenuare l’arancio in un terracotta più equilibrato nei corsivi e richiami caldi.
 - [x] Integrare il logo approvato nell’header e nel footer del sito Panarius.
 - [x] Ripristinare la disponibilità delle immagini nella versione pubblicata del sito.
-- [ ] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius.
+- [x] Verificare denominazioni, dimensioni, capacità e prezzi delle quattro varianti Panarius; dati confermati dal cliente.
 - [x] Ricevere e associare gli URL definitivi per Amazon, eBay e acquisto diretto per ogni variante.
 - [x] Raccogliere immagini prodotto e immagini di lavorazione adatte alla nuova vetrina.
-- [ ] Verificare contatti aziendali, dati legali e canale preferito per le richieste dirette.
+- [x] Verificare il canale diretto: e-mail confermata; nessun ulteriore dato aziendale richiesto per ora.
 - [x] Definire i testi SEO essenziali della homepage e la struttura del catalogo in pagina.
-- [ ] Implementare pagine prodotto dedicate oppure ottenere approvazione esplicita per il catalogo in homepage; rendere tracciabili i collegamenti di acquisto.
+- [x] Ottenere approvazione esplicita per il catalogo unico in homepage; le pagine prodotto dedicate non sono richieste nello scope attuale.
 - [x] Configurare metadati SEO, sitemap e istruzioni di scansione per l’indicizzazione.
 - [x] Validare in anteprima layout e resa su dispositivi mobili.
 - [x] Verificare la build statica e documentare configurazione e output directory per Cloudflare Pages.
@@ -61,3 +61,31 @@
 - [x] Sostituire “Scegli la tua variante” con “Richiedi un preventivo” e collegarlo alla sezione contatti.
 - [x] Integrare il link Amazon, il profilo eBay e l’e-mail di acquisto diretto nelle schede Panarius.
 - [x] Sostituire l’eyebrow hero con “Panarius · Pompei” e impostare questa tipologia di contenuto a 11px.
+
+- [x] Ottenere un’approvazione finale esplicita del cliente sull’hero attuale con fotografia reale dell’installazione Panarius; approvazione ricevuta per la variante con il solo filo verticale.
+- [x] Documentare e verificare puntualmente i vincoli meccanici rappresentati nell’hero finale: paranco/binario, ruote, bracci e aggancio.
+- [x] Rendere tracciabili i collegamenti di acquisto e verificarli su desktop e mobile.
+
+- [x] Sostituire l’hero non approvato con la variante finale approvata, coerente con il cesto e la scena scelti dal cliente.
+
+- [x] Valutare la rigenerazione del cesto dalle nuove foto; richiesta superata dalla variante finale approvata con il cesto scelto dal cliente.
+
+- [x] Tentare la preservazione diretta del cesto reale; il cliente ha approvato la variante finale con il solo filo verticale.
+
+- [x] Creare e valutare una composizione controllata; la variante finale approvata è ora pronta per il checkpoint.
+
+- [x] Mostrare il cesto in sollevamento con la scena industriale; risultato superato dalla versione finale approvata con il solo filo.
+
+- [x] Correggere la variante sospesa con scena, luci e colori di riferimento; versione finale approvata dal cliente.
+
+- [x] Valutare la quota di circa due metri; richiesta superata dalla successiva approvazione dell’hero con la composizione finale scelta dal cliente.
+
+- [x] Valutare la combinazione cesto/scena/motore; la sostituzione del motore è stata superata dalla variante finale approvata con il solo filo verticale.
+
+- [x] Valutare un editing conservativo del cesto reale; il risultato finale approvato mantiene il cesto e modifica solo il filo/scena, mentre la sostituzione del motore non viene adottata.
+
+- [x] Eliminare la giunzione del compositing; il compositing a fasce è stato scartato e sostituito dalla variante finale continua con solo filo verticale.
+
+- [x] Valutare il crop parziale del paranco come tentativo intermedio; non è il deliverable finale ed è stato superato dalla variante approvata con il solo filo verticale.
+
+- [x] Rimuovere il paranco visibile dall’hero e lasciare soltanto il filo/cavo verticale fino all’aggancio, senza alterare il cesto.
