@@ -146,3 +146,5 @@
 - [x] Rigenerare il disegno tecnico con Nano Banana 2 usando l’immagine reale allegata come riferimento prioritario e sostituire l’asset precedente.
 
 - [x] Rendere gradevole graficamente il disegno costruttivo reale fornito dal cliente, senza alterarne geometria e viste.
+
+- [x] Sostituire il disegno costruttivo con la nuova tavola aggiornata dal cliente, applicando solo una veste grafica coerente senza alterare testi, viste o geometria.
