@@ -189,3 +189,8 @@
 - [x] Verificare desktop/mobile, check, test Vitest e build dopo la correzione della tavola tecnica.
 - [x] Ripristinare nel CSS un adattamento reale della tavola all’altezza del riquadro, mantenendo i lati visibili e la tavola leggibile.
 - [x] Salvare un checkpoint dopo la correzione finale della tavola tecnica e la verifica responsive.
+- [x] Eliminare la cornice tecnica attuale dalla tavola.
+- [x] Ricostruire una cornice ISO con linea interna doppia più marcata, linea esterna più sottile, riferimenti centrali e coordinate alfabetiche/numeriche.
+- [x] Integrare la nuova cornice senza alterare disegno, viste o annotazioni.
+- [x] Verificare responsive, check, test Vitest e build prima del checkpoint.
+- [x] Verificare esplicitamente che viste, annotazioni e cartiglio siano preservati nella tavola ISO; confronto interno superato.
