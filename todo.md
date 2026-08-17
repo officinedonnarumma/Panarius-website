@@ -283,3 +283,5 @@
 - [x] Verificare la resa desktop, check TypeScript, test Vitest e build dopo la modifica dell’hover.
 - [x] Correggere il logo negativo del footer mantenendo il rapporto e le dimensioni originali del logo.
 - [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo la correzione del logo footer.
+- [x] Rimuovere il riquadro chiaro residuo dal logo footer e provare il footer in rosso pompeiano #8f2d24.
+- [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo la pulizia del logo e il cambio colore del footer.
