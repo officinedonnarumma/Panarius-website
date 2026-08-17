@@ -235,3 +235,5 @@
 - [x] Verificare responsive, check, test Vitest e build dopo la regolazione della spaziatura.
 - [x] Correggere il rendering della spalletta “Un mestiere, una firma” per mostrare integralmente il testo.
 - [x] Verificare responsive, check, test Vitest e build dopo la correzione del rendering.
+- [x] Impostare in corsivo il testo della spalletta “Un mestiere, una firma”.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica tipografica.
