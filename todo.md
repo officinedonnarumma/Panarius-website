@@ -355,3 +355,5 @@
 - [x] Eliminare il vuoto eccessivo sopra le immagini nella sezione Artigianato Made in Pompeii e allineare a destra la spalletta editoriale, verificare e pubblicare.
 - [x] Correggere il breakpoint intermedio della sezione Artigianato Made in Pompeii affinché testo e spalletta non restino affiancati in modo compresso, verificare e pubblicare.
 - [x] Uniformare il responsive della sezione Artigianato Made in Pompeii alla struttura della sezione Collezione: testo sopra, spalletta sotto a sinistra e immagini dopo, verificare e pubblicare.
+- [ ] Preparare e sottoporre ad approvazione una proposta di immagini catalogo in stile marketplace Amazon, con prodotto isolato su fondo bianco e proporzioni reali preservate, senza applicarla al sito.
+- [x] Eseguire un audit SEO completo e ottimizzare rendering per crawler, metadati, sitemap, robots, dati strutturati e verifiche tecniche del sito Panarius.

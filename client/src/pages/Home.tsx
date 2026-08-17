@@ -17,7 +17,7 @@ import {
   ShoppingBag,
   X,
 } from "lucide-react";
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useState } from "react";
 
 const previewAssets: Record<string, string> = {
   "officine-hero-fabrication.jpg": "/manus-storage/officine-hero-fabrication_5f47ba3b.jpg",
@@ -120,14 +120,13 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
 
   return (
     <article className={`product-card product-card--${index + 1} ${index === 0 ? "product-card--lead" : ""}`}>
-      <div
-        className="product-photo"
-        role="img"
-        aria-label={`${product.name}, cesto per montacarichi Panarius`}
-        style={{
-          backgroundImage: `url("${product.image}")`,
-        } as CSSProperties}
-      >
+      <div className="product-photo">
+        <img
+          src={product.image}
+          alt={`${product.name}: cesto per montacarichi Panarius, ${product.capacity}`}
+          loading={index === 0 ? "eager" : "lazy"}
+          fetchPriority={index === 0 ? "high" : "auto"}
+        />
         <span className="product-code"><i className="product-code__line" /><span>{product.code}</span><b className="product-code__diamond" aria-hidden="true" /></span>
       </div>
       <div className="product-card__body">
