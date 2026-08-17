@@ -329,3 +329,4 @@
 - [x] Ripristinare la soluzione precedente con foglio beige e cornice ISO e rimuovere esclusivamente il residuo bianco laterale, senza applicarla al sito.
 - [x] Correggere la proposta eliminando l’ombra artificiale, rendendo il foglio più beige e facendolo apparire appoggiato sul tavolo, senza applicarla al sito.
 - [x] Sostituire nella sezione “Il concept” la tavola tecnica con la composizione approvata del tavolo top-down, foglio beige e cornice ISO; verificare e pubblicare.
+- [x] Ingrandire la composizione della tavola nella sezione “Il concept”, eliminare le fasce beige esterne e verificare la resa responsive prima della pubblicazione.
