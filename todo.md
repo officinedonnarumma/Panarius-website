@@ -273,3 +273,5 @@
 - [x] Verificare desktop/mobile, oggetti mail, check TypeScript, test Vitest e build dopo l’aggiornamento della sezione contatti.
 - [x] Aggiornare il testo della sezione “Acquista come preferisci” secondo la formulazione approvata e impostare a 11px il testo di tutti i pulsanti.
 - [x] Verificare desktop/mobile, link, check TypeScript, test Vitest e build dopo la correzione della sezione canali.
+- [x] Aggiornare il titolo della sezione “Acquista come preferisci” in “Hai scelto il tuo Panarius. Visita i nostri store.”.
+- [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo la correzione del titolo.

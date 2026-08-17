@@ -268,7 +268,7 @@ export default function Home() {
           <div className="buy-section__content">
             <SectionHeading
               eyebrow="Acquista come preferisci"
-              title="Hai scelto la variante. Ora scegli il canale."
+              title="Hai scelto il tuo Panarius. Visita i nostri store."
               copy="Scegli la tua variante preferita e contattaci per procedere con l'acquisto indicandoci il modello, altrimenti visita i nostri store online."
               inverted
             />
