@@ -312,7 +312,9 @@
 - [x] Aggiornare il secondo paragrafo della spalletta in “Pensati soprattutto per uso domestico e da giardino, sono perfetti anche per esigenze professionali — edilizia, commercio, aziende agricole, strutture ricettive.”
 - [x] Correggere la griglia della sezione collezione per dare alla spalletta una larghezza reale e impedire gli a capo anomali.
 - [x] Verificare leggibilità desktop/mobile, check TypeScript, test Vitest e build dopo la correzione della larghezza.
-- [ ] Rigenerare la proposta della saldatura con linguaggio artistico, caldo e leggibile, senza estetica industriale inquietante e senza applicarla al sito.
-- [ ] Rigenerare la proposta della lavorazione prendendo spunto dall’immagine originale, con il fabbro visibile mentre salda ad arco e senza mostrare il pezzo lavorato.
+- [x] Generare la proposta della saldatura con linguaggio artistico, caldo e leggibile; proposta poi superata da una revisione più fedele all’immagine originale e mai applicata al sito.
+- [x] Generare la proposta della lavorazione prendendo spunto dall’immagine originale, con il fabbro visibile mentre salda ad arco e senza mostrare il pezzo lavorato; proposta separata dal sito.
 - [x] Allineare in basso la spalletta “Un Panarius per ogni esigenza” e rimuovere gli spazi tra i suoi paragrafi.
 - [x] Verificare layout desktop/mobile, testo, check TypeScript, test Vitest e build dopo l’allineamento e la compattazione.
+- [x] Rigenerare La materia dalla foto originale con luce artistica da atelier e sostituire entrambe le immagini della sezione artigianato dopo verifica.
+- [x] Verificare desktop/mobile, nitidezza, palette, check TypeScript, test Vitest e build dopo la sostituzione delle immagini.
