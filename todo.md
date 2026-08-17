@@ -336,3 +336,4 @@
 - [x] Rigenerare la proposta 4:3 reinserendo bordo in legno e mollette e rendendo il blu ossidato più scuro, senza applicarla al sito.
 - [x] Ripristinare la proposta 4:3 precedente con bordo blu ossidato materico senza legno e mollette, integrarla nella sezione “Il concept”, verificare e pubblicare.
 - [x] Sostituire nella sezione “Il concept” l’immagine attuale con l’immagine rigenerata fornita dall’utente tramite URL, verificare e pubblicare.
+- [x] Adattare l’immagine e il contenitore della sezione “Il concept” al formato 5:4, eliminare il troncamento e verificare la resa responsive prima della pubblicazione.
