@@ -343,3 +343,4 @@
 - [x] Preparare una composizione reale in rapporto 5:3, rimuovere i bordi residui e adeguare griglia e contenitore senza alterare la tavola tecnica.
 - [x] Generare una nuova immagine 5:4 partendo dall’originale completa, estendendo solo il piano blu ossidato sopra e sotto la tavola tecnica; adattare poi il contenitore all’altezza dell’immagine, senza applicare finché non verificata.
 - [x] Adattare l’immagine 5:4 approvata al contenitore a tutta altezza, eliminando ogni bordo vuoto senza ritagliarla o deformarla; verificare e pubblicare.
+- [x] Spostare leggermente a sinistra l’inquadratura dell’immagine 5:4 nella sezione “Il concept”, verificare desktop/mobile e pubblicare.
