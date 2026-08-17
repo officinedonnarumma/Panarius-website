@@ -282,7 +282,7 @@ export default function Home() {
 
         <section id="contatti" className="contact-section">
           <div><p className="eyebrow"><span>Parliamone</span></p><h2>Ti serve una mano<br /><em>nella scelta?</em></h2></div>
-          <div className="contact-section__right"><p>Per una richiesta sul prodotto o per l’acquisto diretto, scrivi a Officine Donnarumma: <a href={`mailto:${directPurchaseEmail}`}>{directPurchaseEmail}</a>.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20acquisto%20Panarius`} className="button button--dark">Richiedi un preventivo <ArrowRight size={17} /></a></div>
+          <div className="contact-section__right"><p>Per ricevere maggiori informazioni su un prodotto o per richiedere un modello su misura per te, scrivi a Officine Donnarumma: <a className="contact-email" href={`mailto:${directPurchaseEmail}`}>{directPurchaseEmail}</a>.</p><div className="contact-actions"><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20informazioni%20Panarius`} className="button button--dark" onClick={() => trackPurchaseClick("direct", "information")}>Richiedi informazioni <ArrowRight size={17} /></a><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20acquisto%20Panarius`} className="button button--outline-dark" onClick={() => trackPurchaseClick("direct", "quote")}>Richiedi un preventivo <ArrowRight size={17} /></a></div></div>
         </section>
       </main>
 
