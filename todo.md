@@ -340,3 +340,4 @@
 - [x] Rigenerare l’immagine originale in rapporto 5:4 mantenendo invariati tutti gli elementi e modificando solo l’estensione dello sfondo blu, senza applicarla al sito.
 - [x] Eliminare i bordi blu aggiunti dall’immagine 5:4 e adattarla al contenitore della sezione “Il concept”, verificando e pubblicando la correzione.
 - [x] Eliminare definitivamente i bordi residui e l’area blu vuota sotto l’immagine nella sezione “Il concept”, allineando il contenitore al formato 5:4 e verificando la resa responsive.
+- [x] Preparare una composizione reale in rapporto 5:3, rimuovere i bordi residui e adeguare griglia e contenitore senza alterare la tavola tecnica.
