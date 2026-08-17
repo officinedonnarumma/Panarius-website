@@ -337,3 +337,5 @@
 - [x] Ripristinare la proposta 4:3 precedente con bordo blu ossidato materico senza legno e mollette, integrarla nella sezione “Il concept”, verificare e pubblicare.
 - [x] Sostituire nella sezione “Il concept” l’immagine attuale con l’immagine rigenerata fornita dall’utente tramite URL, verificare e pubblicare.
 - [x] Adattare l’immagine e il contenitore della sezione “Il concept” al formato 5:4, eliminare il troncamento e verificare la resa responsive prima della pubblicazione.
+- [x] Rigenerare l’immagine originale in rapporto 5:4 mantenendo invariati tutti gli elementi e modificando solo l’estensione dello sfondo blu, senza applicarla al sito.
+- [x] Eliminare i bordi blu aggiunti dall’immagine 5:4 e adattarla al contenitore della sezione “Il concept”, verificando e pubblicando la correzione.
