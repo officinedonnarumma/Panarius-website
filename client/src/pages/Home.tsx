@@ -254,11 +254,12 @@ export default function Home() {
               title="Progettato qui. Lavorato qui."
               copy={'Ogni Panarius nasce nella Valle di Pompei come pezzo unico, realizzato artigianalmente. Non è un prodotto industriale, ma l’espressione di un mestiere.\nLavorazioni di precisione e cura per i dettagli danno vita a un prodotto solido, fatto per durare.\nVengono impiegati esclusivamente materiali di alta qualità, selezionati da fornitori locali: non è un vincolo, ma la base del risultato che vogliamo ottenere.\nOgni fase della produzione viene seguita da vicino, passo dopo passo. È questo controllo diretto a fare la differenza.'}
             />
+            <aside className="material-side-note"><strong>Un mestiere, una firma</strong><p>Dall’idea al prodotto finito, ogni Panarius prende forma da un sapere concreto, in cui esperienza e manualità trasformano il progetto in un pezzo unico, realizzato su misura per te.</p></aside>
           </div>
           <div className="material-images">
             <figure className="material-images__large"><img src={asset("officine-detail-weld.jpg")} alt="Dettaglio di lavorazione metallica in officina" /><figcaption>La lavorazione</figcaption></figure>
             <figure className="material-images__small"><img src={asset("officine-detail-perforated-steel.jpg")} alt="Dettaglio di lamiera microforata zincata" /><figcaption>La materia</figcaption></figure>
-            <div className="material-statement"><div className="material-statement__copy"><strong>Un mestiere, una firma</strong><p>Dall’idea al prodotto finito, ogni Panarius prende forma da un sapere concreto, in cui esperienza e manualità trasformano il progetto in un pezzo unico, realizzato su misura per te.</p></div><ArrowDownRight size={28} /></div>
+            <div className="material-statement"><span>Dal metallo<br />alla funzione.</span><ArrowDownRight size={28} /></div>
           </div>
         </section>
 

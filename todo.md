@@ -226,3 +226,6 @@
 - [x] Preparare una vista completa della sezione Artigianato con le proposte di riequilibrio dello spazio laterale, senza applicarle al sito.
 - [x] Aggiornare l’inserto laterale con il titolo “Un mestiere, una firma” e il testo approvato dal cliente.
 - [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento dell’inserto.
+- [x] Spostare “Un mestiere, una firma” nella spalletta laterale superiore della sezione Artigianato.
+- [x] Ripristinare il riquadro rame “Dal metallo alla funzione.” senza modificare il contenuto.
+- [x] Verificare desktop/mobile, check, test Vitest e build dopo la correzione strutturale.
