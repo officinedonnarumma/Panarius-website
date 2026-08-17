@@ -231,3 +231,7 @@
 - [x] Verificare desktop/mobile, check, test Vitest e build dopo la correzione strutturale.
 - [x] Aggiornare la suddivisione dei paragrafi della sezione Artigianato con il testo fornito dal cliente.
 - [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento dei paragrafi.
+- [x] Inserire una piccola interlinea tra i tre paragrafi della sezione Artigianato Made in Pompeii.
+- [x] Verificare responsive, check, test Vitest e build dopo la regolazione della spaziatura.
+- [x] Correggere il rendering della spalletta “Un mestiere, una firma” per mostrare integralmente il testo.
+- [x] Verificare responsive, check, test Vitest e build dopo la correzione del rendering.
