@@ -295,3 +295,5 @@
 - [x] Verificare che la linea non compaia più a menu chiuso e che il menu si chiuda allo scroll.
 - [x] Correggere il vuoto generato dal menu mobile durante lo scorrimento.
 - [x] Aggiungere il pulsante Acquista nella navigazione mobile.
+- [x] Mantenere aperto il menu mobile durante lo scorrimento, eliminare il vuoto e bloccare lo scroll del contenuto sottostante.
+- [x] Verificare menu aperto/chiuso, voce Acquista, mobile, check TypeScript, test Vitest e build dopo la correzione definitiva.
