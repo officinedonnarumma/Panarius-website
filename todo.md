@@ -352,3 +352,4 @@
 - [x] Riallineare “Un mestiere, una firma” nella colonna del riquadro “Dal metallo alla funzione” e il testo principale nella colonna delle due immagini, verificare e pubblicare.
 - [x] Rinominare la variante “Panarius Wheels” in “Panarius Pro Wheels” e aggiornare l’oggetto e-mail della CTA Acquista, verificare e pubblicare.
 - [x] Allargare leggermente il blocco di testo della sezione Artigianato Made in Pompeii, preservando l’allineamento con spalletta e immagini, verificare e pubblicare.
+- [x] Eliminare il vuoto eccessivo sopra le immagini nella sezione Artigianato Made in Pompeii e allineare a destra la spalletta editoriale, verificare e pubblicare.
