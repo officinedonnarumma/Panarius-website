@@ -349,3 +349,4 @@
 - [x] Aggiornare ogni CTA Acquista delle schede prodotto con oggetto e-mail “Richiesta Acquisto + nome modello”, verificare i quattro link e pubblicare.
 - [x] Correggere le denominazioni Wheel in Wheels e aggiornare gli oggetti delle CTA Acquista con i nomi corretti, verificare e pubblicare.
 - [x] Rinominare la variante Panarius da 100 L in Panarius Pro e aggiornare l’oggetto della relativa CTA Acquista, verificare e pubblicare.
+- [x] Riallineare “Un mestiere, una firma” nella colonna del riquadro “Dal metallo alla funzione” e il testo principale nella colonna delle due immagini, verificare e pubblicare.
