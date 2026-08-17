@@ -237,3 +237,6 @@
 - [x] Verificare responsive, check, test Vitest e build dopo la correzione del rendering.
 - [x] Impostare in corsivo il testo della spalletta “Un mestiere, una firma”.
 - [x] Verificare responsive, check, test Vitest e build dopo la modifica tipografica.
+- [x] Aggiornare il testo della sezione Artigianato con la nuova formulazione fornita dal cliente.
+- [x] Impostare il riquadro “Dal metallo alla funzione.” in rosso pompeiano #8f2d24 con cornice ocra.
+- [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento.
