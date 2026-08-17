@@ -117,7 +117,7 @@ a { color: inherit; text-decoration: none; }
 .eyebrow::after { content: ""; width: 10px; height: 10px; margin-left: 2px; border: 1px solid var(--pompeian-red); transform: rotate(45deg); }
 .product-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .product-card,.product-card--lead,.product-card--2,.product-card--3,.product-card--4 { grid-column: auto; margin-top: 0; position: relative; }
-.product-card--lead .product-photo,.product-card--2 .product-photo,.product-card--3 .product-photo,.product-card--4 .product-photo { height: auto; aspect-ratio: 4 / 3; background-size: cover; background-position: center; }
+.product-card--lead .product-photo,.product-card--2 .product-photo,.product-card--3 .product-photo,.product-card--4 .product-photo { height: auto; aspect-ratio: 16 / 9; background-size: cover; background-position: center; }
 .product-code { display: flex; align-items: center; gap: 8px; }
 .product-code i { width: 22px; height: 1px; background: var(--pompeian-ochre); }
 .product-index { display: flex; align-items: center; gap: 6px; }
