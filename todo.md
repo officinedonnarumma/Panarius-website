@@ -330,3 +330,8 @@
 - [x] Correggere la proposta eliminando l’ombra artificiale, rendendo il foglio più beige e facendolo apparire appoggiato sul tavolo, senza applicarla al sito.
 - [x] Sostituire nella sezione “Il concept” la tavola tecnica con la composizione approvata del tavolo top-down, foglio beige e cornice ISO; verificare e pubblicare.
 - [x] Ingrandire la composizione della tavola nella sezione “Il concept”, eliminare le fasce beige esterne e verificare la resa responsive prima della pubblicazione.
+- [x] Preparare una proposta in rapporto 4:3 aumentando il bordo blu ossidato attorno al tavolo da disegno, senza applicarla al sito.
+- [x] Preparare una nuova proposta 4:3 usando una texture blu ossidata materica coerente con il bordo reale di riferimento, senza applicarla al sito.
+- [x] Rigenerare da zero la proposta 4:3 con bordo blu ossidato continuo e realistico, senza bande ripetute o deformazioni, senza applicarla al sito.
+- [x] Rigenerare la proposta 4:3 reinserendo bordo in legno e mollette e rendendo il blu ossidato più scuro, senza applicarla al sito.
+- [x] Ripristinare la proposta 4:3 precedente con bordo blu ossidato materico senza legno e mollette, integrarla nella sezione “Il concept”, verificare e pubblicare.
