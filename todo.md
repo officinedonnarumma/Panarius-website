@@ -271,3 +271,5 @@
 - [x] Verificare i tre link mail, check TypeScript, test Vitest e build dopo l’aggiornamento dell’oggetto.
 - [x] Sottolineare l’indirizzo email nella sezione contatti e aggiungere il pulsante “Richiedi informazioni” con oggetto “Richiesta informazioni Panarius”; mantenere il pulsante preventivo esistente.
 - [x] Verificare desktop/mobile, oggetti mail, check TypeScript, test Vitest e build dopo l’aggiornamento della sezione contatti.
+- [x] Aggiornare il testo della sezione “Acquista come preferisci” secondo la formulazione approvata e impostare a 11px il testo di tutti i pulsanti.
+- [x] Verificare desktop/mobile, link, check TypeScript, test Vitest e build dopo la correzione della sezione canali.

@@ -269,13 +269,13 @@ export default function Home() {
             <SectionHeading
               eyebrow="Acquista come preferisci"
               title="Hai scelto la variante. Ora scegli il canale."
-              copy="Per richieste, configurazioni e acquisti diretti, scegli la variante e contattaci direttamente."
+              copy="Scegli la tua variante preferita e contattaci per procedere con l'acquisto indicandoci il modello, altrimenti visita i nostri store online."
               inverted
             />
             <div className="channel-grid">
               <article><span className="channel-number">01</span><h3>Amazon</h3><p>Acquista Panarius sul marketplace Amazon.</p><MarketplaceButton channel="Amazon" href={purchaseLinks.amazon} productCode="contact" /></article>
-              <article><span className="channel-number">02</span><h3>eBay</h3><p>Scopri le disponibilità sul profilo eBay ufficiale.</p><MarketplaceButton channel="eBay" href={purchaseLinks.ebay} productCode="contact" /></article>
-              <article><span className="channel-number">03</span><h3>Acquisto diretto</h3><p>Per richieste, configurazioni e acquisti diretti.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20acquisto%20Panarius`} className="channel-link" onClick={() => trackPurchaseClick("direct", "contact")}>Scrivici <ArrowRight size={15} /></a></article>
+              <article><span className="channel-number">02</span><h3>eBay</h3><p>Acquista sul nostro store eBay ufficiale.</p><MarketplaceButton channel="eBay" href={purchaseLinks.ebay} productCode="contact" /></article>
+              <article><span className="channel-number">03</span><h3>Acquisto diretto</h3><p>Scrivici per ricevere la tua offerta personalizzata.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20acquisto%20Panarius`} className="channel-link" onClick={() => trackPurchaseClick("direct", "contact")}>Scrivici <ArrowRight size={15} /></a></article>
             </div>
           </div>
         </section>
