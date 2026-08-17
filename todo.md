@@ -262,3 +262,5 @@
 - [x] Correggere il vincolo che mantiene troppo alte le immagini delle schede prodotto.
 - [x] Verificare che il riquadro fotografico rispetti visivamente il rapporto 16:9 su desktop e mobile.
 - [x] Eseguire check, test Vitest, build e pubblicare la correzione.
+- [x] Mostrare l’intera fotografia nelle schede prodotto mantenendo il riquadro 16:9, senza usare un ritaglio cover.
+- [x] Verificare desktop/mobile, check, test Vitest e build dopo la correzione del comportamento immagini.
