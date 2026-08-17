@@ -185,7 +185,7 @@ export default function Home() {
         </button>
       </header>
 
-      <div className={`mobile-menu ${menuOpen ? "mobile-menu--open" : ""}`}>
+      <div className={`mobile-menu ${menuOpen ? "mobile-menu--open" : ""} ${scrolled ? "mobile-menu--scrolled" : ""}`}>
         <a href="#panarius" onClick={closeMenu}>Panarius <ChevronRight size={16} /></a>
         <a href="#progetto" onClick={closeMenu}>Il concept <ChevronRight size={16} /></a>
         <a href="#materia" onClick={closeMenu}>Made in Pompeii <ChevronRight size={16} /></a>

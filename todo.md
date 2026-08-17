@@ -299,3 +299,5 @@
 - [x] Verificare menu aperto/chiuso, voce Acquista, mobile, check TypeScript, test Vitest e build dopo la correzione definitiva.
 - [x] Consentire lo scroll della pagina sottostante con il menu mobile aperto, senza chiudere il menu.
 - [x] Verificare comportamento mobile, menu aperto, check TypeScript, test Vitest e build dopo la rimozione del blocco scroll.
+- [x] Eliminare definitivamente il buco mobile mantenendo il menu aperto e ancorato alla viewport durante lo scroll.
+- [x] Verificare assenza del vuoto, scroll, menu mobile, check TypeScript, test Vitest e build dopo l’ancoraggio dinamico.
