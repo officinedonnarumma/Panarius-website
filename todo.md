@@ -264,3 +264,5 @@
 - [x] Eseguire check, test Vitest, build e pubblicare la correzione.
 - [x] Mostrare l’intera fotografia nelle schede prodotto mantenendo il riquadro 16:9, senza usare un ritaglio cover.
 - [x] Verificare desktop/mobile, check, test Vitest e build dopo la correzione del comportamento immagini.
+- [x] Ripristinare nella sola sezione “Acquista come preferisci” i quadrati Amazon, eBay e Acquisto diretto, mantenendo il pulsante unico “Acquista” nelle schede prodotto.
+- [x] Verificare desktop/mobile, collegamenti, check TypeScript, test Vitest e build dopo il ripristino dei tre canali.

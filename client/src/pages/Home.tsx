@@ -273,7 +273,9 @@ export default function Home() {
               inverted
             />
             <div className="channel-grid">
-              <article><span className="channel-number">01</span><h3>Acquista</h3><p>Per richieste, configurazioni e acquisti diretti.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} className="channel-link" onClick={() => trackPurchaseClick("direct", "contact")}>Acquista <ArrowRight size={15} /></a></article>
+              <article><span className="channel-number">01</span><h3>Amazon</h3><p>Acquista Panarius sul marketplace Amazon.</p><MarketplaceButton channel="Amazon" href={purchaseLinks.amazon} productCode="contact" /></article>
+              <article><span className="channel-number">02</span><h3>eBay</h3><p>Scopri le disponibilità sul profilo eBay ufficiale.</p><MarketplaceButton channel="eBay" href={purchaseLinks.ebay} productCode="contact" /></article>
+              <article><span className="channel-number">03</span><h3>Acquisto diretto</h3><p>Per richieste, configurazioni e acquisti diretti.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} className="channel-link" onClick={() => trackPurchaseClick("direct", "contact")}>Scrivici <ArrowRight size={15} /></a></article>
             </div>
           </div>
         </section>
