@@ -335,3 +335,4 @@
 - [x] Rigenerare da zero la proposta 4:3 con bordo blu ossidato continuo e realistico, senza bande ripetute o deformazioni, senza applicarla al sito.
 - [x] Rigenerare la proposta 4:3 reinserendo bordo in legno e mollette e rendendo il blu ossidato più scuro, senza applicarla al sito.
 - [x] Ripristinare la proposta 4:3 precedente con bordo blu ossidato materico senza legno e mollette, integrarla nella sezione “Il concept”, verificare e pubblicare.
+- [x] Sostituire nella sezione “Il concept” l’immagine attuale con l’immagine rigenerata fornita dall’utente tramite URL, verificare e pubblicare.
