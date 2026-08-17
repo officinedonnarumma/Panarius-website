@@ -240,3 +240,7 @@
 - [x] Aggiornare il testo della sezione Artigianato con la nuova formulazione fornita dal cliente.
 - [x] Impostare il riquadro “Dal metallo alla funzione.” in rosso pompeiano #8f2d24 con cornice ocra.
 - [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento.
+- [x] Spostare la cornice ocra all’interno del riquadro rosso pompeiano, eliminando il bordo esterno visibile.
+- [x] Verificare responsive, check, test Vitest e build dopo la correzione della cornice.
+- [x] Allargare leggermente la colonna testuale della sezione Artigianato per dare più spazio ai tre paragrafi.
+- [x] Verificare responsive, check, test Vitest e build dopo la regolazione della griglia.
