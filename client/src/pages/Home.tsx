@@ -265,7 +265,7 @@ export default function Home() {
         </section>
 
         <section id="acquista" className="buy-section">
-          <div className="buy-section__backdrop" style={{ backgroundImage: `linear-gradient(90deg,#122f45,rgba(18,47,69,.72) 48%,rgba(18,47,69,.92)),url("${asset("officine-detail-perforated-steel.jpg")}")` }} />
+          <div className="buy-section__backdrop" style={{ backgroundImage: `linear-gradient(90deg,#122f45,rgba(18,47,69,.72) 48%,rgba(18,47,69,.92)),url("/manus-storage/officine-sfondo-bottega-romana-proposta_9eb4921e.jpg")` }} />
           <div className="buy-section__content">
             <SectionHeading
               eyebrow="Acquista come preferisci"

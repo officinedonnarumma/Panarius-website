@@ -318,3 +318,6 @@
 - [x] Verificare layout desktop/mobile, testo, check TypeScript, test Vitest e build dopo l’allineamento e la compattazione.
 - [x] Rigenerare La materia dalla foto originale con luce artistica da atelier e sostituire entrambe le immagini della sezione artigianato dopo verifica.
 - [x] Verificare desktop/mobile, nitidezza, palette, check TypeScript, test Vitest e build dopo la sostituzione delle immagini.
+- [ ] Preparare una proposta visiva separata per lo sfondo della sezione Acquista come preferisci, senza applicarla al sito.
+- [ ] Preparare una nuova proposta separata per lo sfondo della sezione Acquista come preferisci, ispirata a una bottega artigiana dell’epoca romana, senza applicarla al sito.
+- [x] Sostituire lo sfondo della sezione Acquista come preferisci con la proposta della bottega artigiana romana e pubblicare dopo le verifiche.
