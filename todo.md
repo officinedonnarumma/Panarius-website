@@ -346,3 +346,6 @@
 - [x] Spostare leggermente a sinistra l’inquadratura dell’immagine 5:4 nella sezione “Il concept”, verificare desktop/mobile e pubblicare.
 - [x] Correggere il verso dello spostamento dell’immagine 5:4 nella sezione “Il concept” portandola leggermente verso destra; verificare e pubblicare.
 - [x] Impostare l’inquadratura dell’immagine 5:4 nella sezione “Il concept” su 55% center, verificare e pubblicare.
+- [x] Aggiornare ogni CTA Acquista delle schede prodotto con oggetto e-mail “Richiesta Acquisto + nome modello”, verificare i quattro link e pubblicare.
+- [x] Correggere le denominazioni Wheel in Wheels e aggiornare gli oggetti delle CTA Acquista con i nomi corretti, verificare e pubblicare.
+- [x] Rinominare la variante Panarius da 100 L in Panarius Pro e aggiornare l’oggetto della relativa CTA Acquista, verificare e pubblicare.

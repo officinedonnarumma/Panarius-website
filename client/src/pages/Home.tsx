@@ -4,6 +4,7 @@
  */
 import { SectionHeading } from "@/components/SectionHeading";
 import { trackPurchaseClick, type PurchaseChannel } from "@/lib/analytics";
+import { purchaseSubjectFor } from "@/lib/purchase";
 import {
   ArrowDownRight,
   ArrowRight,
@@ -46,7 +47,7 @@ type Product = {
 const products: Product[] = [
   {
     code: "PNR-100-W",
-    name: "Panarius Wheel",
+    name: "Panarius Wheels",
     capacity: "100 L",
     internal: "60 × 40 × 40 cm",
     external: "60 × 40 × 68 cm",
@@ -57,7 +58,7 @@ const products: Product[] = [
   },
   {
     code: "PNR-100",
-    name: "Panarius",
+    name: "Panarius Pro",
     capacity: "100 L",
     internal: "60 × 40 × 40 cm",
     external: "60 × 40 × 60 cm",
@@ -68,7 +69,7 @@ const products: Product[] = [
   },
   {
     code: "PNR-80-W",
-    name: "Panarius Lite Wheel",
+    name: "Panarius Lite Wheels",
     capacity: "80 L",
     internal: "60 × 40 × 34 cm",
     external: "60 × 40 × 58 cm",
@@ -115,7 +116,7 @@ function MarketplaceButton({ channel, href, productCode }: { channel: "Amazon" |
 }
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
-  const [baseName, wheelLabel] = product.name.split(" Wheel");
+  const [baseName, wheelsLabel] = product.name.split(" Wheels");
 
   return (
     <article className={`product-card product-card--${index + 1} ${index === 0 ? "product-card--lead" : ""}`}>
@@ -132,7 +133,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       <div className="product-card__body">
         <div className="product-card__intro">
           <p className="product-feature">{product.feature}</p>
-          <h3>{baseName}{wheelLabel !== undefined && <span className="product-wheel">Wheel</span>}</h3>
+          <h3>{baseName}{wheelsLabel !== undefined && <span className="product-wheel">Wheels</span>}</h3>
         </div>
         <div className="spec-list" aria-label={`Specifiche ${product.name}`}>
           <div><span>Capacità</span><strong>{product.capacity}</strong></div>
@@ -143,7 +144,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         <div className="product-card__buy">
           <p><span>Prezzo indicato</span><strong>{product.price}</strong></p>
           <div className="buy-actions">
-            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=Richiesta%20acquisto%20Panarius`} onClick={() => trackPurchaseClick("direct", product.code)}>Acquista <ArrowRight size={15} /></a>
+            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=${encodeURIComponent(purchaseSubjectFor(product.name))}`} onClick={() => trackPurchaseClick("direct", product.code)}>Acquista <ArrowRight size={15} /></a>
           </div>
         </div>
       </div>
