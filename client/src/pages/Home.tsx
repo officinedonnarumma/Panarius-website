@@ -220,7 +220,7 @@ export default function Home() {
               title="Quattro varianti, una sola logica costruttiva."
               copy="Tutti i modelli Panarius condividono la stessa qualità costruttiva. A cambiare sono la capacità di carico e la modalità di movimentazione a terra, così da offrire una soluzione adatta ad ogni esigenza."
             />
-            <aside className="collection-side-note"><strong>Un Panarius per ogni esigenza</strong><p>Dalla sua ideazione, il cesto Panarius è stato scelto da oltre 200 clienti in tutta Italia.</p><p>Pensati soprattutto per uso domestico e da giardino, si adattano bene anche a esigenze professionali — edilizia, commercio, aziende agricole, strutture ricettive.</p><p>Scegli il modello più adatto a te.</p></aside>
+            <aside className="collection-side-note"><strong>Un Panarius per ogni esigenza</strong><p>Dalla sua ideazione, il cesto Panarius è stato scelto da oltre 200 clienti in tutta Italia.</p><p>Pensati soprattutto per uso domestico e da giardino, sono perfetti anche per esigenze professionali — edilizia, commercio, aziende agricole, strutture ricettive.</p><p>Scegli il modello più adatto a te.</p></aside>
           </div>
           <div className="product-grid">
             {products.map((product, index) => <ProductCard key={product.code} product={product} index={index} />)}

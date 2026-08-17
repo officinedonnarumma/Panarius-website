@@ -309,3 +309,6 @@
 - [x] Verificare layout desktop/mobile, testo, check TypeScript, test Vitest e build dopo l’aggiornamento della spalletta.
 - [x] Allineare la spalletta “Un Panarius per ogni esigenza” a quella di Artigianato Made in Pompeii: colonna più ampia, titolo separato e testo in corsivo.
 - [x] Verificare desktop/mobile, leggibilità, check TypeScript, test Vitest e build dopo l’allineamento grafico.
+- [x] Aggiornare il secondo paragrafo della spalletta in “Pensati soprattutto per uso domestico e da giardino, sono perfetti anche per esigenze professionali — edilizia, commercio, aziende agricole, strutture ricettive.”
+- [x] Correggere la griglia della sezione collezione per dare alla spalletta una larghezza reale e impedire gli a capo anomali.
+- [x] Verificare leggibilità desktop/mobile, check TypeScript, test Vitest e build dopo la correzione della larghezza.
