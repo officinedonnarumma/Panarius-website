@@ -257,3 +257,5 @@
 - [x] Verificare responsive, check, test Vitest e build dopo la modifica.
 - [x] Ridurre ancora leggermente l’altezza delle immagini nelle schede prodotto.
 - [x] Verificare responsive, check, test Vitest e build dopo la nuova regolazione.
+- [x] Impostare il rapporto 16:9 per le immagini delle schede prodotto.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica.
