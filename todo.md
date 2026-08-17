@@ -246,3 +246,6 @@
 - [x] Verificare responsive, check, test Vitest e build dopo la regolazione della griglia.
 - [x] Creare una cornice ocra interna con margine di circa 10px nel riquadro rosso pompeiano.
 - [x] Verificare responsive, check, test Vitest e build dopo la regolazione della cornice.
+- [x] Ridurre leggermente la dimensione del testo “Dal metallo alla funzione.”.
+- [x] Impostare a 16px il titolo “Un mestiere, una firma”.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica tipografica.
