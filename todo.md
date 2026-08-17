@@ -301,3 +301,5 @@
 - [x] Verificare comportamento mobile, menu aperto, check TypeScript, test Vitest e build dopo la rimozione del blocco scroll.
 - [x] Eliminare definitivamente il buco mobile mantenendo il menu aperto e ancorato alla viewport durante lo scroll.
 - [x] Verificare assenza del vuoto, scroll, menu mobile, check TypeScript, test Vitest e build dopo l’ancoraggio dinamico.
+- [x] Eliminare lo scarto residuo nei primi pixel di scroll del menu mobile.
+- [x] Verificare transizione iniziale, ancoraggio mobile, check TypeScript, test Vitest e build dopo la correzione.

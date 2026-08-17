@@ -164,7 +164,7 @@ export default function Home() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <div className="site-shell">
+    <div className={`site-shell ${menuOpen ? "site-shell--menu-open" : ""}`}>
       <div className="utility-bar">
         <p>Panarius · Cesti per montacarichi</p>
         <a href="#contatti">Richiedi un preventivo <ArrowDownRight size={15} /></a>
