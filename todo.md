@@ -290,3 +290,8 @@
 - [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo il ripristino del footer scuro.
 - [x] Sostituire il logo footer con un asset vettoriale realmente trasparente, eliminando il riquadro bianco.
 - [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo l’integrazione del logo vettoriale.
+- [x] Ripristinare il logo originale nel footer.
+- [x] Identificare e correggere la linea anomala visibile nel layout mobile.
+- [x] Verificare che la linea non compaia più a menu chiuso e che il menu si chiuda allo scroll.
+- [x] Correggere il vuoto generato dal menu mobile durante lo scorrimento.
+- [x] Aggiungere il pulsante Acquista nella navigazione mobile.

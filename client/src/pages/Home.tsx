@@ -156,7 +156,10 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 32);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 32);
+      setMenuOpen(false);
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -180,7 +183,7 @@ export default function Home() {
           <a href="#materia">Made in Pompeii</a>
           <a href="#acquista" className="nav-cta"><ShoppingBag size={15} /> Acquista</a>
         </nav>
-        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Apri menu" aria-expanded={menuOpen}>
+        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Chiudi menu" : "Apri menu"} aria-expanded={menuOpen}>
           {menuOpen ? <X size={23} /> : <Menu size={23} />}
         </button>
       </header>
@@ -189,6 +192,7 @@ export default function Home() {
         <a href="#panarius" onClick={closeMenu}>Panarius <ChevronRight size={16} /></a>
         <a href="#progetto" onClick={closeMenu}>Il concept <ChevronRight size={16} /></a>
         <a href="#materia" onClick={closeMenu}>Made in Pompeii <ChevronRight size={16} /></a>
+        <a href="#acquista" onClick={closeMenu}><span>Acquista</span><ShoppingBag size={16} /></a>
         <a href="#contatti" onClick={closeMenu}>Richiedi un preventivo <ChevronRight size={16} /></a>
       </div>
 
@@ -287,7 +291,7 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="site-footer__brand"><img className="site-footer__logo" src="/manus-storage/officine-donnarumma-footer-logo_39d98dd9.svg" alt="Officine Donnarumma, Pompei" /></div>
+        <div className="site-footer__brand"><img className="site-footer__logo" src="/manus-storage/officine-donnarumma-logo-original-transparent_bdd78817.png" alt="Officine Donnarumma, Pompei" /></div>
         <p>Panarius · Cesti per montacarichi</p>
         <p>© {new Date().getFullYear()} Officine Donnarumma. Tutti i diritti riservati.</p>
       </footer>
