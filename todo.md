@@ -255,3 +255,5 @@
 - [x] Aggiornare il testo introduttivo della collezione Panarius con la formulazione approvata.
 - [x] Ridurre leggermente l’altezza delle immagini nelle schede prodotto.
 - [x] Verificare responsive, check, test Vitest e build dopo la modifica.
+- [x] Ridurre ancora leggermente l’altezza delle immagini nelle schede prodotto.
+- [x] Verificare responsive, check, test Vitest e build dopo la nuova regolazione.
