@@ -47,7 +47,7 @@ type Product = {
 const products: Product[] = [
   {
     code: "PNR-100-W",
-    name: "Panarius Wheels",
+    name: "Panarius Pro Wheels",
     capacity: "100 L",
     internal: "60 × 40 × 40 cm",
     external: "60 × 40 × 68 cm",
