@@ -143,7 +143,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         <div className="product-card__buy">
           <p><span>Prezzo indicato</span><strong>{product.price}</strong></p>
           <div className="buy-actions">
-            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} onClick={() => trackPurchaseClick("direct", product.code)}>Acquista <ArrowRight size={15} /></a>
+            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=Richiesta%20acquisto%20Panarius`} onClick={() => trackPurchaseClick("direct", product.code)}>Acquista <ArrowRight size={15} /></a>
           </div>
         </div>
       </div>
@@ -275,14 +275,14 @@ export default function Home() {
             <div className="channel-grid">
               <article><span className="channel-number">01</span><h3>Amazon</h3><p>Acquista Panarius sul marketplace Amazon.</p><MarketplaceButton channel="Amazon" href={purchaseLinks.amazon} productCode="contact" /></article>
               <article><span className="channel-number">02</span><h3>eBay</h3><p>Scopri le disponibilità sul profilo eBay ufficiale.</p><MarketplaceButton channel="eBay" href={purchaseLinks.ebay} productCode="contact" /></article>
-              <article><span className="channel-number">03</span><h3>Acquisto diretto</h3><p>Per richieste, configurazioni e acquisti diretti.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} className="channel-link" onClick={() => trackPurchaseClick("direct", "contact")}>Scrivici <ArrowRight size={15} /></a></article>
+              <article><span className="channel-number">03</span><h3>Acquisto diretto</h3><p>Per richieste, configurazioni e acquisti diretti.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20acquisto%20Panarius`} className="channel-link" onClick={() => trackPurchaseClick("direct", "contact")}>Scrivici <ArrowRight size={15} /></a></article>
             </div>
           </div>
         </section>
 
         <section id="contatti" className="contact-section">
           <div><p className="eyebrow"><span>Parliamone</span></p><h2>Ti serve una mano<br /><em>nella scelta?</em></h2></div>
-          <div className="contact-section__right"><p>Per una richiesta sul prodotto o per l’acquisto diretto, scrivi a Officine Donnarumma: <a href={`mailto:${directPurchaseEmail}`}>{directPurchaseEmail}</a>.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20preventivo%20Panarius`} className="button button--dark">Richiedi un preventivo <ArrowRight size={17} /></a></div>
+          <div className="contact-section__right"><p>Per una richiesta sul prodotto o per l’acquisto diretto, scrivi a Officine Donnarumma: <a href={`mailto:${directPurchaseEmail}`}>{directPurchaseEmail}</a>.</p><a href={`mailto:${directPurchaseEmail}?subject=Richiesta%20acquisto%20Panarius`} className="button button--dark">Richiedi un preventivo <ArrowRight size={17} /></a></div>
         </section>
       </main>
 

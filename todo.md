@@ -266,3 +266,6 @@
 - [x] Verificare desktop/mobile, check, test Vitest e build dopo la correzione del comportamento immagini.
 - [x] Ripristinare nella sola sezione “Acquista come preferisci” i quadrati Amazon, eBay e Acquisto diretto, mantenendo il pulsante unico “Acquista” nelle schede prodotto.
 - [x] Verificare desktop/mobile, collegamenti, check TypeScript, test Vitest e build dopo il ripristino dei tre canali.
+- [ ] Impostare l’oggetto delle mail generate dal pulsante Acquista su “Acquisto Panarius”, senza modificare il testo o i canali della sezione.
+- [x] Sostituire l’oggetto precedente con “Richiesta acquisto Panarius” in tutti i link mail di acquisto.
+- [x] Verificare i tre link mail, check TypeScript, test Vitest e build dopo l’aggiornamento dell’oggetto.
