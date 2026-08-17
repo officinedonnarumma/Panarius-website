@@ -258,7 +258,7 @@ export default function Home() {
           <div className="material-images">
             <figure className="material-images__large"><img src={asset("officine-detail-weld.jpg")} alt="Dettaglio di lavorazione metallica in officina" /><figcaption>La lavorazione</figcaption></figure>
             <figure className="material-images__small"><img src={asset("officine-detail-perforated-steel.jpg")} alt="Dettaglio di lamiera microforata zincata" /><figcaption>La materia</figcaption></figure>
-            <div className="material-statement"><span>Dal metallo<br />alla funzione.</span><ArrowDownRight size={28} /></div>
+            <div className="material-statement"><div className="material-statement__copy"><strong>Un mestiere, una firma</strong><p>Dall’idea al prodotto finito, ogni Panarius prende forma da un sapere concreto, in cui esperienza e manualità trasformano il progetto in un pezzo unico, realizzato su misura per te.</p></div><ArrowDownRight size={28} /></div>
           </div>
         </section>
 

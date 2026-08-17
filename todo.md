@@ -220,3 +220,9 @@
 - [x] Verificare responsive, check, test Vitest e build dopo la modifica tipografica.
 - [x] Rinominare la voce di navigazione “Il progetto” in “Il concept”.
 - [x] Verificare responsive, check, test Vitest e build dopo la modifica della navigazione.
+- [x] Preparare una tavola comparativa grafica con le alternative del riquadro “Dal metallo alla funzione.” senza applicarle al sito.
+- [x] Correggere grammaticalmente il testo fornito per la sezione Artigianato Made in Pompeii.
+- [x] Preparare una prova grafica della casella con lo stesso testo su fondo rosso, senza applicarla al sito.
+- [x] Preparare una vista completa della sezione Artigianato con le proposte di riequilibrio dello spazio laterale, senza applicarle al sito.
+- [x] Aggiornare l’inserto laterale con il titolo “Un mestiere, una firma” e il testo approvato dal cliente.
+- [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento dell’inserto.
