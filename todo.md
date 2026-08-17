@@ -285,3 +285,6 @@
 - [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo la correzione del logo footer.
 - [x] Rimuovere il riquadro chiaro residuo dal logo footer e provare il footer in rosso pompeiano #8f2d24.
 - [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo la pulizia del logo e il cambio colore del footer.
+- [ ] Eliminare il fondo chiaro residuo del logo footer e renderlo leggibile sul rosso pompeiano.
+- [x] Ripristinare il footer nel colore scuro precedente #182625.
+- [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo il ripristino del footer scuro.
