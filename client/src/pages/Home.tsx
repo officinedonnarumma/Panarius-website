@@ -176,7 +176,7 @@ export default function Home() {
         </a>
         <nav className="desktop-nav" aria-label="Navigazione principale">
           <a href="#panarius">Panarius</a>
-          <a href="#progetto">Il progetto</a>
+          <a href="#progetto">Il concept</a>
           <a href="#materia">Made in Pompeii</a>
           <a href="#acquista" className="nav-cta"><ShoppingBag size={15} /> Acquista</a>
         </nav>
@@ -187,7 +187,7 @@ export default function Home() {
 
       <div className={`mobile-menu ${menuOpen ? "mobile-menu--open" : ""}`}>
         <a href="#panarius" onClick={closeMenu}>Panarius <ChevronRight size={16} /></a>
-        <a href="#progetto" onClick={closeMenu}>Il progetto <ChevronRight size={16} /></a>
+        <a href="#progetto" onClick={closeMenu}>Il concept <ChevronRight size={16} /></a>
         <a href="#materia" onClick={closeMenu}>Made in Pompeii <ChevronRight size={16} /></a>
         <a href="#contatti" onClick={closeMenu}>Richiedi un preventivo <ChevronRight size={16} /></a>
       </div>
@@ -252,7 +252,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Artigianato Made in Pompeii"
               title="Progettato qui. Lavorato qui."
-              copy={'Ogni Panarius nasce nella Valle di Pompei come pezzo unico, realizzato artigianalmente. Non è un prodotto industriale, ma l’espressione di un mestiere.\nLavorazioni di precisione e cura per ogni dettaglio danno vita a un prodotto solido, fatto per durare.\nVengono impiegati esclusivamente materiali di alta qualità, selezionati da fornitori locali: non è un vincolo, ma la base del risultato che vogliamo ottenere.\nOgni fase della produzione viene seguita da vicino, passo dopo passo. È questo controllo diretto a fare la differenza.'}
+              copy={'Ogni Panarius nasce nella Valle di Pompei come pezzo unico, realizzato artigianalmente. Non è un prodotto industriale, ma l’espressione di un mestiere.\nLavorazioni di precisione e cura per i dettagli danno vita a un prodotto solido, fatto per durare.\nVengono impiegati esclusivamente materiali di alta qualità, selezionati da fornitori locali: non è un vincolo, ma la base del risultato che vogliamo ottenere.\nOgni fase della produzione viene seguita da vicino, passo dopo passo. È questo controllo diretto a fare la differenza.'}
             />
           </div>
           <div className="material-images">

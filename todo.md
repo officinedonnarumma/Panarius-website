@@ -211,3 +211,12 @@
 - [x] Sostituire l’immagine della lavorazione con la nuova fotografia della saldatura.
 - [x] Sostituire l’immagine della materia con la nuova fotografia della piegatura.
 - [x] Verificare responsive, check, test Vitest e build dopo la sostituzione delle immagini.
+- [x] Aggiornare la frase in “Lavorazioni di precisione e cura per i dettagli danno vita a un prodotto solido, fatto per durare.”.
+- [x] Allargare leggermente la casella di testo della sezione Artigianato Made in Pompeii.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica.
+- [x] Impostare a 11px le didascalie “La lavorazione” e “La materia”.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica tipografica.
+- [x] Impostare a 11px la didascalia “Disegno costruttivo · Panarius”.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica tipografica.
+- [x] Rinominare la voce di navigazione “Il progetto” in “Il concept”.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica della navigazione.
