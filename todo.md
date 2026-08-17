@@ -249,3 +249,6 @@
 - [x] Ridurre leggermente la dimensione del testo “Dal metallo alla funzione.”.
 - [x] Impostare a 16px il titolo “Un mestiere, una firma”.
 - [x] Verificare responsive, check, test Vitest e build dopo la modifica tipografica.
+- [x] Aggiornare il testo della sezione Artigianato con la nuova formulazione fornita dal cliente.
+- [x] Allargare ulteriormente la griglia nella fascia delle due immagini sottostanti, mantenendo spalletta e riquadro leggibili.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica.

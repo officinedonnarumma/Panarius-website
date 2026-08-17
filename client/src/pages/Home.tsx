@@ -252,7 +252,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Artigianato Made in Pompeii"
               title="Progettato qui. Lavorato qui."
-              copy={'Ogni Panarius nasce nella Valle di Pompei come pezzo unico, realizzato artigianalmente, non come prodotto industriale, ma come espressione di un mestiere.\nLavorazioni di precisione, esperienza e cura per i dettagli danno vita a un prodotto solido, fatto per durare. Vengono impiegati esclusivamente materiali di alta qualità, selezionati da fornitori locali: non è un vincolo, ma la base del risultato che vogliamo ottenere.\nOgni fase della produzione viene seguita da vicino, passo dopo passo. È questo controllo diretto a fare la differenza.'}
+              copy={'Ogni Panarius nasce nella Valle di Pompei come pezzo unico realizzato artigianalmente, non come prodotto industriale ma come espressione di un mestiere.\nLavorazioni di precisione, esperienza e cura per i dettagli danno vita a un prodotto solido, fatto per durare. Vengono impiegati esclusivamente materiali di alta qualità, selezionati da fornitori locali: non è un vincolo, ma la base del risultato che vogliamo ottenere.\nOgni fase della produzione viene seguita da vicino, passo dopo passo. È questo controllo diretto a fare la differenza.'}
             />
             <aside className="material-side-note"><strong>Un mestiere, una firma</strong><p>Dall’idea al prodotto finito, ogni Panarius prende forma da un sapere concreto, in cui esperienza e manualità trasformano il progetto in un pezzo unico, realizzato su misura per te.</p></aside>
           </div>
