@@ -252,3 +252,6 @@
 - [x] Aggiornare il testo della sezione Artigianato con la nuova formulazione fornita dal cliente.
 - [x] Allargare ulteriormente la griglia nella fascia delle due immagini sottostanti, mantenendo spalletta e riquadro leggibili.
 - [x] Verificare responsive, check, test Vitest e build dopo la modifica.
+- [x] Aggiornare il testo introduttivo della collezione Panarius con la formulazione approvata.
+- [x] Ridurre leggermente l’altezza delle immagini nelle schede prodotto.
+- [x] Verificare responsive, check, test Vitest e build dopo la modifica.

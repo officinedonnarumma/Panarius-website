@@ -217,7 +217,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="La collezione Panarius"
               title="Quattro varianti, una sola logica costruttiva."
-              copy="Scegli il modello in base al volume di carico e alla necessità di spostamento a terra. Tutte le dimensioni indicate si riferiscono al singolo cesto."
+              copy="Tutti i modelli Panarius condividono la stessa qualità costruttiva. A cambiare sono la capacità di carico e la modalità di movimentazione a terra, così da offrire una soluzione per ogni esigenza."
             />
             <a href="#acquista" className="catalogue__anchor">Acquista Panarius <ArrowRight size={17} /></a>
           </div>
