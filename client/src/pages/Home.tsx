@@ -218,7 +218,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="La collezione Panarius"
               title="Quattro varianti, una sola logica costruttiva."
-              copy="Tutti i modelli Panarius condividono la stessa qualità costruttiva. A cambiare sono la capacità di carico e la modalità di movimentazione a terra, così da offrire una soluzione per ogni esigenza."
+              copy="Tutti i modelli Panarius condividono la stessa qualità costruttiva. A cambiare sono la capacità di carico e la modalità di movimentazione a terra, così da offrire una soluzione adatta ad ogni esigenza."
             />
             <a href="#acquista" className="catalogue__anchor">Acquista Panarius <ArrowRight size={17} /></a>
           </div>

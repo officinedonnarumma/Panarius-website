@@ -303,3 +303,5 @@
 - [x] Verificare assenza del vuoto, scroll, menu mobile, check TypeScript, test Vitest e build dopo l’ancoraggio dinamico.
 - [x] Eliminare lo scarto residuo nei primi pixel di scroll del menu mobile.
 - [x] Verificare transizione iniziale, ancoraggio mobile, check TypeScript, test Vitest e build dopo la correzione.
+- [x] Aggiornare la frase finale della sezione La collezione Panarius in “una soluzione adatta ad ogni esigenza.”
+- [x] Verificare testo, check TypeScript, test Vitest e build dopo l’aggiornamento della frase.
