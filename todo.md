@@ -279,3 +279,5 @@
 - [x] Verificare responsive, check TypeScript, test Vitest e build dopo la modifica degli hover.
 - [x] Creare una versione del logo con fondo trasparente e grafica in negativo per il fondo scuro, quindi applicarla al footer.
 - [x] Verificare resa desktop/mobile, check TypeScript, test Vitest e build dopo l’integrazione del logo negativo.
+- [x] Impostare il mouse over di “Richiedi un preventivo” con fondo rame ocra e testo bianco.
+- [x] Verificare la resa desktop, check TypeScript, test Vitest e build dopo la modifica dell’hover.
