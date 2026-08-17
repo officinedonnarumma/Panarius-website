@@ -305,3 +305,5 @@
 - [x] Verificare transizione iniziale, ancoraggio mobile, check TypeScript, test Vitest e build dopo la correzione.
 - [x] Aggiornare la frase finale della sezione La collezione Panarius in “una soluzione adatta ad ogni esigenza.”
 - [x] Verificare testo, check TypeScript, test Vitest e build dopo l’aggiornamento della frase.
+- [x] Sostituire il link “Acquista Panarius” con la spalletta “Un Panarius per ogni esigenza” e il testo fornito.
+- [x] Verificare layout desktop/mobile, testo, check TypeScript, test Vitest e build dopo l’aggiornamento della spalletta.
