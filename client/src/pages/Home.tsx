@@ -287,7 +287,7 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="site-footer__brand"><img className="site-footer__logo" src="/manus-storage/officine-donnarumma-logo-negative-clean-local_906d5f20.png" alt="Officine Donnarumma, Pompei" /></div>
+        <div className="site-footer__brand"><img className="site-footer__logo" src="/manus-storage/officine-donnarumma-logo-negative-clean-local_fcbd2d23.png?v=2" alt="Officine Donnarumma, Pompei" /></div>
         <p>Panarius · Cesti per montacarichi</p>
         <p>© {new Date().getFullYear()} Officine Donnarumma. Tutti i diritti riservati.</p>
       </footer>

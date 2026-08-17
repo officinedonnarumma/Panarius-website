@@ -3,11 +3,12 @@ import numpy as np
 
 src = Image.open('/home/ubuntu/upload/Screenshot2026-08-17alle17.21.59.png').convert('RGB')
 # Crop exactly the original cream logo panel; retain its wide original proportions.
-crop = src.crop((159, 89, 520, 252))
+crop = src.crop((169, 99, 510, 242))
 arr = np.asarray(crop).astype(np.float32)
-luma = 0.2126 * arr[:, :, 0] + 0.7152 * arr[:, :, 1] + 0.0722 * arr[:, :, 2]
-# Dark original artwork becomes opaque ivory; the light cream panel becomes transparent.
-alpha = np.clip((232.0 - luma) * 3.2, 0, 255).astype(np.uint8)
+background = np.array([247.0, 244.0, 238.0], dtype=np.float32)
+distance = np.linalg.norm(arr - background, axis=2)
+# The original dark artwork is kept opaque; pixels matching the cream panel become transparent.
+alpha = np.clip((distance - 4.0) * 8.0, 0, 255).astype(np.uint8)
 # Remove very weak residual background pixels and preserve crisp logo edges.
 alpha[alpha < 18] = 0
 rgba = np.zeros((arr.shape[0], arr.shape[1], 4), dtype=np.uint8)
