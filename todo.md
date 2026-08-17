@@ -307,3 +307,5 @@
 - [x] Verificare testo, check TypeScript, test Vitest e build dopo l’aggiornamento della frase.
 - [x] Sostituire il link “Acquista Panarius” con la spalletta “Un Panarius per ogni esigenza” e il testo fornito.
 - [x] Verificare layout desktop/mobile, testo, check TypeScript, test Vitest e build dopo l’aggiornamento della spalletta.
+- [x] Allineare la spalletta “Un Panarius per ogni esigenza” a quella di Artigianato Made in Pompeii: colonna più ampia, titolo separato e testo in corsivo.
+- [x] Verificare desktop/mobile, leggibilità, check TypeScript, test Vitest e build dopo l’allineamento grafico.
