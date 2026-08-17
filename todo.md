@@ -229,3 +229,5 @@
 - [x] Spostare “Un mestiere, una firma” nella spalletta laterale superiore della sezione Artigianato.
 - [x] Ripristinare il riquadro rame “Dal metallo alla funzione.” senza modificare il contenuto.
 - [x] Verificare desktop/mobile, check, test Vitest e build dopo la correzione strutturale.
+- [x] Aggiornare la suddivisione dei paragrafi della sezione Artigianato con il testo fornito dal cliente.
+- [x] Verificare responsive, check, test Vitest e build dopo l’aggiornamento dei paragrafi.
