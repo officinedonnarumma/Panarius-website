@@ -341,3 +341,5 @@
 - [x] Eliminare i bordi blu aggiunti dall’immagine 5:4 e adattarla al contenitore della sezione “Il concept”, verificando e pubblicando la correzione.
 - [x] Eliminare definitivamente i bordi residui e l’area blu vuota sotto l’immagine nella sezione “Il concept”, allineando il contenitore al formato 5:4 e verificando la resa responsive.
 - [x] Preparare una composizione reale in rapporto 5:3, rimuovere i bordi residui e adeguare griglia e contenitore senza alterare la tavola tecnica.
+- [x] Generare una nuova immagine 5:4 partendo dall’originale completa, estendendo solo il piano blu ossidato sopra e sotto la tavola tecnica; adattare poi il contenitore all’altezza dell’immagine, senza applicare finché non verificata.
+- [x] Adattare l’immagine 5:4 approvata al contenitore a tutta altezza, eliminando ogni bordo vuoto senza ritagliarla o deformarla; verificare e pubblicare.
