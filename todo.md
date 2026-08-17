@@ -297,3 +297,5 @@
 - [x] Aggiungere il pulsante Acquista nella navigazione mobile.
 - [x] Mantenere aperto il menu mobile durante lo scorrimento, eliminare il vuoto e bloccare lo scroll del contenuto sottostante.
 - [x] Verificare menu aperto/chiuso, voce Acquista, mobile, check TypeScript, test Vitest e build dopo la correzione definitiva.
+- [x] Consentire lo scroll della pagina sottostante con il menu mobile aperto, senza chiudere il menu.
+- [x] Verificare comportamento mobile, menu aperto, check TypeScript, test Vitest e build dopo la rimozione del blocco scroll.
