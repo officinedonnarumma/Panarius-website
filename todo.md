@@ -288,3 +288,5 @@
 - [x] Eliminare il fondo chiaro residuo del logo footer e renderlo leggibile sul rosso pompeiano; asset corretto e mantenuto sul footer scuro.
 - [x] Ripristinare il footer nel colore scuro precedente #182625.
 - [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo il ripristino del footer scuro.
+- [x] Sostituire il logo footer con un asset vettoriale realmente trasparente, eliminando il riquadro bianco.
+- [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo l’integrazione del logo vettoriale.
