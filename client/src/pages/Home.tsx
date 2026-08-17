@@ -22,7 +22,7 @@ const previewAssets: Record<string, string> = {
   "officine-hero-fabrication.jpg": "/manus-storage/officine-hero-fabrication_5f47ba3b.jpg",
   "officine-detail-perforated-steel.jpg": "/manus-storage/officine-proposta-materia-atelier_40be7d3a.jpg",
   "officine-detail-weld.jpg": "/manus-storage/officine-proposta-lavorazione-fabbro-originale_de038c9b.jpg",
-  "officine-technical-blueprint.jpg": "/manus-storage/panarius-technical-drawing-iso_4a4ee796.png",
+  "officine-technical-blueprint.jpg": "/manus-storage/proposta-panarius-beige-appoggiata-senza-ombra_8f9162a4.png",
   "officine-d-symbol.png": "/manus-storage/officine-d-symbol_2f7ead5c.png",
   "panarius-shop-source.webp": "/manus-storage/panarius-shop-source_4e57ba40.webp",
 };

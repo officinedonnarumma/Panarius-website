@@ -321,3 +321,11 @@
 - [x] Preparare una proposta visiva separata per lo sfondo della sezione Acquista come preferisci, senza applicarla al sito.
 - [x] Preparare una nuova proposta separata per lo sfondo della sezione Acquista come preferisci, ispirata a una bottega artigiana dell’epoca romana, senza applicarla al sito.
 - [x] Sostituire lo sfondo della sezione Acquista come preferisci con la proposta della bottega artigiana romana e pubblicare dopo le verifiche.
+- [x] Preparare una proposta visiva per inserire sotto la tavola tecnica della sezione “Il concept” un tavolo da disegno coerente con il sito, senza applicarla finché non viene approvata.
+- [x] Preparare una nuova proposta con tavolo da disegno visto dall’alto e disegno tecnico originale chiaro su un livello superiore separato, senza applicarla al sito.
+- [x] Preparare una nuova proposta top-down eliminando completamente il bordo crema, mantenendo la tavola tecnica originale separata e leggibile, senza applicarla al sito.
+- [x] Preparare una nuova proposta con foglio beige e cornice tecnica ISO completa attorno al disegno, senza applicarla al sito.
+- [x] Preparare una nuova proposta con tavola tecnica più vicina al formato A3 ed eliminare il rettangolo bianco residuo, senza applicarla al sito.
+- [x] Ripristinare la soluzione precedente con foglio beige e cornice ISO e rimuovere esclusivamente il residuo bianco laterale, senza applicarla al sito.
+- [x] Correggere la proposta eliminando l’ombra artificiale, rendendo il foglio più beige e facendolo apparire appoggiato sul tavolo, senza applicarla al sito.
+- [x] Sostituire nella sezione “Il concept” la tavola tecnica con la composizione approvata del tavolo top-down, foglio beige e cornice ISO; verificare e pubblicare.
