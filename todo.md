@@ -277,3 +277,5 @@
 - [x] Verificare desktop/mobile, check TypeScript, test Vitest e build dopo la correzione del titolo.
 - [x] Differenziare gli stati mouse over di “Richiedi informazioni” e “Richiedi un preventivo” nella sezione contatti, evitando il medesimo colore.
 - [x] Verificare responsive, check TypeScript, test Vitest e build dopo la modifica degli hover.
+- [x] Creare una versione del logo con fondo trasparente e grafica in negativo per il fondo scuro, quindi applicarla al footer.
+- [x] Verificare resa desktop/mobile, check TypeScript, test Vitest e build dopo l’integrazione del logo negativo.
