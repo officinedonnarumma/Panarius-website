@@ -367,3 +367,4 @@
 - [x] Rinominare l’etichetta della sezione in “Applicazioni in ogni settore”, verificare e pubblicare.
 - [x] Impostare in rosso pompeiano i bordi della griglia Applicazioni e delle schede prodotto, verificare e pubblicare.
 - [x] Allargare le colonne della griglia Applicazioni e ridurre l’altezza delle card per compattare i testi, verificare e pubblicare.
+- [x] Lasciare in rosso pompeiano solo le linee superiori della griglia Applicazioni e delle schede prodotto, con spessore leggermente maggiore, verificare e pubblicare.
