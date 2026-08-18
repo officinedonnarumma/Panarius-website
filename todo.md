@@ -380,3 +380,4 @@
 - [x] Ripristinare nelle quattro schede catalogo le fotografie originali Panarius, senza immagini rigenerate né sfondi sostituiti.
 - [x] Rimuovere tutti i riferimenti pubblici agli asset in storage del progetto e migrare immagini e risorse verso un host esterno scelto dall’utente. Completato nel pacchetto statico Cloudflare con asset inclusi localmente.
 - [x] Creare un pacchetto ZIP statico per Cloudflare Pages con tutti gli asset inclusi localmente e senza riferimenti allo storage del progetto.
+- [x] Aggiornare la sezione contatti con il testo Panarius Bespoke, i pulsanti “Richiedi informazioni” e “Richiedi preventivo” e l’email in grassetto e sottolineata.
