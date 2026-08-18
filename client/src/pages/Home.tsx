@@ -174,6 +174,7 @@ export default function Home() {
         </a>
         <nav className="desktop-nav" aria-label="Navigazione principale">
           <a href="#panarius">Panarius</a>
+          <a href="#utilizzi">Applicazioni</a>
           <a href="#progetto">Il concept</a>
           <a href="#materia">Made in Pompeii</a>
           <a href="#acquista" className="nav-cta"><ShoppingBag size={15} /> Acquista</a>
@@ -185,6 +186,7 @@ export default function Home() {
 
       <div className={`mobile-menu ${menuOpen ? "mobile-menu--open" : ""} ${scrolled ? "mobile-menu--scrolled" : ""}`}>
         <a href="#panarius" onClick={closeMenu}>Panarius <ChevronRight size={16} /></a>
+        <a href="#utilizzi" onClick={closeMenu}>Applicazioni <ChevronRight size={16} /></a>
         <a href="#progetto" onClick={closeMenu}>Il concept <ChevronRight size={16} /></a>
         <a href="#materia" onClick={closeMenu}>Made in Pompeii <ChevronRight size={16} /></a>
         <a href="#acquista" onClick={closeMenu}><span>Acquista</span><ShoppingBag size={16} /></a>
@@ -229,16 +231,16 @@ export default function Home() {
         <section id="utilizzi" className="use-cases section-space" aria-labelledby="utilizzi-title">
           <div className="use-cases__heading">
             <SectionHeading
-              eyebrow="Applicazioni Panarius"
+              eyebrow="Applicazioni in ogni settore"
               title="Il cesto per paranco e montacarichi, dove serve davvero."
               copy="Panarius completa il tuo paranco o montacarichi con uno spazio di carico sicuro e pratico. È pensato per chi deve sollevare e movimentare oggetti di uso quotidiano, materiali da lavoro e forniture in modo ordinato."
             />
           </div>
           <div className="use-cases__grid">
-            <article><span>01</span><h3>Casa, giardino e biomasse</h3><p>Per trasportare legna, pellet, noccioline e sanza, oltre agli oggetti necessari nelle attività domestiche e di giardinaggio.</p></article>
-            <article><span>02</span><h3>Spesa e casse d’acqua</h3><p>Una soluzione pratica per sollevare la spesa, casse d’acqua e carichi pesanti fino ai piani superiori, riducendo gli spostamenti manuali.</p></article>
-            <article><span>03</span><h3>Commercio e ospitalità</h3><p>Adatto a pacchi, scatoloni e materiali di ogni genere per negozi, attività commerciali e strutture ricettive.</p></article>
-            <article><span>04</span><h3>Edilizia e agricoltura</h3><p>Per sacchi di cemento, attrezzature e materiali da cantiere, così come per le esigenze operative delle aziende agricole.</p></article>
+            <article><span>01</span><h3>Casa, giardino e biomasse per camini e stufe</h3><p>Per sollevare e trasportare legna da ardere, pellet di abete, di faggio o di legno vergine, sansa, nocciolino d’oliva, cippato di legno e bricchette. Ideale anche per gli oggetti necessari nelle attività domestiche e di giardinaggio.</p></article>
+            <article><span>02</span><h3>Spesa e casse d’acqua</h3><p>Il cesto ideale per sollevare la spesa, casse d’acqua e carichi pesanti fino ai piani superiori, riducendo gli spostamenti manuali.</p></article>
+            <article><span>03</span><h3>Commercio e Hôtellerie</h3><p>Adatto al sollevamento di pacchi, scatoloni, forniture, biancheria, prodotti per la pulizia, attrezzature e materiali di consumo per negozi, ristoranti, agriturismi e strutture ricettive.</p></article>
+            <article><span>04</span><h3>Edilizia, Industria e Agricoltura</h3><p>Per il trasporto in sicurezza di sacchi di cemento, malta e laterizi nei cantieri edili, componenti e pezzi di ricambio in ambito industriale, mangimi, sementi e concimi per le aziende agricole.</p></article>
           </div>
         </section>
 

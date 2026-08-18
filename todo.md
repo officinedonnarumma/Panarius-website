@@ -361,3 +361,7 @@
 - [x] Rinominare gli asset visuali con nomi descrittivi e SEO-friendly e aggiornare i relativi riferimenti del sito.
 - [x] Ampliare i contenuti SEO per paranchi e montacarichi, includendo usi domestici, commerciali, edilizi, agricoli e ricettivi del cesto Panarius.
 - [x] Preparare tre proposte marketplace per Panarius Pro, Panarius Lite Wheels e Panarius Lite usando il nuovo Panarius Pro Wheels come riferimento geometrico, senza applicarle al sito.
+- [x] Rigenerare con Nano Banana 2 le proposte marketplace di Panarius Pro, Panarius Lite Wheels e Panarius Lite usando le caratteristiche esatte delle schede prodotto, senza applicarle al sito.
+- [x] Aggiornare la sezione SEO con i quattro ambiti d’uso forniti e impostare i rispettivi titoletti in grassetto a 14px, verificare e pubblicare.
+- [x] Aggiungere la voce di navigazione “Applicazioni” collegata alla sezione SEO degli utilizzi Panarius, verificare e pubblicare.
+- [x] Rinominare l’etichetta della sezione in “Applicazioni in ogni settore”, verificare e pubblicare.
