@@ -376,3 +376,7 @@
 - [x] Preparare quattro proposte fotografiche professionali per le varianti Panarius, con sfondo neutro e prodotto interamente inquadrato, senza applicarle al sito fino ad approvazione.
 - [x] Rigenerare le quattro immagini catalogo con due ganci triangolari e tubolari quadri fedeli al riferimento, quindi sostituirle nelle schede prodotto e pubblicare.
 - [x] Ripristinare le fotografie originali delle quattro varianti Panarius e modificare esclusivamente sfondo e formato 16:9, senza alterare geometria, ganci, tubolari, ruote, piedini o pannelli del prodotto.
+- [x] Correggere la sola immagine Panarius Lite Wheels aggiungendo le ruote sterzanti sotto il cesto e mantenendo invariato il resto del prodotto. Attività interrotta su richiesta dell’utente.
+- [x] Ripristinare nelle quattro schede catalogo le fotografie originali Panarius, senza immagini rigenerate né sfondi sostituiti.
+- [x] Rimuovere tutti i riferimenti pubblici agli asset in storage del progetto e migrare immagini e risorse verso un host esterno scelto dall’utente. Completato nel pacchetto statico Cloudflare con asset inclusi localmente.
+- [x] Creare un pacchetto ZIP statico per Cloudflare Pages con tutti gli asset inclusi localmente e senza riferimenti allo storage del progetto.
