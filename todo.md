@@ -373,3 +373,5 @@
 - [x] Allineare in basso la spalletta “Un mestiere, una firma” nella colonna destra della sezione Artigianato su desktop, verificare e pubblicare.
 - [x] Separare i breakpoint della sezione Artigianato: spalletta a destra e immagini estese nel secondo, spalletta sotto e immagini in due colonne nel terzo, verificare e pubblicare.
 - [x] Calibrare la larghezza della spalletta “Un mestiere, una firma” nel secondo breakpoint sulla proporzione del riferimento, mantenendola a destra, verificare e pubblicare.
+- [x] Preparare quattro proposte fotografiche professionali per le varianti Panarius, con sfondo neutro e prodotto interamente inquadrato, senza applicarle al sito fino ad approvazione.
+- [x] Rigenerare le quattro immagini catalogo con due ganci triangolari e tubolari quadri fedeli al riferimento, quindi sostituirle nelle schede prodotto e pubblicare.

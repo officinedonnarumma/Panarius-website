@@ -51,7 +51,7 @@ const products: Product[] = [
     external: "60 × 40 × 68 cm",
     base: "Ruote sterzanti",
     price: "€ 215,00",
-    image: "/manus-storage/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg",
+    image: "/manus-storage/catalogo-panarius-pro-wheels-ganci-triangolari_e92457a6.png",
     feature: "TUTTO, OVUNQUE SERVA",
   },
   {
@@ -62,7 +62,7 @@ const products: Product[] = [
     external: "60 × 40 × 60 cm",
     base: "Piedini fissi",
     price: "€ 185,00",
-    image: "/manus-storage/cesto-panarius-pro-piedini-fissi_82e689da.jpg",
+    image: "/manus-storage/catalogo-panarius-pro-ganci-triangolari_e5ad3932.png",
     feature: "L'ESSENZIALE, IN GRANDE",
   },
   {
@@ -73,7 +73,7 @@ const products: Product[] = [
     external: "60 × 40 × 58 cm",
     base: "Ruote sterzanti",
     price: "€ 175,00",
-    image: "/manus-storage/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
+    image: "/manus-storage/catalogo-panarius-lite-wheels-ganci-triangolari_8a45ea8e.png",
     feature: "PICCOLO INGOMBRO, MASSIMA LIBERTÀ",
   },
   {
@@ -84,7 +84,7 @@ const products: Product[] = [
     external: "60 × 40 × 50 cm",
     base: "Piedini fissi",
     price: "€ 145,00",
-    image: "/manus-storage/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
+    image: "/manus-storage/catalogo-panarius-lite-ganci-triangolari_e15d6124.png",
     feature: "COMPATTO E FUNZIONALE",
   },
 ];
