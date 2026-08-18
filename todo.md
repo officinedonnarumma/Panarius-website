@@ -372,3 +372,4 @@
 - [x] Uniformare il breakpoint intermedio della sezione Artigianato al comportamento della sezione Quattro varianti, eliminando il vuoto laterale e ordinando testo, spalletta e immagini in sequenza, verificare e pubblicare.
 - [x] Allineare in basso la spalletta “Un mestiere, una firma” nella colonna destra della sezione Artigianato su desktop, verificare e pubblicare.
 - [x] Separare i breakpoint della sezione Artigianato: spalletta a destra e immagini estese nel secondo, spalletta sotto e immagini in due colonne nel terzo, verificare e pubblicare.
+- [x] Calibrare la larghezza della spalletta “Un mestiere, una firma” nel secondo breakpoint sulla proporzione del riferimento, mantenendola a destra, verificare e pubblicare.
