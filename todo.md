@@ -365,3 +365,4 @@
 - [x] Aggiornare la sezione SEO con i quattro ambiti d’uso forniti e impostare i rispettivi titoletti in grassetto a 14px, verificare e pubblicare.
 - [x] Aggiungere la voce di navigazione “Applicazioni” collegata alla sezione SEO degli utilizzi Panarius, verificare e pubblicare.
 - [x] Rinominare l’etichetta della sezione in “Applicazioni in ogni settore”, verificare e pubblicare.
+- [x] Impostare in rosso pompeiano i bordi della griglia Applicazioni e delle schede prodotto, verificare e pubblicare.

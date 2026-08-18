@@ -188,3 +188,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 850px) {
   .material-images { margin-left: 0; margin-right: 0; }
 }
+
+/* Bordi rosso pompeiano nelle griglie catalogo e applicazioni. */
+.product-card { border-top-color: var(--pompeian-red); }
+.use-cases__grid { background: var(--pompeian-red); border-top-color: var(--pompeian-red); }
