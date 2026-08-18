@@ -375,3 +375,4 @@
 - [x] Calibrare la larghezza della spalletta “Un mestiere, una firma” nel secondo breakpoint sulla proporzione del riferimento, mantenendola a destra, verificare e pubblicare.
 - [x] Preparare quattro proposte fotografiche professionali per le varianti Panarius, con sfondo neutro e prodotto interamente inquadrato, senza applicarle al sito fino ad approvazione.
 - [x] Rigenerare le quattro immagini catalogo con due ganci triangolari e tubolari quadri fedeli al riferimento, quindi sostituirle nelle schede prodotto e pubblicare.
+- [x] Ripristinare le fotografie originali delle quattro varianti Panarius e modificare esclusivamente sfondo e formato 16:9, senza alterare geometria, ganci, tubolari, ruote, piedini o pannelli del prodotto.

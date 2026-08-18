@@ -51,7 +51,7 @@ const products: Product[] = [
     external: "60 × 40 × 68 cm",
     base: "Ruote sterzanti",
     price: "€ 215,00",
-    image: "/manus-storage/catalogo-panarius-pro-wheels-ganci-triangolari_e92457a6.png",
+    image: "/manus-storage/catalogo-originale-panarius-pro-wheels-sfondo-neutro-16x9_ae949946.png",
     feature: "TUTTO, OVUNQUE SERVA",
   },
   {
@@ -62,7 +62,7 @@ const products: Product[] = [
     external: "60 × 40 × 60 cm",
     base: "Piedini fissi",
     price: "€ 185,00",
-    image: "/manus-storage/catalogo-panarius-pro-ganci-triangolari_e5ad3932.png",
+    image: "/manus-storage/catalogo-originale-panarius-pro-sfondo-neutro-16x9_a7a464d2.png",
     feature: "L'ESSENZIALE, IN GRANDE",
   },
   {
@@ -73,7 +73,7 @@ const products: Product[] = [
     external: "60 × 40 × 58 cm",
     base: "Ruote sterzanti",
     price: "€ 175,00",
-    image: "/manus-storage/catalogo-panarius-lite-wheels-ganci-triangolari_8a45ea8e.png",
+    image: "/manus-storage/catalogo-originale-panarius-lite-wheels-sfondo-neutro-16x9_185ec11d.png",
     feature: "PICCOLO INGOMBRO, MASSIMA LIBERTÀ",
   },
   {
@@ -84,7 +84,7 @@ const products: Product[] = [
     external: "60 × 40 × 50 cm",
     base: "Piedini fissi",
     price: "€ 145,00",
-    image: "/manus-storage/catalogo-panarius-lite-ganci-triangolari_e15d6124.png",
+    image: "/manus-storage/catalogo-originale-panarius-lite-sfondo-neutro-16x9_6909e8f2.png",
     feature: "COMPATTO E FUNZIONALE",
   },
 ];
