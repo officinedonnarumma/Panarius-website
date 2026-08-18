@@ -371,3 +371,4 @@
 - [x] Ridurre la larghezza dei testi delle card Applicazioni per ottenere descrizioni ariose di circa tre righe, verificare e pubblicare.
 - [x] Uniformare il breakpoint intermedio della sezione Artigianato al comportamento della sezione Quattro varianti, eliminando il vuoto laterale e ordinando testo, spalletta e immagini in sequenza, verificare e pubblicare.
 - [x] Allineare in basso la spalletta “Un mestiere, una firma” nella colonna destra della sezione Artigianato su desktop, verificare e pubblicare.
+- [x] Separare i breakpoint della sezione Artigianato: spalletta a destra e immagini estese nel secondo, spalletta sotto e immagini in due colonne nel terzo, verificare e pubblicare.
