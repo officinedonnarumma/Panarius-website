@@ -357,3 +357,6 @@
 - [x] Uniformare il responsive della sezione Artigianato Made in Pompeii alla struttura della sezione Collezione: testo sopra, spalletta sotto a sinistra e immagini dopo, verificare e pubblicare.
 - [ ] Preparare e sottoporre ad approvazione una proposta di immagini catalogo in stile marketplace Amazon, con prodotto isolato su fondo bianco e proporzioni reali preservate, senza applicarla al sito.
 - [x] Eseguire un audit SEO completo e ottimizzare rendering per crawler, metadati, sitemap, robots, dati strutturati e verifiche tecniche del sito Panarius.
+- [x] Eliminare tutti i riferimenti pubblici a Manus e all’AI dal sito, dalle anteprime e dagli asset esposti.
+- [x] Rinominare gli asset visuali con nomi descrittivi e SEO-friendly e aggiornare i relativi riferimenti del sito.
+- [x] Ampliare i contenuti SEO per paranchi e montacarichi, includendo usi domestici, commerciali, edilizi, agricoli e ricettivi del cesto Panarius.

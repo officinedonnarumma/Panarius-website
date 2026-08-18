@@ -3,7 +3,6 @@ import fs from "fs";
 import { type Server } from "http";
 import { nanoid } from "nanoid";
 import path from "path";
-import superjson from "superjson";
 import { createServer as createViteServer } from "vite";
 import viteConfig from "../../vite.config";
 import { buildStructuredData, canonicalOrigin, headForPath, SITE_NAME, type SeoHead } from "./seo";
@@ -34,10 +33,8 @@ function buildHeadTags(head: SeoHead) {
   return tags.join("\n");
 }
 
-function composeHtml(template: string, appHtml: string, head: SeoHead, dehydratedState: unknown) {
-  const state = JSON.stringify(superjson.serialize(dehydratedState)).replace(/</g, "\\u003c");
+function composeHtml(template: string, appHtml: string, head: SeoHead) {
   return template
-    .replace("</body>", () => `<script>window.__RQ_STATE__ = ${state}</script></body>`)
     .replace("<!--app-head-->", () => buildHeadTags(head))
     .replace("<!--app-html-->", () => appHtml);
 }
@@ -74,8 +71,8 @@ export async function setupVite(app: Express, server: Server) {
       template = await vite.transformIndexHtml(url, template);
       template = template.replace("</head>", `<link rel="stylesheet" href="/src/index.css?direct" data-ssr-dev-css></head>`);
       const { render } = await vite.ssrLoadModule("/src/entry-server.tsx");
-      const { html, dehydratedState, head } = await render(url);
-      res.status(head.notFound ? 404 : 200).set({ "Content-Type": "text/html", "Cache-Control": "no-cache" }).end(composeHtml(template, html, head, dehydratedState));
+      const { html, head } = await render(url);
+      res.status(head.notFound ? 404 : 200).set({ "Content-Type": "text/html", "Cache-Control": "no-cache" }).end(composeHtml(template, html, head));
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
       next(e);
@@ -105,8 +102,8 @@ export function serveStatic(app: Express) {
     try {
       const serverEntryPath = path.resolve(import.meta.dirname, "server-ssr", "entry-server.js");
       const { render } = await import(serverEntryPath);
-      const { html, dehydratedState, head } = await render(req.originalUrl);
-      res.status(head.notFound ? 404 : 200).set("Cache-Control", "no-cache").type("html").end(composeHtml(template, html, head, dehydratedState));
+      const { html, head } = await render(req.originalUrl);
+      res.status(head.notFound ? 404 : 200).set("Cache-Control", "no-cache").type("html").end(composeHtml(template, html, head));
     } catch (error) {
       console.error("[SSR] render failed, serving shell:", error);
       const fallbackHead = headForPath("/");

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://officinedon-f6a6rcbv.manus.space/sitemap.xml
+Sitemap: https://officinedonnarumma.it/sitemap.xml

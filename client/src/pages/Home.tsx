@@ -20,17 +20,15 @@ import {
 import { useEffect, useState } from "react";
 
 const previewAssets: Record<string, string> = {
-  "officine-hero-fabrication.jpg": "/manus-storage/officine-hero-fabrication_5f47ba3b.jpg",
-  "officine-detail-perforated-steel.jpg": "/manus-storage/officine-proposta-materia-atelier_40be7d3a.jpg",
-  "officine-detail-weld.jpg": "/manus-storage/officine-proposta-lavorazione-fabbro-originale_de038c9b.jpg",
-  "officine-technical-blueprint.jpg": "/manus-storage/proposta-panarius-5x4-estensione-blu-originale_eb39496f.png",
-  "officine-d-symbol.png": "/manus-storage/officine-d-symbol_2f7ead5c.png",
-  "panarius-shop-source.webp": "/manus-storage/panarius-shop-source_4e57ba40.webp",
+  "tavola-tecnica-cesto-panarius-montacarichi.png": "/manus-storage/tavola-tecnica-cesto-panarius-montacarichi_4dab7703.png",
+  "lavorazione-artigianale-cesto-panarius-pompei.jpg": "/manus-storage/lavorazione-artigianale-cesto-panarius-pompei_ed5234d2.jpg",
+  "lamiera-microforata-zincata-panarius.jpg": "/manus-storage/lamiera-microforata-zincata-panarius_d81bf494.jpg",
 };
 
 const asset = (filename: keyof typeof previewAssets) => previewAssets[filename];
 
-const heroImage = "/manus-storage/panarius-hero-cable-only-gpt_164f15a6.png";
+const heroImage = "/manus-storage/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
+const brandLogo = "/manus-storage/logo-officine-donnarumma-pompei_354bdd6b.png";
 
 type Product = {
   code: string;
@@ -53,7 +51,7 @@ const products: Product[] = [
     external: "60 × 40 × 68 cm",
     base: "Ruote sterzanti",
     price: "€ 215,00",
-    image: "/manus-storage/panarius-variant-01_b9e16593.jpg",
+    image: "/manus-storage/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg",
     feature: "TUTTO, OVUNQUE SERVA",
   },
   {
@@ -64,7 +62,7 @@ const products: Product[] = [
     external: "60 × 40 × 60 cm",
     base: "Piedini fissi",
     price: "€ 185,00",
-    image: "/manus-storage/panarius-variant-02_01f381e7.jpg",
+    image: "/manus-storage/cesto-panarius-pro-piedini-fissi_82e689da.jpg",
     feature: "L'ESSENZIALE, IN GRANDE",
   },
   {
@@ -75,7 +73,7 @@ const products: Product[] = [
     external: "60 × 40 × 58 cm",
     base: "Ruote sterzanti",
     price: "€ 175,00",
-    image: "/manus-storage/panarius-variant-03_e9d7ffc2.jpg",
+    image: "/manus-storage/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
     feature: "PICCOLO INGOMBRO, MASSIMA LIBERTÀ",
   },
   {
@@ -86,7 +84,7 @@ const products: Product[] = [
     external: "60 × 40 × 50 cm",
     base: "Piedini fissi",
     price: "€ 145,00",
-    image: "/manus-storage/panarius-variant-04_d5920e0f.jpg",
+    image: "/manus-storage/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
     feature: "COMPATTO E FUNZIONALE",
   },
 ];
@@ -172,7 +170,7 @@ export default function Home() {
 
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
         <a className="brand" href="#top" aria-label="Officine Donnarumma — torna all'inizio">
-          <img className="brand__logo" src="/manus-storage/officine-donnarumma-logo-original-transparent_bdd78817.png" alt="Officine Donnarumma, Pompei" />
+          <img className="brand__logo" src={brandLogo} alt="Officine Donnarumma, Pompei" />
         </a>
         <nav className="desktop-nav" aria-label="Navigazione principale">
           <a href="#panarius">Panarius</a>
@@ -200,7 +198,7 @@ export default function Home() {
           <div className="hero__content">
             <p className="eyebrow eyebrow--light"><span>Panarius · Cesta per montacarichi</span></p>
             <h1 id="hero-title">Il tuo carico,<br /><em>sempre al sicuro.</em></h1>
-            <p className="hero__copy">Panarius è il cesto per montacarichi progettato per distribuire il carico in maniera uniforme e rendere ogni movimentazione più semplice e sicura.</p>
+            <p className="hero__copy">Panarius è il cesto metallico per paranchi e montacarichi progettato per distribuire il carico in maniera uniforme e rendere ogni movimentazione più semplice e sicura.</p>
             <div className="hero__actions">
               <a href="#panarius" className="button button--copper">Scopri le varianti <ArrowRight size={17} /></a>
               <a href="#progetto" className="text-link">Come è costruito <MoveUpRight size={15} /></a>
@@ -228,9 +226,25 @@ export default function Home() {
           <p className="catalogue-note"><span>*</span> Prezzi e configurazioni saranno confermati nel canale di acquisto selezionato.</p>
         </section>
 
+        <section id="utilizzi" className="use-cases section-space" aria-labelledby="utilizzi-title">
+          <div className="use-cases__heading">
+            <SectionHeading
+              eyebrow="Applicazioni Panarius"
+              title="Il cesto per paranco e montacarichi, dove serve davvero."
+              copy="Panarius completa il tuo paranco o montacarichi con uno spazio di carico sicuro e pratico. È pensato per chi deve sollevare e movimentare oggetti di uso quotidiano, materiali da lavoro e forniture in modo ordinato."
+            />
+          </div>
+          <div className="use-cases__grid">
+            <article><span>01</span><h3>Casa, giardino e biomasse</h3><p>Per trasportare legna, pellet, noccioline e sanza, oltre agli oggetti necessari nelle attività domestiche e di giardinaggio.</p></article>
+            <article><span>02</span><h3>Spesa e casse d’acqua</h3><p>Una soluzione pratica per sollevare la spesa, casse d’acqua e carichi pesanti fino ai piani superiori, riducendo gli spostamenti manuali.</p></article>
+            <article><span>03</span><h3>Commercio e ospitalità</h3><p>Adatto a pacchi, scatoloni e materiali di ogni genere per negozi, attività commerciali e strutture ricettive.</p></article>
+            <article><span>04</span><h3>Edilizia e agricoltura</h3><p>Per sacchi di cemento, attrezzature e materiali da cantiere, così come per le esigenze operative delle aziende agricole.</p></article>
+          </div>
+        </section>
+
         <section id="progetto" className="project-section">
           <div className="project-image">
-            <img src={asset("officine-technical-blueprint.jpg")} alt="Disegno tecnico della struttura Panarius" />
+            <img src={asset("tavola-tecnica-cesto-panarius-montacarichi.png")} alt="Tavola tecnica del cesto Panarius per montacarichi" />
             <span className="project-image__label">Disegno costruttivo · Panarius</span>
           </div>
           <div className="project-content">
@@ -258,14 +272,14 @@ export default function Home() {
             <aside className="material-side-note"><strong>Un mestiere, una firma</strong><p>Dall’idea al prodotto finito, ogni Panarius prende forma da un sapere concreto, in cui esperienza e manualità trasformano il progetto in un pezzo unico, realizzato su misura per te.</p></aside>
           </div>
           <div className="material-images">
-            <figure className="material-images__large"><img src={asset("officine-detail-weld.jpg")} alt="Dettaglio di lavorazione metallica in officina" /><figcaption>La lavorazione</figcaption></figure>
-            <figure className="material-images__small"><img src={asset("officine-detail-perforated-steel.jpg")} alt="Dettaglio di lamiera microforata zincata" /><figcaption>La materia</figcaption></figure>
+            <figure className="material-images__large"><img src={asset("lavorazione-artigianale-cesto-panarius-pompei.jpg")} alt="Lavorazione artigianale del cesto Panarius nell’officina di Pompei" /><figcaption>La lavorazione</figcaption></figure>
+            <figure className="material-images__small"><img src={asset("lamiera-microforata-zincata-panarius.jpg")} alt="Lamiera microforata zincata impiegata nel cesto Panarius" /><figcaption>La materia</figcaption></figure>
             <div className="material-statement"><span>Dal metallo<br />alla funzione.</span><ArrowDownRight size={28} /></div>
           </div>
         </section>
 
         <section id="acquista" className="buy-section">
-          <div className="buy-section__backdrop" style={{ backgroundImage: `linear-gradient(90deg,#122f45,rgba(18,47,69,.72) 48%,rgba(18,47,69,.92)),url("/manus-storage/officine-sfondo-bottega-romana-proposta_9eb4921e.jpg")` }} />
+          <div className="buy-section__backdrop" style={{ backgroundImage: `linear-gradient(90deg,#122f45,rgba(18,47,69,.72) 48%,rgba(18,47,69,.92)),url("/manus-storage/bottega-artigiana-pompei-acquisto-panarius_900aacab.jpg")` }} />
           <div className="buy-section__content">
             <SectionHeading
               eyebrow="Acquista come preferisci"
@@ -288,7 +302,7 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="site-footer__brand"><img className="site-footer__logo" src="/manus-storage/officine-donnarumma-logo-original-transparent_bdd78817.png" alt="Officine Donnarumma, Pompei" /></div>
+        <div className="site-footer__brand"><img className="site-footer__logo" src={brandLogo} alt="Officine Donnarumma, Pompei" /></div>
         <p>Panarius · Cesti per montacarichi</p>
         <p>© {new Date().getFullYear()} Officine Donnarumma. Tutti i diritti riservati.</p>
       </footer>

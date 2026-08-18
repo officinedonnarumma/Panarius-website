@@ -6,7 +6,7 @@ describe("SEO Panarius", () => {
     const head = headForPath("/");
     expect(head.notFound).toBeUndefined();
     expect(head.canonicalPath).toBe("/");
-    expect(head.title).toContain("Cesti per montacarichi");
+    expect(head.title).toContain("paranco e montacarichi");
   });
 
   it("usa le quattro denominazioni prodotto aggiornate nel JSON-LD", () => {
