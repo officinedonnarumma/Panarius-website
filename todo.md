@@ -382,3 +382,4 @@
 - [x] Creare un pacchetto ZIP statico per Cloudflare Pages con tutti gli asset inclusi localmente e senza riferimenti allo storage del progetto.
 - [x] Aggiornare la sezione contatti con il testo Panarius Bespoke, i pulsanti “Richiedi informazioni” e “Richiedi preventivo” e l’email in grassetto e sottolineata.
 - [x] Rendere “Panarius Bespoke” in corsivo e aumentare lo spazio sotto i pulsanti prima del contatto diretto.
+- [x] Valutare la copertura SEO di Pompei, Officine Donnarumma e della produzione artigianale nei metadati, nel rendering server-side e nei dati strutturati.
