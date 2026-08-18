@@ -360,3 +360,4 @@
 - [x] Eliminare tutti i riferimenti pubblici a Manus e all’AI dal sito, dalle anteprime e dagli asset esposti.
 - [x] Rinominare gli asset visuali con nomi descrittivi e SEO-friendly e aggiornare i relativi riferimenti del sito.
 - [x] Ampliare i contenuti SEO per paranchi e montacarichi, includendo usi domestici, commerciali, edilizi, agricoli e ricettivi del cesto Panarius.
+- [x] Preparare tre proposte marketplace per Panarius Pro, Panarius Lite Wheels e Panarius Lite usando il nuovo Panarius Pro Wheels come riferimento geometrico, senza applicarle al sito.
