@@ -14,7 +14,7 @@ export function SectionHeading({ eyebrow, title, copy, inverted = false }: Secti
     <div className={`section-heading ${inverted ? "section-heading--inverted" : ""}`}>
       <p className="eyebrow"><span>{eyebrow}</span></p>
       <h2>{title}</h2>
-      {copy && <p className="section-copy">{copy}</p>}
+      {copy && <p className="section-copy">{copy.split("\n").map((paragraph, index) => <span className="section-copy__paragraph" key={`${index}-${paragraph.slice(0, 12)}`}>{paragraph}</span>)}</p>}
     </div>
   );
 }
