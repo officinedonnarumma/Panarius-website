@@ -383,3 +383,12 @@
 - [x] Aggiornare la sezione contatti con il testo Panarius Bespoke, i pulsanti “Richiedi informazioni” e “Richiedi preventivo” e l’email in grassetto e sottolineata.
 - [x] Rendere “Panarius Bespoke” in corsivo e aumentare lo spazio sotto i pulsanti prima del contatto diretto.
 - [x] Valutare la copertura SEO di Pompei, Officine Donnarumma e della produzione artigianale nei metadati, nel rendering server-side e nei dati strutturati.
+- [x] Rigenerare il pacchetto ZIP statico Cloudflare includendo le ultime modifiche alla sezione contatti e verificarne l’integrità.
+- [x] Esportare un archivio ZIP completo del progetto sorgente aggiornato, con asset locali e senza node_modules né build statica Cloudflare.
+- [x] Aggiornare il repository GitHub Panarius-website già collegato a Cloudflare con il progetto sorgente aggiornato, preservando la configurazione di pubblicazione esistente.
+- [x] Confrontare provider per dominio .it con rinnovo annuo massimo di 8 €, verificando compatibilità DNS con Cloudflare Pages.
+- [x] Collegare officinedonnarumma.it a Cloudflare Pages, impostare il reindirizzamento canonico e verificare HTTPS e indicizzabilità.
+- [x] Confrontare costi fissi e commissioni delle soluzioni per accettare pagamenti online con sola carta.
+- [ ] Migliorare meta description e descrizione Open Graph del sito Panarius e mantenerle coerenti tra sorgente e pubblicazione Cloudflare.
+- [x] Aggiornare il testo introduttivo della collezione Panarius con la formulazione fornita e pubblicarlo su Cloudflare, senza modificare index.html.
+- [ ] Migliorare la descrizione Open Graph del sito Panarius e mantenerla coerente tra sorgente e pubblicazione Cloudflare.

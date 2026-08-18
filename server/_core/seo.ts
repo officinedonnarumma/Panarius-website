@@ -29,7 +29,7 @@ export function headForPath(pathname: string): SeoHead {
     return {
       title: "Cesto per paranco e montacarichi | Panarius",
       description:
-        "Panarius è il cesto metallico per paranco e montacarichi: legna, pellet, spesa, casse d’acqua, pacchi, materiali edili e agricoli.",
+        "Panarius è il cesto in acciaio per paranco e montacarichi, realizzato artigianalmente a Pompei da Officine Donnarumma. Per casa, lavoro e giardino.",
       canonicalPath: "/",
       ogImage: SHARE_IMAGE,
       ogImageAlt: "Cesta per montacarichi Panarius sospesa",
