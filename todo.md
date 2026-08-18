@@ -370,3 +370,4 @@
 - [x] Lasciare in rosso pompeiano solo le linee superiori della griglia Applicazioni e delle schede prodotto, con spessore leggermente maggiore, verificare e pubblicare.
 - [x] Ridurre la larghezza dei testi delle card Applicazioni per ottenere descrizioni ariose di circa tre righe, verificare e pubblicare.
 - [x] Uniformare il breakpoint intermedio della sezione Artigianato al comportamento della sezione Quattro varianti, eliminando il vuoto laterale e ordinando testo, spalletta e immagini in sequenza, verificare e pubblicare.
+- [x] Allineare in basso la spalletta “Un mestiere, una firma” nella colonna destra della sezione Artigianato su desktop, verificare e pubblicare.
