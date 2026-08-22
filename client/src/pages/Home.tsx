@@ -39,6 +39,7 @@ type Product = {
   base: string;
   price: string;
   image: string;
+  alt: string;
   feature: string;
 };
 
@@ -52,6 +53,7 @@ const products: Product[] = [
     base: "Ruote sterzanti",
     price: "€ 215,00",
     image: "/assets/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg",
+    alt: "Cesta - carrello in acciaio per montacarichi e paranco Panarius Pro Wheels con ruote, 100 L",
     feature: "TUTTO, OVUNQUE SERVA",
   },
   {
@@ -63,6 +65,7 @@ const products: Product[] = [
     base: "Piedini fissi",
     price: "€ 185,00",
     image: "/assets/cesto-panarius-pro-piedini-fissi_82e689da.jpg",
+    alt: "Cesto in acciaio per montacarichi e paranco Panarius Pro, 100 L",
     feature: "L'ESSENZIALE, IN GRANDE",
   },
   {
@@ -74,6 +77,7 @@ const products: Product[] = [
     base: "Ruote sterzanti",
     price: "€ 175,00",
     image: "/assets/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
+    alt: "Cesta - carrello in acciaio per montacarichi e paranco Panarius Lite Wheels con ruote, 80 L",
     feature: "PICCOLO INGOMBRO, MASSIMA LIBERTÀ",
   },
   {
@@ -85,6 +89,7 @@ const products: Product[] = [
     base: "Piedini fissi",
     price: "€ 145,00",
     image: "/assets/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
+    alt: "Cesta in acciaio per montacarichi e paranco da balcone Panarius Lite, 80 L",
     feature: "COMPATTO E FUNZIONALE",
   },
 ];
@@ -121,7 +126,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       <div className="product-photo">
         <img
           src={product.image}
-          alt={`${product.name}: cesto per montacarichi Panarius, ${product.capacity}`}
+          alt={product.alt}
           loading={index === 0 ? "eager" : "lazy"}
           fetchPriority={index === 0 ? "high" : "auto"}
         />
@@ -232,13 +237,13 @@ export default function Home() {
           <div className="use-cases__heading">
             <SectionHeading
               eyebrow="Applicazioni in ogni settore"
-              title="Il cesto per paranco e montacarichi, dove serve davvero."
+              title="La cesta per paranco e montacarichi, dove serve davvero."
               copy="Panarius completa il tuo paranco o montacarichi con uno spazio di carico sicuro e pratico. È pensato per chi deve sollevare e movimentare oggetti di uso quotidiano, materiali da lavoro e forniture in modo ordinato."
             />
           </div>
           <div className="use-cases__grid">
             <article><span>01</span><h3>Casa, giardino e biomasse per camini e stufe</h3><p>Per sollevare e trasportare legna da ardere, pellet di abete, di faggio o di legno vergine, sansa, nocciolino d’oliva, cippato di legno e bricchette. Ideale anche per gli oggetti necessari nelle attività domestiche e di giardinaggio.</p></article>
-            <article><span>02</span><h3>Spesa e casse d’acqua</h3><p>Il cesto ideale per sollevare la spesa, casse d’acqua e carichi pesanti fino ai piani superiori, riducendo gli spostamenti manuali.</p></article>
+            <article><span>02</span><h3>Spesa e casse d’acqua</h3><p>Il cesto ideale per sollevare la spesa, casse d’acqua e carichi pesanti fino ai piani superiori tramite montacarichi o paranco da balcone, riducendo gli spostamenti manuali.</p></article>
             <article><span>03</span><h3>Commercio e Hôtellerie</h3><p>Adatto al sollevamento di pacchi, scatoloni, forniture, biancheria, prodotti per la pulizia, attrezzature e materiali di consumo per negozi, ristoranti, agriturismi e strutture ricettive.</p></article>
             <article><span>04</span><h3>Edilizia, Industria e Agricoltura</h3><p>Per il trasporto in sicurezza di sacchi di cemento, malta e laterizi nei cantieri edili, componenti e pezzi di ricambio in ambito industriale, mangimi, sementi e concimi per le aziende agricole.</p></article>
           </div>
