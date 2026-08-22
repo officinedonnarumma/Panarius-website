@@ -9,8 +9,20 @@ describe("SEO Panarius", () => {
     expect(head.title).toContain("paranco e montacarichi");
   });
 
-  it("usa le quattro denominazioni prodotto aggiornate nel JSON-LD", () => {
-    const structuredData = JSON.stringify(buildStructuredData("https://example.com"));
-    for (const product of catalogProducts) expect(structuredData).toContain(product.name);
+  it("espone quattro Product completi di brand, SKU, prezzo e disponibilità", () => {
+    const structuredData = buildStructuredData("https://example.com");
+    const products = structuredData["@graph"].filter((node) => node["@type"] === "Product");
+
+    expect(structuredData["@graph"].some((node) => node["@type"] === "ItemList")).toBe(false);
+    expect(products).toHaveLength(4);
+    expect(products.map((product) => product.sku)).toEqual(catalogProducts.map((product) => product.code));
+    for (const product of products) {
+      expect(product.brand).toEqual({ "@type": "Brand", name: "Panarius" });
+      expect(product.offers).toMatchObject({
+        priceCurrency: "EUR",
+        availability: "https://schema.org/InStock",
+        url: "https://example.com/#panarius",
+      });
+    }
   });
 });

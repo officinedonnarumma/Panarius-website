@@ -21,7 +21,92 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script type="application/ld+json">
-      {"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Officine Donnarumma","url":"https://officinedonnarumma.it","email":"officinedonnarumma@gmail.com"},{"@type":"WebSite","name":"Panarius - Cesta per montacarichi | Officine Donnarumma","url":"https://officinedonnarumma.it","inLanguage":"it-IT"},{"@type":"ItemList","name":"Cesti per montacarichi Panarius","itemListElement":[{"@type":"ListItem","position":1,"name":"Panarius Pro Wheels"},{"@type":"ListItem","position":2,"name":"Panarius Pro"},{"@type":"ListItem","position":3,"name":"Panarius Lite Wheels"},{"@type":"ListItem","position":4,"name":"Panarius Lite"}]}]}
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://officinedonnarumma.it/#organization",
+            "name": "Officine Donnarumma",
+            "url": "https://officinedonnarumma.it/",
+            "email": "officinedonnarumma@gmail.com"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://officinedonnarumma.it/#website",
+            "url": "https://officinedonnarumma.it/",
+            "name": "Officine Donnarumma | Panarius",
+            "inLanguage": "it-IT",
+            "publisher": {
+              "@id": "https://officinedonnarumma.it/#organization"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Panarius Pro Wheels",
+            "description": "Cesta carrello in acciaio per montacarichi e paranco, capacità 100 L, con ruote sterzanti.",
+            "brand": { "@type": "Brand", "name": "Panarius" },
+            "manufacturer": { "@id": "https://officinedonnarumma.it/#organization" },
+            "sku": "PNR-100-W",
+            "image": "https://officinedonnarumma.it/assets/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "215.00",
+              "availability": "https://schema.org/InStock",
+              "url": "https://officinedonnarumma.it/#panarius"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Panarius Pro",
+            "description": "Cesto in acciaio per montacarichi e paranco, capacità 100 L, con piedini fissi.",
+            "brand": { "@type": "Brand", "name": "Panarius" },
+            "manufacturer": { "@id": "https://officinedonnarumma.it/#organization" },
+            "sku": "PNR-100",
+            "image": "https://officinedonnarumma.it/assets/cesto-panarius-pro-piedini-fissi_82e689da.jpg",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "185.00",
+              "availability": "https://schema.org/InStock",
+              "url": "https://officinedonnarumma.it/#panarius"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Panarius Lite Wheels",
+            "description": "Cesta carrello in acciaio per montacarichi e paranco, capacità 80 L, con ruote sterzanti.",
+            "brand": { "@type": "Brand", "name": "Panarius" },
+            "manufacturer": { "@id": "https://officinedonnarumma.it/#organization" },
+            "sku": "PNR-80-W",
+            "image": "https://officinedonnarumma.it/assets/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "175.00",
+              "availability": "https://schema.org/InStock",
+              "url": "https://officinedonnarumma.it/#panarius"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Panarius Lite",
+            "description": "Cesta in acciaio per montacarichi e paranco da balcone, capacità 80 L, con piedini fissi.",
+            "brand": { "@type": "Brand", "name": "Panarius" },
+            "manufacturer": { "@id": "https://officinedonnarumma.it/#organization" },
+            "sku": "PNR-80",
+            "image": "https://officinedonnarumma.it/assets/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "145.00",
+              "availability": "https://schema.org/InStock",
+              "url": "https://officinedonnarumma.it/#panarius"
+            }
+          }
+        ]
+      }
     </script>
   </body>
 </html>

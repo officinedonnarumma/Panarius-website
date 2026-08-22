@@ -10,13 +10,37 @@ export type SeoHead = {
 
 export const SITE_NAME = "Panarius | Officine Donnarumma";
 export const DEFAULT_CANONICAL_ORIGIN = "https://officinedonnarumma.it";
-export const SHARE_IMAGE = "/manus-storage/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
+export const SHARE_IMAGE = "/assets/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
 
 export const catalogProducts = [
-  { name: "Panarius Pro Wheels", code: "PNR-100-W", price: "215.00", image: "/manus-storage/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg" },
-  { name: "Panarius Pro", code: "PNR-100", price: "185.00", image: "/manus-storage/cesto-panarius-pro-piedini-fissi_82e689da.jpg" },
-  { name: "Panarius Lite Wheels", code: "PNR-80-W", price: "175.00", image: "/manus-storage/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg" },
-  { name: "Panarius Lite", code: "PNR-80", price: "145.00", image: "/manus-storage/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg" },
+  {
+    name: "Panarius Pro Wheels",
+    code: "PNR-100-W",
+    price: "215.00",
+    image: "/assets/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg",
+    description: "Cesta carrello in acciaio per montacarichi e paranco, capacità 100 L, con ruote sterzanti.",
+  },
+  {
+    name: "Panarius Pro",
+    code: "PNR-100",
+    price: "185.00",
+    image: "/assets/cesto-panarius-pro-piedini-fissi_82e689da.jpg",
+    description: "Cesto in acciaio per montacarichi e paranco, capacità 100 L, con piedini fissi.",
+  },
+  {
+    name: "Panarius Lite Wheels",
+    code: "PNR-80-W",
+    price: "175.00",
+    image: "/assets/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
+    description: "Cesta carrello in acciaio per montacarichi e paranco, capacità 80 L, con ruote sterzanti.",
+  },
+  {
+    name: "Panarius Lite",
+    code: "PNR-80",
+    price: "145.00",
+    image: "/assets/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
+    description: "Cesta in acciaio per montacarichi e paranco da balcone, capacità 80 L, con piedini fissi.",
+  },
 ] as const;
 
 export function canonicalOrigin() {
@@ -43,47 +67,45 @@ export function headForPath(pathname: string): SeoHead {
 }
 
 export function buildStructuredData(origin: string) {
-  const productItems = catalogProducts.map((product, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    item: {
-      "@type": "Product",
-      name: product.name,
-      sku: product.code,
-      description: "Cesto metallico Panarius per paranchi e montacarichi, adatto a carichi domestici, commerciali, edili e agricoli.",
-      brand: { "@type": "Brand", name: "Officine Donnarumma" },
-      image: `${origin}${product.image}`,
-      offers: {
-        "@type": "Offer",
-        price: product.price,
-        priceCurrency: "EUR",
-        url: `${origin}/#panarius`,
-      },
-    },
-  }));
+  const organizationId = `${origin}/#organization`;
+  const websiteId = `${origin}/#website`;
 
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
-      "@type": "Organization",
+        "@type": "Organization",
+        "@id": organizationId,
         name: "Officine Donnarumma",
         url: origin,
         email: "officinedonnarumma@gmail.com",
-        logo: `${origin}/manus-storage/logo-officine-donnarumma-pompei_354bdd6b.png`,
+        logo: `${origin}/assets/logo-officine-donnarumma-pompei_354bdd6b.png`,
       },
       {
         "@type": "WebSite",
+        "@id": websiteId,
         name: SITE_NAME,
         url: origin,
         inLanguage: "it-IT",
+        publisher: { "@id": organizationId },
         description: "Cesti metallici Panarius per paranchi e montacarichi, per uso domestico, commerciale, edilizio, agricolo e ricettivo.",
       },
-      {
-        "@type": "ItemList",
-        name: "Cesti per montacarichi Panarius",
-        itemListElement: productItems,
-      },
+      ...catalogProducts.map((product) => ({
+        "@type": "Product",
+        name: product.name,
+        description: product.description,
+        brand: { "@type": "Brand", name: "Panarius" },
+        manufacturer: { "@id": organizationId },
+        sku: product.code,
+        image: `${origin}${product.image}`,
+        offers: {
+          "@type": "Offer",
+          price: product.price,
+          priceCurrency: "EUR",
+          availability: "https://schema.org/InStock",
+          url: `${origin}/#panarius`,
+        },
+      })),
     ],
   };
 }
