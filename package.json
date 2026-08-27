@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
     "build": "NODE_ENV=production vite build && NODE_ENV=production vite build --config vite.config.ssr.ts && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
-    "build:pages": "vite build",
+    "build:pages": "NODE_ENV=production vite build && NODE_ENV=production vite build --config vite.config.ssr.ts && node scripts/prerender.mjs",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc --noEmit",
     "format": "prettier --write .",
-    "test": "vitest run",
+    "test": "pnpm run build:pages && vitest run",
     "db:push": "drizzle-kit generate && drizzle-kit migrate"
   },
   "dependencies": {
