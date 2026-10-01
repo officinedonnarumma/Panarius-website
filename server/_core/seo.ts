@@ -15,8 +15,8 @@ export const SHARE_IMAGE = "/manus-storage/cesto-panarius-per-montacarichi-sospe
 export const catalogProducts = [
   { name: "Panarius Pro Wheels", code: "PNR-100-W", price: "215.00", image: "/manus-storage/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg" },
   { name: "Panarius Pro", code: "PNR-100", price: "185.00", image: "/manus-storage/cesto-panarius-pro-piedini-fissi_82e689da.jpg" },
-  { name: "Panarius Lite Wheels", code: "PNR-80-W", price: "175.00", image: "/manus-storage/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg" },
-  { name: "Panarius Lite", code: "PNR-80", price: "145.00", image: "/manus-storage/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg" },
+  { name: "Panarius Lite Wheels", code: "PNR-80-W", price: "180.00", image: "/manus-storage/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg" },
+  { name: "Panarius Lite", code: "PNR-80", price: "150.00", image: "/manus-storage/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg" },
 ] as const;
 
 export function canonicalOrigin() {
@@ -29,7 +29,7 @@ export function headForPath(pathname: string): SeoHead {
     return {
       title: "Cesto per paranco e montacarichi | Panarius",
       description:
-        "Panarius è il cesto in acciaio per paranco e montacarichi, realizzato artigianalmente a Pompei da Officine Donnarumma. Per casa, lavoro e giardino.",
+        "Panarius è il cesto in acciaio per paranchi e montacarichi, realizzato artigianalmente a Pompei da Officine Donnarumma per legna, pellet, spesa e materiali.",
       canonicalPath: "/",
       ogImage: SHARE_IMAGE,
       ogImageAlt: "Cesta per montacarichi Panarius sospesa",

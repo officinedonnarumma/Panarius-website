@@ -389,6 +389,6 @@
 - [x] Confrontare provider per dominio .it con rinnovo annuo massimo di 8 €, verificando compatibilità DNS con Cloudflare Pages.
 - [x] Collegare officinedonnarumma.it a Cloudflare Pages, impostare il reindirizzamento canonico e verificare HTTPS e indicizzabilità.
 - [x] Confrontare costi fissi e commissioni delle soluzioni per accettare pagamenti online con sola carta.
-- [ ] Migliorare meta description e descrizione Open Graph del sito Panarius e mantenerle coerenti tra sorgente e pubblicazione Cloudflare.
+- [x] Migliorare meta description e descrizione Open Graph del sito Panarius e mantenerle coerenti tra sorgente e pubblicazione Cloudflare.
 - [x] Aggiornare il testo introduttivo della collezione Panarius con la formulazione fornita e pubblicarlo su Cloudflare, senza modificare index.html.
-- [ ] Migliorare la descrizione Open Graph del sito Panarius e mantenerla coerente tra sorgente e pubblicazione Cloudflare.
+- [x] Migliorare la descrizione Open Graph del sito Panarius e mantenerla coerente tra sorgente e pubblicazione Cloudflare.
