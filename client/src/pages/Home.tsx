@@ -72,7 +72,7 @@ const products: Product[] = [
     internal: "60 × 40 × 34 cm",
     external: "60 × 40 × 58 cm",
     base: "Ruote sterzanti",
-    price: "€ 175,00",
+    price: "€ 180,00",
     image: "/manus-storage/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
     feature: "PICCOLO INGOMBRO, MASSIMA LIBERTÀ",
   },
@@ -83,7 +83,7 @@ const products: Product[] = [
     internal: "60 × 40 × 34 cm",
     external: "60 × 40 × 50 cm",
     base: "Piedini fissi",
-    price: "€ 145,00",
+    price: "€ 150,00",
     image: "/manus-storage/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
     feature: "COMPATTO E FUNZIONALE",
   },
@@ -225,7 +225,7 @@ export default function Home() {
           <div className="product-grid">
             {products.map((product, index) => <ProductCard key={product.code} product={product} index={index} />)}
           </div>
-          <p className="catalogue-note"><span>*</span> Prezzi e configurazioni saranno confermati nel canale di acquisto selezionato.</p>
+          <p className="catalogue-note"><span>*</span> Prezzi e configurazioni saranno confermati nel canale di acquisto selezionato. Servizio di spedizione con corriere: <strong>€ 25,00</strong>.</p>
         </section>
 
         <section id="utilizzi" className="use-cases section-space" aria-labelledby="utilizzi-title">
