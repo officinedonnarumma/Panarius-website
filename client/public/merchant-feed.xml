@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Panarius | Officine Donnarumma</title>
+    <link>https://officinedonnarumma.it/</link>
+    <description>Cesti in acciaio Panarius per montacarichi e paranco</description>
+
+    <item>
+      <g:id>PNR-100-W</g:id>
+      <g:title>Cesta per montacarichi e paranco Panarius Pro Wheels 100 L</g:title>
+      <g:description>Cesta-carrello in acciaio da 100 L per montacarichi e paranco, con ruote sterzanti. Ideale per trasportare legna, pellet, spesa, casse d'acqua, pacchi, attrezzi e altri carichi.</g:description>
+      <g:link>https://officinedonnarumma.it/#panarius</g:link>
+      <g:image_link>https://officinedonnarumma.it/assets/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>215.00 EUR</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Panarius</g:brand>
+      <g:mpn>PNR-100-W</g:mpn>
+    </item>
+
+    <item>
+      <g:id>PNR-100</g:id>
+      <g:title>Cesto per montacarichi e paranco Panarius Pro 100 L</g:title>
+      <g:description>Cesto in acciaio da 100 L per montacarichi e paranco, con piedini fissi. Adatto al trasporto di legna, pellet, spesa, casse d'acqua, pacchi, attrezzi e altri carichi.</g:description>
+      <g:link>https://officinedonnarumma.it/#panarius</g:link>
+      <g:image_link>https://officinedonnarumma.it/assets/cesto-panarius-pro-piedini-fissi_82e689da.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>185.00 EUR</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Panarius</g:brand>
+      <g:mpn>PNR-100</g:mpn>
+    </item>
+
+    <item>
+      <g:id>PNR-80-W</g:id>
+      <g:title>Cesta per montacarichi e paranco Panarius Lite Wheels 80 L</g:title>
+      <g:description>Cesta-carrello in acciaio da 80 L per montacarichi e paranco, con ruote sterzanti. Compatta e facilmente movimentabile a terra.</g:description>
+      <g:link>https://officinedonnarumma.it/#panarius</g:link>
+      <g:image_link>https://officinedonnarumma.it/assets/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>175.00 EUR</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Panarius</g:brand>
+      <g:mpn>PNR-80-W</g:mpn>
+    </item>
+
+    <item>
+      <g:id>PNR-80</g:id>
+      <g:title>Cesta per montacarichi e paranco da balcone Panarius Lite 80 L</g:title>
+      <g:description>Cesta in acciaio da 80 L per montacarichi e paranco da balcone, con piedini fissi. Soluzione compatta per il sollevamento e il trasporto di carichi.</g:description>
+      <g:link>https://officinedonnarumma.it/#panarius</g:link>
+      <g:image_link>https://officinedonnarumma.it/assets/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>145.00 EUR</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Panarius</g:brand>
+      <g:mpn>PNR-80</g:mpn>
+    </item>
+  </channel>
+</rss>
