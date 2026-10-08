@@ -210,7 +210,7 @@ export default function Home() {
         </section>
 
         <section className="intro-strip" aria-label="Introduzione Panarius">
-          <p>Robustezza concreta che ti accompagna ad ogni carico.</p>
+          <p>Robustezza premium che ti accompagna ad ogni carico.</p>
         </section>
 
         <section id="panarius" className="catalogue section-space">
