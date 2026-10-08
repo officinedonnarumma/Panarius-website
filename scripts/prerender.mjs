@@ -5,14 +5,13 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicIndexPath = path.join(projectRoot, "dist", "public", "index.html");
 const serverEntryPath = path.join(projectRoot, "dist", "server-ssr", "entry-server.js");
-const rootPlaceholder = '<div id="root"></div>';
-
 const documentHtml = await readFile(publicIndexPath, "utf8");
-const placeholderCount = documentHtml.split(rootPlaceholder).length - 1;
+const rootPlaceholderPattern = /<div id="root">(?:<!--app-html-->)?<\/div>/g;
+const placeholders = documentHtml.match(rootPlaceholderPattern) ?? [];
 
-if (placeholderCount !== 1) {
+if (placeholders.length !== 1) {
   throw new Error(
-    `Prerender non eseguito: atteso un solo ${rootPlaceholder} in ${publicIndexPath}, trovati ${placeholderCount}.`,
+    `Prerender non eseguito: atteso un solo placeholder di #root in ${publicIndexPath}, trovati ${placeholders.length}.`,
   );
 }
 
@@ -23,9 +22,6 @@ if (!result || typeof result.html !== "string" || result.html.trim().length === 
   throw new Error("Prerender non eseguito: render('/') non ha restituito markup HTML.");
 }
 
-const prerenderedDocument = documentHtml.replace(
-  rootPlaceholder,
-  () => `<div id="root">${result.html}</div>`,
-);
+const prerenderedDocument = documentHtml.replace(rootPlaceholderPattern, `<div id="root">${result.html}</div>`);
 
 await writeFile(publicIndexPath, prerenderedDocument, "utf8");
