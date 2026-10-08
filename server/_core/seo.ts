@@ -10,13 +10,13 @@ export type SeoHead = {
 
 export const SITE_NAME = "Panarius | Officine Donnarumma";
 export const DEFAULT_CANONICAL_ORIGIN = "https://officinedonnarumma.it";
-export const SHARE_IMAGE = "/manus-storage/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
+export const SHARE_IMAGE = "/assets/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
 
 export const catalogProducts = [
-  { name: "Panarius Pro Wheels", code: "PNR-100-W", price: "215.00", image: "/manus-storage/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg" },
-  { name: "Panarius Pro", code: "PNR-100", price: "185.00", image: "/manus-storage/cesto-panarius-pro-piedini-fissi_82e689da.jpg" },
-  { name: "Panarius Lite Wheels", code: "PNR-80-W", price: "180.00", image: "/manus-storage/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg" },
-  { name: "Panarius Lite", code: "PNR-80", price: "150.00", image: "/manus-storage/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg" },
+  { name: "Panarius Pro Wheels", code: "PNR-100-W", price: "215.00", image: "/assets/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg" },
+  { name: "Panarius Pro", code: "PNR-100", price: "185.00", image: "/assets/cesto-panarius-pro-piedini-fissi_82e689da.jpg" },
+  { name: "Panarius Lite Wheels", code: "PNR-80-W", price: "180.00", image: "/assets/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg" },
+  { name: "Panarius Lite", code: "PNR-80", price: "150.00", image: "/assets/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg" },
 ] as const;
 
 export function canonicalOrigin() {
@@ -70,7 +70,7 @@ export function buildStructuredData(origin: string) {
         name: "Officine Donnarumma",
         url: origin,
         email: "officinedonnarumma@gmail.com",
-        logo: `${origin}/manus-storage/logo-officine-donnarumma-pompei_354bdd6b.png`,
+        logo: `${origin}/assets/logo-officine-donnarumma-pompei_354bdd6b.png`,
       },
       {
         "@type": "WebSite",

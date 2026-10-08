@@ -20,15 +20,15 @@ import {
 import { useEffect, useState } from "react";
 
 const previewAssets: Record<string, string> = {
-  "tavola-tecnica-cesto-panarius-montacarichi.png": "/manus-storage/tavola-tecnica-cesto-panarius-montacarichi_4dab7703.png",
-  "lavorazione-artigianale-cesto-panarius-pompei.jpg": "/manus-storage/lavorazione-artigianale-cesto-panarius-pompei_ed5234d2.jpg",
-  "lamiera-microforata-zincata-panarius.jpg": "/manus-storage/lamiera-microforata-zincata-panarius_d81bf494.jpg",
+  "tavola-tecnica-cesto-panarius-montacarichi.png": "/assets/tavola-tecnica-cesto-panarius-montacarichi_4dab7703.png",
+  "lavorazione-artigianale-cesto-panarius-pompei.jpg": "/assets/lavorazione-artigianale-cesto-panarius-pompei_ed5234d2.jpg",
+  "lamiera-microforata-zincata-panarius.jpg": "/assets/lamiera-microforata-zincata-panarius_d81bf494.jpg",
 };
 
 const asset = (filename: keyof typeof previewAssets) => previewAssets[filename];
 
-const heroImage = "/manus-storage/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
-const brandLogo = "/manus-storage/logo-officine-donnarumma-pompei_354bdd6b.png";
+const heroImage = "/assets/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
+const brandLogo = "/assets/logo-officine-donnarumma-pompei_354bdd6b.png";
 
 type Product = {
   code: string;
@@ -51,7 +51,7 @@ const products: Product[] = [
     external: "60 × 40 × 68 cm",
     base: "Ruote sterzanti",
     price: "€ 215,00",
-    image: "/manus-storage/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg",
+    image: "/assets/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg",
     feature: "TUTTO, OVUNQUE SERVA",
   },
   {
@@ -62,7 +62,7 @@ const products: Product[] = [
     external: "60 × 40 × 60 cm",
     base: "Piedini fissi",
     price: "€ 185,00",
-    image: "/manus-storage/cesto-panarius-pro-piedini-fissi_82e689da.jpg",
+    image: "/assets/cesto-panarius-pro-piedini-fissi_82e689da.jpg",
     feature: "L'ESSENZIALE, IN GRANDE",
   },
   {
@@ -73,7 +73,7 @@ const products: Product[] = [
     external: "60 × 40 × 58 cm",
     base: "Ruote sterzanti",
     price: "€ 180,00",
-    image: "/manus-storage/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
+    image: "/assets/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
     feature: "PICCOLO INGOMBRO, MASSIMA LIBERTÀ",
   },
   {
@@ -84,7 +84,7 @@ const products: Product[] = [
     external: "60 × 40 × 50 cm",
     base: "Piedini fissi",
     price: "€ 150,00",
-    image: "/manus-storage/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
+    image: "/assets/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
     feature: "COMPATTO E FUNZIONALE",
   },
 ];
@@ -281,7 +281,7 @@ export default function Home() {
         </section>
 
         <section id="acquista" className="buy-section">
-          <div className="buy-section__backdrop" style={{ backgroundImage: `linear-gradient(90deg,#122f45,rgba(18,47,69,.72) 48%,rgba(18,47,69,.92)),url("/manus-storage/bottega-artigiana-pompei-acquisto-panarius_900aacab.jpg")` }} />
+          <div className="buy-section__backdrop" style={{ backgroundImage: `linear-gradient(90deg,#122f45,rgba(18,47,69,.72) 48%,rgba(18,47,69,.92)),url("/assets/bottega-artigiana-pompei-acquisto-panarius_900aacab.jpg")` }} />
           <div className="buy-section__content">
             <SectionHeading
               eyebrow="Acquista come preferisci"
