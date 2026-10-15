@@ -11,11 +11,14 @@ import {
   Check,
   ChevronRight,
   ExternalLink,
+  Facebook,
+  Instagram,
   Menu,
   MousePointer2,
   MoveUpRight,
   ShoppingBag,
   X,
+  Youtube,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -95,6 +98,7 @@ const purchaseLinks = {
 };
 
 const directPurchaseEmail = "officinedonnarumma@gmail.com";
+const siteYear = "2026";
 
 function MarketplaceButton({ channel, href, productCode }: { channel: "Amazon" | "eBay"; href: string; productCode?: string }) {
   const analyticsChannel: PurchaseChannel = channel === "Amazon" ? "amazon" : "ebay";
@@ -305,8 +309,15 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="site-footer__brand"><img className="site-footer__logo" src={brandLogo} alt="Officine Donnarumma, Pompei" /></div>
-        <p>Panarius · Cesti per montacarichi</p>
-        <p>© {new Date().getFullYear()} Officine Donnarumma. Tutti i diritti riservati.</p>
+        <nav className="site-footer__social" aria-label="Social Officine Donnarumma">
+          <a href="https://www.youtube.com/@OfficineDonnarumma" target="_blank" rel="noreferrer" aria-label="Officine Donnarumma su YouTube"><Youtube size={18} strokeWidth={1.8} /></a>
+          <a href="https://www.facebook.com/OfficineDonnarumma" target="_blank" rel="noreferrer" aria-label="Officine Donnarumma su Facebook"><Facebook size={18} strokeWidth={1.8} /></a>
+          <a href="https://www.instagram.com/officinedonnarumma/" target="_blank" rel="noreferrer" aria-label="Officine Donnarumma su Instagram"><Instagram size={18} strokeWidth={1.8} /></a>
+        </nav>
+        <div className="site-footer__meta">
+          <p>Panarius · Cesti per montacarichi</p>
+          <p>© {siteYear} Officine Donnarumma. Tutti i diritti riservati.</p>
+        </div>
       </footer>
     </div>
   );
