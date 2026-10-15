@@ -20,14 +20,14 @@ import {
 import { useEffect, useState } from "react";
 
 const previewAssets: Record<string, string> = {
-  "tavola-tecnica-cesto-panarius-montacarichi.png": "/assets/tavola-tecnica-cesto-panarius-montacarichi_4dab7703.png",
-  "lavorazione-artigianale-cesto-panarius-pompei.jpg": "/assets/lavorazione-artigianale-cesto-panarius-pompei_ed5234d2.jpg",
-  "lamiera-microforata-zincata-panarius.jpg": "/assets/lamiera-microforata-zincata-panarius_d81bf494.jpg",
+  "tavola-tecnica-cesto-panarius-montacarichi.png": "/assets/tavola-tecnica-cesto-panarius-montacarichi_4dab7703-ottimizzata.webp",
+  "lavorazione-artigianale-cesto-panarius-pompei.jpg": "/assets/lavorazione-artigianale-cesto-panarius-pompei_ed5234d2-ottimizzata.webp",
+  "lamiera-microforata-zincata-panarius.jpg": "/assets/lamiera-microforata-zincata-panarius_d81bf494-ottimizzata.webp",
 };
 
 const asset = (filename: keyof typeof previewAssets) => previewAssets[filename];
 
-const heroImage = "/assets/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
+const heroImage = "/assets/cesto-panarius-per-montacarichi-sospeso_3c3f94f9-ottimizzata.webp";
 const brandLogo = "/assets/logo-officine-donnarumma-pompei_354bdd6b.png";
 
 type Product = {
@@ -246,7 +246,7 @@ export default function Home() {
 
         <section id="progetto" className="project-section">
           <div className="project-image">
-            <img src={asset("tavola-tecnica-cesto-panarius-montacarichi.png")} alt="Tavola tecnica del cesto Panarius per montacarichi" />
+            <img src={asset("tavola-tecnica-cesto-panarius-montacarichi.png")} alt="Tavola tecnica del cesto Panarius per montacarichi" loading="lazy" decoding="async" />
             <span className="project-image__label">Disegno costruttivo · Panarius</span>
           </div>
           <div className="project-content">
@@ -274,14 +274,14 @@ export default function Home() {
             <aside className="material-side-note"><strong>Un mestiere, una firma</strong><p>Dall’idea al prodotto finito, ogni Panarius prende forma da un sapere concreto, in cui esperienza e manualità trasformano il progetto in un pezzo unico, realizzato su misura per te.</p></aside>
           </div>
           <div className="material-images">
-            <figure className="material-images__large"><img src={asset("lavorazione-artigianale-cesto-panarius-pompei.jpg")} alt="Lavorazione artigianale del cesto Panarius nell’officina di Pompei" /><figcaption>La lavorazione</figcaption></figure>
-            <figure className="material-images__small"><img src={asset("lamiera-microforata-zincata-panarius.jpg")} alt="Lamiera microforata zincata impiegata nel cesto Panarius" /><figcaption>La materia</figcaption></figure>
+            <figure className="material-images__large"><img src={asset("lavorazione-artigianale-cesto-panarius-pompei.jpg")} alt="Lavorazione artigianale del cesto Panarius nell’officina di Pompei" loading="lazy" decoding="async" /><figcaption>La lavorazione</figcaption></figure>
+            <figure className="material-images__small"><img src={asset("lamiera-microforata-zincata-panarius.jpg")} alt="Lamiera microforata zincata impiegata nel cesto Panarius" loading="lazy" decoding="async" /><figcaption>La materia</figcaption></figure>
             <div className="material-statement"><span>Dal metallo<br />alla funzione.</span><ArrowDownRight size={28} /></div>
           </div>
         </section>
 
         <section id="acquista" className="buy-section">
-          <div className="buy-section__backdrop" style={{ backgroundImage: `linear-gradient(90deg,#122f45,rgba(18,47,69,.72) 48%,rgba(18,47,69,.92)),url("/assets/bottega-artigiana-pompei-acquisto-panarius_900aacab.jpg")` }} />
+          <div className="buy-section__backdrop" style={{ backgroundImage: `linear-gradient(90deg,#122f45,rgba(18,47,69,.72) 48%,rgba(18,47,69,.92)),url("/assets/bottega-artigiana-pompei-acquisto-panarius_900aacab-ottimizzata.webp")` }} />
           <div className="buy-section__content">
             <SectionHeading
               eyebrow="Acquista come preferisci"
