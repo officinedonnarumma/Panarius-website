@@ -1,26 +1,112 @@
 <!doctype html>
 <html lang="it">
-
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <meta name="theme-color" content="#122f45" />
-    <link rel="icon" type="image/png" href="/assets/officine-d-symbol_2f7ead5c.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="description" content="Panarius è la cesta in acciaio per paranco e montacarichi da balcone, realizzata artigianalmente a Pompei da Officine Donnarumma per il trasporto di legna, pellet, spesa, casse d'acqua, pacchi, attrezzi e altri carichi." />
+    <meta property="og:title" content="Panarius | Cesta per paranco e montacarichi" />
+    <meta property="og:description" content="Panarius è la cesta in acciaio per paranco e montacarichi, prodotta da Officine Donnarumma." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:url" content="https://officinedonnarumma.it/" />
+    <meta property="og:image" content="https://officinedonnarumma.it/assets/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png" />
+    <link rel="canonical" href="https://officinedonnarumma.it/" />
+    <link rel="icon" type="image/png" href="/assets/officine-d-symbol.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <!--app-head-->
+    <title>Panarius | Cesta per paranco e montacarichi</title>
   </head>
-
   <body>
-    <div id="root"><!--app-html--></div>
+    <div id="root"></div>
     <script type="module" src="/src/entry-client.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://officinedonnarumma.it/#organization",
+            "name": "Officine Donnarumma",
+            "url": "https://officinedonnarumma.it/",
+            "email": "officinedonnarumma@gmail.com"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://officinedonnarumma.it/#website",
+            "url": "https://officinedonnarumma.it/",
+            "name": "Panarius - Cesta per montacarichi | Officine Donnarumma",
+            "inLanguage": "it-IT",
+            "publisher": {
+              "@id": "https://officinedonnarumma.it/#organization"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Panarius Pro Wheels",
+            "description": "Cesta carrello in acciaio per montacarichi e paranco, capacità 100 L, con ruote sterzanti.",
+            "brand": { "@type": "Brand", "name": "Panarius" },
+            "manufacturer": { "@id": "https://officinedonnarumma.it/#organization" },
+            "sku": "PNR-100-W",
+            "image": "https://officinedonnarumma.it/assets/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "215.00",
+              "availability": "https://schema.org/InStock",
+              "url": "https://officinedonnarumma.it/#panarius"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Panarius Pro",
+            "description": "Cesto in acciaio per montacarichi e paranco, capacità 100 L, con piedini fissi.",
+            "brand": { "@type": "Brand", "name": "Panarius" },
+            "manufacturer": { "@id": "https://officinedonnarumma.it/#organization" },
+            "sku": "PNR-100",
+            "image": "https://officinedonnarumma.it/assets/cesto-panarius-pro-piedini-fissi_82e689da.jpg",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "185.00",
+              "availability": "https://schema.org/InStock",
+              "url": "https://officinedonnarumma.it/#panarius"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Panarius Lite Wheels",
+            "description": "Cesta carrello in acciaio per montacarichi e paranco, capacità 80 L, con ruote sterzanti.",
+            "brand": { "@type": "Brand", "name": "Panarius" },
+            "manufacturer": { "@id": "https://officinedonnarumma.it/#organization" },
+            "sku": "PNR-80-W",
+            "image": "https://officinedonnarumma.it/assets/cesto-panarius-lite-wheels-ruote-sterzanti_05d1b1a8.jpg",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "180.00",
+              "availability": "https://schema.org/InStock",
+              "url": "https://officinedonnarumma.it/#panarius"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Panarius Lite",
+            "description": "Cesta in acciaio per montacarichi e paranco da balcone, capacità 80 L, con piedini fissi.",
+            "brand": { "@type": "Brand", "name": "Panarius" },
+            "manufacturer": { "@id": "https://officinedonnarumma.it/#organization" },
+            "sku": "PNR-80",
+            "image": "https://officinedonnarumma.it/assets/cesto-panarius-lite-piedini-fissi_ab52b6fa.jpg",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "150.00",
+              "availability": "https://schema.org/InStock",
+              "url": "https://officinedonnarumma.it/#panarius"
+            }
+          }
+        ]
+      }
+    </script>
   </body>
-
 </html>
