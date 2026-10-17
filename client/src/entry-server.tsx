@@ -1,4 +1,5 @@
 import { renderToString } from "react-dom/server";
+import React from "react";
 import { Router } from "wouter";
 import App from "./App";
 import { headForPath, type SeoHead } from "../../server/_core/seo";
