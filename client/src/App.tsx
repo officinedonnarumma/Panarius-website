@@ -1,4 +1,3 @@
-import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
@@ -19,7 +18,6 @@ function App() {
         // switchable
       >
         <TooltipProvider>
-          <Toaster />
           <Switch>
             <Route path={"/"} component={Home} />
             <Route path={"/404"} component={NotFound} />
