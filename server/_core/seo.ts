@@ -10,7 +10,7 @@ export type SeoHead = {
 
 export const SITE_NAME = "Panarius | Officine Donnarumma";
 export const DEFAULT_CANONICAL_ORIGIN = "https://officinedonnarumma.it";
-export const SHARE_IMAGE = "/assets/cesto-panarius-per-montacarichi-sospeso_3c3f94f9.png";
+export const SHARE_IMAGE = "/assets/cesto-panarius-per-montacarichi-sospeso_3c3f94f9-ottimizzata.webp";
 
 export const catalogProducts = [
   { name: "Panarius Pro Wheels", code: "PNR-100-W", price: "215.00", image: "/assets/cesto-panarius-pro-wheels-ruote-sterzanti_03b659e1.jpg" },
