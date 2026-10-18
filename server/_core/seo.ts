@@ -27,7 +27,7 @@ export function headForPath(pathname: string): SeoHead {
   const cleanPath = pathname.replace(/\/+$/, "") || "/";
   if (cleanPath === "/") {
     return {
-      title: "Cesto per paranco e montacarichi | Panarius",
+      title: "Panarius | Cesto per paranco e montacarichi | Officine Donnarumma",
       description:
         "Panarius è il cesto in acciaio per paranchi e montacarichi, realizzato artigianalmente a Pompei da Officine Donnarumma per legna, pellet, spesa e materiali.",
       canonicalPath: "/",
