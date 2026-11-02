@@ -9,6 +9,7 @@ import {
   ArrowDownRight,
   ArrowRight,
   Check,
+  ChevronLeft,
   ChevronRight,
   ExternalLink,
   Facebook,
@@ -20,7 +21,7 @@ import {
   X,
   Youtube,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type TouchEvent } from "react";
 
 const previewAssets: Record<string, string> = {
   "tavola-tecnica-cesto-panarius-montacarichi.png": "/assets/tavola-tecnica-cesto-panarius-montacarichi_4dab7703-ottimizzata.webp",
@@ -100,6 +101,33 @@ const purchaseLinks = {
 const directPurchaseEmail = "officinedonnarumma@gmail.com";
 const siteYear = "2026";
 
+type Review = {
+  product: string;
+  client: string;
+  text: string;
+};
+
+// Ordinate prima per utilità all'acquisto: uso reale, robustezza, montaggio e consegna.
+const reviews: Review[] = [
+  { product: "Panarius Pro Wheels", client: "studio_dorsi", text: "La cesta molto robusta ha rispettato le mie aspettative. Buon prodotto artigianale: ho dovuto montare le ruote, ma viti e fori erano corrispondenti. Questa versione con le ruote è comoda in quanto puoi caricare la cesta e poi raggiungere il montacarichi sotto il mio balcone per portare su la roba caricata." },
+  { product: "Panarius Lite", client: "litrav77", text: "Cesto conforme alla descrizione fatta, ottima resistenza e capienza. Primo utilizzo con legna eccezionale! Prodotto utile e consigliato." },
+  { product: "Panarius Pro Wheels", client: "ramboco", text: "Oggetto veramente ben fatto, anche se la descrizione già lo indicava… ma sorpreso in positivo a vederlo dal vivo!!! Ottimo acquisto." },
+  { product: "Panarius Pro Wheels", client: "cassandra2379", text: "Pacco arrivato integro e ben avvolto! Cestello resistente e ben rifinito! Ottimo!" },
+  { product: "Panarius Lite Wheels", client: "sigen_8588", text: "Buon prodotto, rifinito, robusto, poco ingombrante e anche esteticamente carino." },
+  { product: "Panarius Lite", client: "giallona270", text: "Prodotto perfetto in tutte le descrizioni fornite, consegnato nei tempi dichiarati dal venditore. Consigliato 10++++++++" },
+  { product: "Panarius Pro Wheels", client: "duendecanaya", text: "Tutto perfetto, oggetto come la descrizione, arrivato nei tempi stabiliti!! Ottima transazione!!" },
+  { product: "Panarius Pro", client: "carforc_91", text: "Perfetto. Venditore serio." },
+  { product: "Panarius Lite Wheels", client: "pupiyzf81", text: "Ottimo prodotto, consigliatissimo" },
+  { product: "Panarius Lite Wheels", client: "giusvene41", text: "Tutto perfetto, super positivo. Consigliatissimo" },
+  { product: "Panarius Lite Wheels", client: "brizo83", text: "Perfetto ottimo!!!!" },
+  { product: "Panarius Pro Wheels", client: "alfalfaalfa", text: "Tutto ok!" },
+  { product: "Panarius Pro Wheels", client: "luca974", text: "Tutto come descrizione." },
+  { product: "Panarius Pro", client: "adrranzo", text: "Super!!!" },
+  { product: "Panarius Lite Wheels", client: "sepid0", text: "Tutto come da descrizione!" },
+  { product: "Panarius Lite", client: "ema.pee.tivc7k23k", text: "Va benissimo 😊" },
+  { product: "Panarius Pro Wheels", client: "sasas23", text: "Transazione perfetta.. grazie mille." },
+];
+
 function MarketplaceButton({ channel, href, productCode }: { channel: "Amazon" | "eBay"; href: string; productCode?: string }) {
   const analyticsChannel: PurchaseChannel = channel === "Amazon" ? "amazon" : "ebay";
   if (!href) {
@@ -150,6 +178,47 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         </div>
       </div>
     </article>
+  );
+}
+
+function ReviewsGallery() {
+  const [activeReview, setActiveReview] = useState(0);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const review = reviews[activeReview];
+
+  const showReview = (index: number) => {
+    setActiveReview((index + reviews.length) % reviews.length);
+  };
+
+  const handleTouchEnd = (event: TouchEvent<HTMLElement>) => {
+    if (touchStart === null) return;
+    const distance = event.changedTouches[0].clientX - touchStart;
+    if (Math.abs(distance) > 45) showReview(activeReview + (distance < 0 ? 1 : -1));
+    setTouchStart(null);
+  };
+
+  return (
+    <section className="reviews-section" aria-labelledby="recensioni-title">
+      <div className="reviews-section__heading">
+        <div>
+          <p className="eyebrow"><span>Recensioni Panarius</span></p>
+          <h2 id="recensioni-title">Chi ha scelto Panarius,<br /><em>lo racconta.</em></h2>
+        </div>
+        <p className="reviews-section__intro">Esperienze reali di chi utilizza il cesto per paranco e montacarichi in casa, in giardino e nel lavoro quotidiano.</p>
+      </div>
+      <div className="reviews-gallery" onTouchStart={(event) => setTouchStart(event.touches[0].clientX)} onTouchEnd={handleTouchEnd}>
+        <button className="reviews-gallery__arrow reviews-gallery__arrow--prev" type="button" onClick={() => showReview(activeReview - 1)} aria-label="Recensione precedente"><ChevronLeft size={22} /></button>
+        <article className="review-card" aria-live="polite">
+          <div className="review-card__top"><span className="review-card__number">{String(activeReview + 1).padStart(2, "0")} / {String(reviews.length).padStart(2, "0")}</span><span className="review-card__source">Recensione eBay</span></div>
+          <blockquote>“{review.text}”</blockquote>
+          <div className="review-card__meta"><strong>{review.product}</strong><span>Cliente: {review.client}</span></div>
+        </article>
+        <button className="reviews-gallery__arrow reviews-gallery__arrow--next" type="button" onClick={() => showReview(activeReview + 1)} aria-label="Recensione successiva"><ChevronRight size={22} /></button>
+      </div>
+      <div className="reviews-gallery__dots" role="tablist" aria-label="Seleziona recensione">
+        {reviews.map((item, index) => <button key={`${item.client}-${index}`} type="button" role="tab" aria-selected={index === activeReview} aria-label={`Mostra recensione ${index + 1} di ${reviews.length}`} className={index === activeReview ? "is-active" : ""} onClick={() => showReview(index)} />)}
+      </div>
+    </section>
   );
 }
 
@@ -300,6 +369,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <ReviewsGallery />
 
         <section id="contatti" className="contact-section">
           <div><p className="eyebrow"><span>Parliamone</span></p><h2>Ti serve una mano<br /><em>nella scelta?</em></h2></div>
