@@ -198,13 +198,13 @@ function ReviewsGallery() {
   };
 
   return (
-    <section className="reviews-section" aria-labelledby="recensioni-title">
+    <section id="esperienze" className="reviews-section" aria-labelledby="recensioni-title">
       <div className="reviews-section__heading">
         <div>
-          <p className="eyebrow"><span>Recensioni Panarius</span></p>
+          <p className="eyebrow"><span>Esperienze Panarius</span></p>
           <h2 id="recensioni-title">Chi ha scelto Panarius,<br /><em>lo racconta.</em></h2>
         </div>
-        <p className="reviews-section__intro">Esperienze reali di chi utilizza il cesto per paranco e montacarichi in casa, in giardino e nel lavoro quotidiano.</p>
+        <p className="reviews-section__intro">Esperienze reali di chi utilizza Panarius in casa, in giardino e nel lavoro quotidiano.</p>
       </div>
       <div className="reviews-gallery" onTouchStart={(event) => setTouchStart(event.touches[0].clientX)} onTouchEnd={handleTouchEnd}>
         <div className="reviews-gallery__featured">
@@ -270,6 +270,7 @@ export default function Home() {
           <a href="#utilizzi">Applicazioni</a>
           <a href="#progetto">Il concept</a>
           <a href="#materia">Made in Pompeii</a>
+          <a href="#esperienze">Esperienze</a>
           <a href="#acquista" className="nav-cta"><ShoppingBag size={15} /> Acquista</a>
         </nav>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Chiudi menu" : "Apri menu"} aria-expanded={menuOpen}>
@@ -282,6 +283,7 @@ export default function Home() {
         <a href="#utilizzi" onClick={closeMenu}>Applicazioni <ChevronRight size={16} /></a>
         <a href="#progetto" onClick={closeMenu}>Il concept <ChevronRight size={16} /></a>
         <a href="#materia" onClick={closeMenu}>Made in Pompeii <ChevronRight size={16} /></a>
+        <a href="#esperienze" onClick={closeMenu}>Esperienze <ChevronRight size={16} /></a>
         <a href="#acquista" onClick={closeMenu}><span>Acquista</span><ShoppingBag size={16} /></a>
         <a href="#contatti" onClick={closeMenu}>Richiedi un preventivo <ChevronRight size={16} /></a>
       </div>
