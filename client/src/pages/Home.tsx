@@ -109,7 +109,7 @@ type Review = {
 
 // Ordinate prima per utilità all'acquisto: uso reale, robustezza, montaggio e consegna.
 const reviews: Review[] = [
-  { product: "Panarius Pro Wheels", client: "studio_dorsi", text: "La cesta molto robusta ha rispettato le mie aspettative. Buon prodotto artigianale: ho dovuto montare le ruote, ma viti e fori erano corrispondenti. Questa versione con le ruote è comoda in quanto puoi caricare la cesta e poi raggiungere il montacarichi sotto il mio balcone per portare su la roba caricata." },
+  { product: "Panarius Pro Wheels", client: "studio_dorsi", text: "La cesta molto robusta ha rispettato le mie aspettative. Ottimo prodotto artigianale: ho dovuto montare le ruote, ma viti e fori erano perfettamente corrispondenti. Questa versione con le ruote è davvero comoda in quanto puoi caricare la cesta e poi raggiungere il montacarichi sotto il mio balcone per portare su la roba caricata." },
   { product: "Panarius Lite", client: "litrav77", text: "Cesto conforme alla descrizione fatta, ottima resistenza e capienza. Primo utilizzo con legna eccezionale! Prodotto utile e consigliato." },
   { product: "Panarius Pro Wheels", client: "ramboco", text: "Oggetto veramente ben fatto, anche se la descrizione già lo indicava… ma sorpreso in positivo a vederlo dal vivo!!! Ottimo acquisto." },
   { product: "Panarius Pro Wheels", client: "cassandra2379", text: "Pacco arrivato integro e ben avvolto! Cestello resistente e ben rifinito! Ottimo!" },
