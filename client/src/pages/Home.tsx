@@ -184,7 +184,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
 function ReviewsGallery() {
   const [activeReview, setActiveReview] = useState(0);
   const [touchStart, setTouchStart] = useState<number | null>(null);
-  const review = reviews[activeReview];
+  const featuredReview = reviews[activeReview];
 
   const showReview = (index: number) => {
     setActiveReview((index + reviews.length) % reviews.length);
@@ -207,17 +207,37 @@ function ReviewsGallery() {
         <p className="reviews-section__intro">Esperienze reali di chi utilizza il cesto per paranco e montacarichi in casa, in giardino e nel lavoro quotidiano.</p>
       </div>
       <div className="reviews-gallery" onTouchStart={(event) => setTouchStart(event.touches[0].clientX)} onTouchEnd={handleTouchEnd}>
-        <button className="reviews-gallery__arrow reviews-gallery__arrow--prev" type="button" onClick={() => showReview(activeReview - 1)} aria-label="Recensione precedente"><ChevronLeft size={22} /></button>
-        <article className="review-card" aria-live="polite">
-          <div className="review-card__top"><span className="review-card__number">{String(activeReview + 1).padStart(2, "0")} / {String(reviews.length).padStart(2, "0")}</span><span className="review-card__source">Recensione eBay</span></div>
-          <blockquote>“{review.text}”</blockquote>
-          <div className="review-card__meta"><strong>{review.product}</strong><span>Cliente: {review.client}</span></div>
-        </article>
-        <button className="reviews-gallery__arrow reviews-gallery__arrow--next" type="button" onClick={() => showReview(activeReview + 1)} aria-label="Recensione successiva"><ChevronRight size={22} /></button>
+        <div className="reviews-gallery__featured">
+          <div className="reviews-gallery__featured-label">
+            <div><span className="reviews-stars" aria-label="Feedback positivo">★★★★★</span><h3>La recensione più utile<br />all’acquisto</h3></div>
+            <span className="reviews-model">{featuredReview.product} · recensione in evidenza</span>
+          </div>
+          <article className="reviews-gallery__quote" aria-live="polite">
+            <span className="reviews-quote-mark" aria-hidden="true">“</span>
+            <blockquote>{featuredReview.text}</blockquote>
+            <span className="reviews-author">Cliente eBay · {featuredReview.client}</span>
+          </article>
+        </div>
+        <div className="reviews-gallery__cards">
+          {[1, 2, 3].map((offset) => {
+            const review = reviews[(activeReview + offset) % reviews.length];
+            return <article className="review-mini-card" key={`${review.client}-${activeReview}-${offset}`}>
+              <div className="review-mini-card__top"><span className="reviews-model">{review.product}</span><span className="reviews-stars" aria-label="Feedback positivo">★★★★★</span></div>
+              <p>{review.text}</p>
+              <div className="review-mini-card__meta"><span>Cliente eBay · {review.client}</span><span>{review.product.includes("Lite") ? "80 L" : "100 L"}</span></div>
+            </article>;
+          })}
+        </div>
+        <div className="reviews-gallery__controls">
+          <button className="reviews-gallery__arrow reviews-gallery__arrow--prev" type="button" onClick={() => showReview(activeReview - 1)} aria-label="Recensione precedente"><ChevronLeft size={22} /></button>
+          <div className="reviews-gallery__dots" role="tablist" aria-label="Seleziona recensione">
+            {reviews.map((item, index) => <button key={`${item.client}-${index}`} type="button" role="tab" aria-selected={index === activeReview} aria-label={`Mostra recensione ${index + 1} di ${reviews.length}`} className={index === activeReview ? "is-active" : ""} onClick={() => showReview(index)} />)}
+          </div>
+          <button className="reviews-gallery__arrow reviews-gallery__arrow--next" type="button" onClick={() => showReview(activeReview + 1)} aria-label="Recensione successiva"><ChevronRight size={22} /></button>
+        </div>
       </div>
-      <div className="reviews-gallery__dots" role="tablist" aria-label="Seleziona recensione">
-        {reviews.map((item, index) => <button key={`${item.client}-${index}`} type="button" role="tab" aria-selected={index === activeReview} aria-label={`Mostra recensione ${index + 1} di ${reviews.length}`} className={index === activeReview ? "is-active" : ""} onClick={() => showReview(index)} />)}
-      </div>
+      <div className="reviews-section__cta"><p>Hai già scelto la configurazione più adatta?</p><a href="#panarius" className="button button--copper">Scopri i modelli Panarius <ArrowRight size={15} /></a></div>
+      <p className="reviews-section__note">Le recensioni sono feedback originali pubblicati dai clienti sullo store eBay.</p>
     </section>
   );
 }
