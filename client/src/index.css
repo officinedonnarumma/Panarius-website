@@ -272,3 +272,35 @@ a { color: inherit; text-decoration: none; }
   .reviews-section__cta { align-items: stretch; flex-direction: column; }
   .reviews-section__cta .button { width: 100%; }
 }
+
+
+/* Richiesta Panarius: modale attivata direttamente dalle card prodotto. */
+.product-card .direct-link { border: 0; cursor: pointer; font: inherit; }
+.order-modal { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 24px; background: rgba(9, 23, 32, .72); backdrop-filter: blur(5px); }
+.order-modal__dialog { position: relative; width: min(760px, 100%); max-height: min(900px, calc(100vh - 48px)); overflow: auto; padding: clamp(30px, 5vw, 54px); background: #f4f1e8; border-top: 5px solid #963127; box-shadow: 0 24px 70px rgba(0,0,0,.3); }
+.order-modal__close { position: absolute; top: 18px; right: 18px; display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid #c9c1b6; background: transparent; color: #122f45; cursor: pointer; }
+.order-modal__close:hover,.order-modal__close:focus-visible { background: #122f45; color: #fffdf9; }
+.order-modal__dialog h2 { max-width: 600px; margin: 14px 0 12px; color: #122f45; font-family: "DM Serif Display",Georgia,serif; font-size: clamp(34px, 5vw, 56px); font-weight: 400; line-height: .98; }
+.order-modal__intro { max-width: 540px; margin: 0 0 30px; color: #536069; font-size: 15px; line-height: 1.55; }
+.order-form__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px 20px; }
+.order-form label { display: flex; flex-direction: column; gap: 7px; color: #122f45; font-size: 11px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.order-form input,.order-form textarea { width: 100%; border: 1px solid #c9c1b6; border-radius: 0; background: #fffdf9; color: #122f45; font: inherit; font-size: 14px; font-weight: 500; letter-spacing: 0; outline: none; padding: 12px 13px; text-transform: none; }
+.order-form input:focus,.order-form textarea:focus { border-color: #c56a3c; box-shadow: 0 0 0 2px rgba(197,106,60,.16); }
+.order-form input[readonly] { background: #e8e3d8; color: #536069; }
+.order-form textarea { resize: vertical; }
+.order-form__full { grid-column: 1 / -1; }
+.order-form__privacy { display: flex !important; flex-direction: row !important; align-items: flex-start; gap: 9px !important; margin-top: 23px; color: #536069 !important; font-size: 10px !important; font-weight: 500 !important; letter-spacing: 0 !important; line-height: 1.45; text-transform: none !important; }
+.order-form__privacy input { width: 16px; height: 16px; flex: 0 0 auto; margin-top: 1px; accent-color: #963127; }
+.order-form__submit { margin-top: 25px; }
+.order-modal__success { padding: 34px 0 12px; text-align: center; }
+.order-modal__check { display: grid; place-items: center; width: 52px; height: 52px; margin: 0 auto 22px; border-radius: 50%; background: #963127; color: #fffdf9; }
+.order-modal__success h2 { margin-left: auto; margin-right: auto; }
+.order-modal__success p { max-width: 480px; margin: 0 auto 28px; color: #536069; line-height: 1.6; }
+@media (max-width: 600px) {
+  .order-modal { padding: 12px; align-items: end; }
+  .order-modal__dialog { max-height: calc(100vh - 24px); padding: 32px 20px 26px; }
+  .order-modal__close { top: 12px; right: 12px; }
+  .order-form__grid { grid-template-columns: 1fr; gap: 15px; }
+  .order-form__full { grid-column: auto; }
+  .order-modal__dialog h2 { padding-right: 34px; font-size: 42px; }
+}

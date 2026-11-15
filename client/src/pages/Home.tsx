@@ -4,7 +4,6 @@
  */
 import { SectionHeading } from "@/components/SectionHeading";
 import { trackPurchaseClick, type PurchaseChannel } from "@/lib/analytics";
-import { purchaseSubjectFor } from "@/lib/purchase";
 import {
   ArrowDownRight,
   ArrowRight,
@@ -21,7 +20,7 @@ import {
   X,
   Youtube,
 } from "lucide-react";
-import { useEffect, useState, type TouchEvent } from "react";
+import { useEffect, useState, type FormEvent, type TouchEvent } from "react";
 
 const previewAssets: Record<string, string> = {
   "tavola-tecnica-cesto-panarius-montacarichi.png": "/assets/tavola-tecnica-cesto-panarius-montacarichi_4dab7703-ottimizzata.webp",
@@ -145,7 +144,7 @@ function MarketplaceButton({ channel, href, productCode }: { channel: "Amazon" |
   );
 }
 
-function ProductCard({ product, index }: { product: Product; index: number }) {
+function ProductCard({ product, index, onRequest }: { product: Product; index: number; onRequest: (product: Product) => void }) {
   const [baseName, wheelsLabel] = product.name.split(" Wheels");
 
   return (
@@ -173,11 +172,80 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         <div className="product-card__buy">
           <p><span>Prezzo indicato</span><strong>{product.price}</strong></p>
           <div className="buy-actions">
-            <a className="direct-link" href={`mailto:${directPurchaseEmail}?subject=${encodeURIComponent(purchaseSubjectFor(product.name))}`} onClick={() => trackPurchaseClick("direct", product.code)}>Acquista <ArrowRight size={15} /></a>
+            <button className="direct-link" type="button" onClick={() => { trackPurchaseClick("direct", product.code); onRequest(product); }}>Richiedi il tuo Panarius <ArrowRight size={15} /></button>
           </div>
         </div>
       </div>
     </article>
+  );
+}
+
+function OrderRequestModal({ product, onClose }: { product: Product; onClose: () => void }) {
+  const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [onClose]);
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const details = [
+      `Nome e cognome: ${data.get("name")}`,
+      `Email: ${data.get("email")}`,
+      `Telefono: ${data.get("phone") || "Non indicato"}`,
+      `Modello: ${product.name}`,
+      `Quantità: ${data.get("quantity")}`,
+      `Indirizzo: ${data.get("address")}`,
+      `CAP: ${data.get("postalCode")}`,
+      `Comune: ${data.get("city")}`,
+      `Provincia: ${data.get("province")}`,
+      `Note: ${data.get("notes") || "Nessuna"}`,
+    ].join("\n");
+    window.location.href = `mailto:${directPurchaseEmail}?subject=${encodeURIComponent(`Richiesta ${product.name}`)}&body=${encodeURIComponent(details)}`;
+    setSubmitted(true);
+  };
+
+  return (
+    <div className="order-modal" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
+      <div className="order-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+        <button className="order-modal__close" type="button" onClick={onClose} aria-label="Chiudi richiesta d’ordine"><X size={22} /></button>
+        {submitted ? (
+          <div className="order-modal__success">
+            <span className="order-modal__check"><Check size={24} /></span>
+            <h2>Richiesta ricevuta.</h2>
+            <p>Grazie, abbiamo ricevuto i tuoi dati. Ti contatteremo per confermare il tuo ordine.</p>
+            <button className="button button--copper" type="button" onClick={onClose}>Chiudi</button>
+          </div>
+        ) : (
+          <>
+            <p className="eyebrow"><span>Richiesta diretta</span></p>
+            <h2 id="order-modal-title">Richiedi il tuo Panarius</h2>
+            <p className="order-modal__intro">Compila il modulo con i tuoi dati. Ti ricontatteremo per confermare l’ordine.</p>
+            <form className="order-form" onSubmit={handleSubmit}>
+              <div className="order-form__grid">
+                <label>Nome e cognome *<input name="name" required autoComplete="name" /></label>
+                <label>Email *<input name="email" type="email" required autoComplete="email" /></label>
+                <label>Telefono<input name="phone" type="tel" autoComplete="tel" /></label>
+                <label>Modello desiderato<input value={product.name} readOnly aria-readonly="true" /></label>
+                <label>Quantità *<input name="quantity" type="number" min="1" defaultValue="1" required /></label>
+                <label>Provincia *<input name="province" required autoComplete="address-level1" /></label>
+                <label className="order-form__full">Indirizzo e numero civico *<input name="address" required autoComplete="street-address" /></label>
+                <label>CAP *<input name="postalCode" required inputMode="numeric" autoComplete="postal-code" /></label>
+                <label>Comune *<input name="city" required autoComplete="address-level2" /></label>
+                <label className="order-form__full">Note<textarea name="notes" rows={3} /></label>
+              </div>
+              <label className="order-form__privacy"><input type="checkbox" required /> <span>Ho letto l’informativa privacy e acconsento al trattamento dei dati per la gestione della richiesta.</span></label>
+              <button className="button button--copper order-form__submit" type="submit">Invia richiesta d’ordine <ArrowRight size={17} /></button>
+            </form>
+          </>
+        )}
+      </div>
+    </div>
   );
 }
 
@@ -245,6 +313,7 @@ function ReviewsGallery() {
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [requestedProduct, setRequestedProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 32);
@@ -318,7 +387,7 @@ export default function Home() {
             <aside className="collection-side-note"><strong>Un Panarius per ogni esigenza</strong><p>Dalla sua ideazione, il cesto Panarius è stato scelto da oltre 200 clienti in tutta Italia.</p><p>Pensati soprattutto per uso domestico e da giardino, sono perfetti anche per esigenze professionali — edilizia, commercio, aziende agricole, strutture ricettive.</p><p>Scegli il modello più adatto a te.</p></aside>
           </div>
           <div className="product-grid">
-            {products.map((product, index) => <ProductCard key={product.code} product={product} index={index} />)}
+            {products.map((product, index) => <ProductCard key={product.code} product={product} index={index} onRequest={setRequestedProduct} />)}
           </div>
           <p className="catalogue-note"><span>*</span> Prezzi e configurazioni saranno confermati nel canale di acquisto selezionato. Servizio di spedizione con corriere: <strong>€ 25,00</strong>.</p>
         </section>
@@ -412,6 +481,7 @@ export default function Home() {
           <p>© {siteYear} Officine Donnarumma. Tutti i diritti riservati.</p>
         </div>
       </footer>
+      {requestedProduct && <OrderRequestModal product={requestedProduct} onClose={() => setRequestedProduct(null)} />}
     </div>
   );
 }
