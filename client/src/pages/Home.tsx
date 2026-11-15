@@ -194,11 +194,12 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    const selectedModel = String(data.get("model") || product.name);
     const details = [
       `Nome e cognome: ${data.get("name")}`,
       `Email: ${data.get("email")}`,
       `Telefono: ${data.get("phone") || "Non indicato"}`,
-      `Modello: ${product.name}`,
+      `Modello: ${selectedModel}`,
       `Quantità: ${data.get("quantity")}`,
       `Indirizzo: ${data.get("address")}`,
       `CAP: ${data.get("postalCode")}`,
@@ -206,7 +207,7 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
       `Provincia: ${data.get("province")}`,
       `Note: ${data.get("notes") || "Nessuna"}`,
     ].join("\n");
-    window.location.href = `mailto:${directPurchaseEmail}?subject=${encodeURIComponent(`Richiesta ${product.name}`)}&body=${encodeURIComponent(details)}`;
+    window.location.href = `mailto:${directPurchaseEmail}?subject=${encodeURIComponent(`Richiesta ${selectedModel}`)}&body=${encodeURIComponent(details)}`;
     setSubmitted(true);
   };
 
@@ -231,7 +232,7 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
                 <label>Nome e cognome *<input name="name" required autoComplete="name" /></label>
                 <label>Email *<input name="email" type="email" required autoComplete="email" /></label>
                 <label>Telefono<input name="phone" type="tel" autoComplete="tel" /></label>
-                <label>Modello desiderato<input value={product.name} readOnly aria-readonly="true" /></label>
+                <label>Modello desiderato *<select name="model" defaultValue={product.name} required><option value="Panarius Pro Wheels">Panarius Pro Wheels</option><option value="Panarius Pro">Panarius Pro</option><option value="Panarius Lite Wheels">Panarius Lite Wheels</option><option value="Panarius Lite">Panarius Lite</option></select></label>
                 <label>Quantità *<input name="quantity" type="number" min="1" defaultValue="1" required /></label>
                 <label>Provincia *<input name="province" required autoComplete="address-level1" /></label>
                 <label className="order-form__full">Indirizzo e numero civico *<input name="address" required autoComplete="street-address" /></label>

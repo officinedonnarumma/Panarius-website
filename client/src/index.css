@@ -309,3 +309,5 @@ a { color: inherit; text-decoration: none; }
 .order-form__privacy-details summary { display: inline-block; color: #963127; cursor: pointer; font-weight: 800; letter-spacing: .04em; text-decoration: underline; text-underline-offset: 3px; }
 .order-form__privacy-details p { max-width: 680px; margin: 10px 0 0; }
 .order-form__privacy-details a { color: #963127; text-decoration: underline; text-underline-offset: 2px; }
+.order-form select { width: 100%; border: 1px solid #c9c1b6; border-radius: 0; background: #fffdf9; color: #122f45; font: inherit; font-size: 14px; font-weight: 500; outline: none; padding: 12px 13px; }
+.order-form select:focus { border-color: #c56a3c; box-shadow: 0 0 0 2px rgba(197,106,60,.16); }
