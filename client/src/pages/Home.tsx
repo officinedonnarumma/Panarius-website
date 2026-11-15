@@ -172,7 +172,7 @@ function ProductCard({ product, index, onRequest }: { product: Product; index: n
         <div className="product-card__buy">
           <p><span>Prezzo indicato</span><strong>{product.price}</strong></p>
           <div className="buy-actions">
-            <button className="direct-link" type="button" onClick={() => { trackPurchaseClick("direct", product.code); onRequest(product); }}>Richiedi il tuo Panarius <ArrowRight size={15} /></button>
+            <button className="direct-link" type="button" onClick={() => { trackPurchaseClick("direct", product.code); onRequest(product); }}>Ordina <ArrowRight size={15} /></button>
           </div>
         </div>
       </div>
