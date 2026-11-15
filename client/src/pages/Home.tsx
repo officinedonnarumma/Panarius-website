@@ -224,7 +224,7 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
           </div>
         ) : (
           <>
-            <p className="eyebrow"><span>Richiesta di acquisto</span></p>
+            <p className="eyebrow"><span>Richiesta d’ordine</span></p>
             <h2 id="order-modal-title">Richiedi il tuo Panarius</h2>
             <p className="order-modal__intro">Compila il modulo con i tuoi dati. Ti ricontatteremo per confermare l’ordine.</p>
             <form className="order-form" onSubmit={handleSubmit}>
