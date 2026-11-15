@@ -10,6 +10,7 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
   ExternalLink,
   Facebook,
   Instagram,
@@ -232,7 +233,7 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
                 <label>Nome e cognome *<input name="name" required autoComplete="name" /></label>
                 <label>Email *<input name="email" type="email" required autoComplete="email" /></label>
                 <label>Telefono<input name="phone" type="tel" autoComplete="tel" /></label>
-                <label>Modello desiderato *<select name="model" defaultValue={product.name} required><option value="Panarius Pro Wheels">Panarius Pro Wheels</option><option value="Panarius Pro">Panarius Pro</option><option value="Panarius Lite Wheels">Panarius Lite Wheels</option><option value="Panarius Lite">Panarius Lite</option></select></label>
+                <label>Modello desiderato *<span className="order-form__select-wrap"><select name="model" defaultValue={product.name} required><option value="Panarius Pro Wheels">Panarius Pro Wheels</option><option value="Panarius Pro">Panarius Pro</option><option value="Panarius Lite Wheels">Panarius Lite Wheels</option><option value="Panarius Lite">Panarius Lite</option></select><ChevronDown size={17} aria-hidden="true" /></span></label>
                 <label>Quantità *<input name="quantity" type="number" min="1" defaultValue="1" required /></label>
                 <label>Provincia *<input name="province" required autoComplete="address-level1" /></label>
                 <label className="order-form__full">Indirizzo e numero civico *<input name="address" required autoComplete="street-address" /></label>
