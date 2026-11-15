@@ -239,6 +239,10 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
                 <label>Comune *<input name="city" required autoComplete="address-level2" /></label>
                 <label className="order-form__full">Note<textarea name="notes" rows={3} /></label>
               </div>
+              <details className="order-form__privacy-details">
+                <summary>Leggi l’informativa privacy</summary>
+                <p>Officine Donnarumma tratterà i dati inseriti per gestire la richiesta e ricontattarti in merito all’ordine. I dati non saranno utilizzati per finalità promozionali né ceduti a terzi, salvo gli eventuali fornitori tecnici necessari alla gestione della comunicazione. Potrai chiedere accesso, rettifica o cancellazione dei dati scrivendo a <a href={`mailto:${directPurchaseEmail}`}>{directPurchaseEmail}</a>. Il conferimento dei dati contrassegnati con * è necessario per poter gestire la richiesta.</p>
+              </details>
               <label className="order-form__privacy"><input type="checkbox" required /> <span>Ho letto l’informativa privacy e acconsento al trattamento dei dati per la gestione della richiesta.</span></label>
               <button className="button button--copper order-form__submit" type="submit">Invia richiesta d’ordine <ArrowRight size={17} /></button>
             </form>

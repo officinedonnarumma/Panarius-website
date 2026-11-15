@@ -304,3 +304,8 @@ a { color: inherit; text-decoration: none; }
   .order-form__full { grid-column: auto; }
   .order-modal__dialog h2 { padding-right: 34px; font-size: 42px; }
 }
+
+.order-form__privacy-details { margin-top: 22px; color: #536069; font-size: 11px; line-height: 1.55; }
+.order-form__privacy-details summary { display: inline-block; color: #963127; cursor: pointer; font-weight: 800; letter-spacing: .04em; text-decoration: underline; text-underline-offset: 3px; }
+.order-form__privacy-details p { max-width: 680px; margin: 10px 0 0; }
+.order-form__privacy-details a { color: #963127; text-decoration: underline; text-underline-offset: 2px; }
