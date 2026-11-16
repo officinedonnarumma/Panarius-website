@@ -256,6 +256,7 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
                 <label>Quantità *<input name="quantity" type="number" min="1" defaultValue="1" required /></label>
                 <label className="order-form__full">Indirizzo e numero civico *<input name="address" required autoComplete="street-address" /></label>
                 <label>CAP *<input name="postalCode" required inputMode="numeric" autoComplete="postal-code" /></label>
+                <label>Comune *<input name="city" required autoComplete="address-level2" /></label>
                 <label>Provincia *<input name="province" required autoComplete="address-level1" /></label>
                 <label>Telefono *<input name="phone" type="tel" required autoComplete="tel" /></label>
                 <label className="order-form__full">Note<textarea name="notes" rows={3} /></label>
