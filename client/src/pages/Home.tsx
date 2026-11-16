@@ -183,6 +183,8 @@ function ProductCard({ product, index, onRequest }: { product: Product; index: n
 
 function OrderRequestModal({ product, onClose }: { product: Product; onClose: () => void }) {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -192,24 +194,38 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [onClose]);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError("");
     const data = new FormData(event.currentTarget);
     const selectedModel = String(data.get("model") || product.name);
-    const details = [
-      `Nome e cognome: ${data.get("name")}`,
-      `Email: ${data.get("email")}`,
-      `Telefono: ${data.get("phone") || "Non indicato"}`,
-      `Modello: ${selectedModel}`,
-      `Quantità: ${data.get("quantity")}`,
-      `Indirizzo: ${data.get("address")}`,
-      `CAP: ${data.get("postalCode")}`,
-      `Comune: ${data.get("city")}`,
-      `Provincia: ${data.get("province")}`,
-      `Note: ${data.get("notes") || "Nessuna"}`,
-    ].join("\n");
-    window.location.href = `mailto:${directPurchaseEmail}?subject=${encodeURIComponent(`Richiesta ${selectedModel}`)}&body=${encodeURIComponent(details)}`;
-    setSubmitted(true);
+    try {
+      const response = await fetch("/api/richiesta-ordine", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name"),
+          email: data.get("email"),
+          phone: data.get("phone"),
+          model: selectedModel,
+          quantity: data.get("quantity"),
+          address: data.get("address"),
+          postalCode: data.get("postalCode"),
+          city: data.get("city"),
+          province: data.get("province"),
+          notes: data.get("notes"),
+          privacyConsent: data.get("privacyConsent") === "yes",
+        }),
+      });
+      const result = (await response.json().catch(() => ({}))) as { error?: string };
+      if (!response.ok) throw new Error(result.error || "Invio non riuscito.");
+      setSubmitted(true);
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : "Non è stato possibile inviare la richiesta. Riprova tra poco.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -245,8 +261,9 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
                 <summary>Leggi l’informativa privacy</summary>
                 <p>Officine Donnarumma tratterà i dati inseriti per gestire la richiesta e ricontattarti in merito all’ordine. I dati non saranno utilizzati per finalità promozionali né ceduti a terzi, salvo gli eventuali fornitori tecnici necessari alla gestione della comunicazione. Potrai chiedere accesso, rettifica o cancellazione dei dati scrivendo a <a href={`mailto:${directPurchaseEmail}`}>{directPurchaseEmail}</a>. Il conferimento dei dati contrassegnati con * è necessario per poter gestire la richiesta.</p>
               </details>
-              <label className="order-form__privacy"><input type="checkbox" required /> <span>Ho letto l’informativa privacy e acconsento al trattamento dei dati per la gestione della richiesta.</span></label>
-              <button className="button button--copper order-form__submit" type="submit">Invia richiesta d’ordine <ArrowRight size={17} /></button>
+              <label className="order-form__privacy"><input name="privacyConsent" value="yes" type="checkbox" required /> <span>Ho letto l’informativa privacy e acconsento al trattamento dei dati per la gestione della richiesta.</span></label>
+              {submitError && <p className="order-form__error" role="alert">{submitError}</p>}
+              <button className="button button--copper order-form__submit" type="submit" disabled={isSubmitting}>{isSubmitting ? "Invio in corso…" : "Invia richiesta d’ordine"} {!isSubmitting && <ArrowRight size={17} />}</button>
             </form>
           </>
         )}
