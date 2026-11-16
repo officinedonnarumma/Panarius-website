@@ -61,7 +61,7 @@ export const onRequestPost = async (context: PagesContext) => {
   const province = clean(payload.province, 100);
   const notes = clean(payload.notes, 1500);
 
-  if (!name || !email || !model || !quantity || !address || !postalCode || !city || !province || !payload.privacyConsent) {
+  if (!name || !email || !phone || !model || !quantity || !address || !postalCode || !city || !province || !payload.privacyConsent) {
     return json({ error: "Compila tutti i campi obbligatori e accetta l’informativa privacy." }, 400);
   }
 

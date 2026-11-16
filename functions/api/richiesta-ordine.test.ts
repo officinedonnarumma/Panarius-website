@@ -13,6 +13,7 @@ const context = (body: Record<string, unknown>) => ({
 const validBody = {
   name: "Mario Rossi",
   email: "mario@example.com",
+  phone: "+39 333 1234567",
   model: "Panarius Pro Wheels",
   quantity: "1",
   address: "Via Roma 1",

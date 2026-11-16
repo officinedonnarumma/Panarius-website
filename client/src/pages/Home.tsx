@@ -98,6 +98,8 @@ const purchaseLinks = {
   ebay: "https://www.ebay.it/usr/officinedonnarumma",
 };
 
+const modelOptions = ["Panarius Pro Wheels", "Panarius Pro", "Panarius Lite Wheels", "Panarius Lite"];
+
 const directPurchaseEmail = "officinedonnarumma@gmail.com";
 const siteYear = "2026";
 
@@ -185,6 +187,8 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [selectedModel, setSelectedModel] = useState(product.name);
+  const [modelMenuOpen, setModelMenuOpen] = useState(false);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -199,7 +203,7 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
     setIsSubmitting(true);
     setSubmitError("");
     const data = new FormData(event.currentTarget);
-    const selectedModel = String(data.get("model") || product.name);
+    const formModel = String(data.get("model") || selectedModel);
     try {
       const response = await fetch("/api/richiesta-ordine", {
         method: "POST",
@@ -208,7 +212,7 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
           name: data.get("name"),
           email: data.get("email"),
           phone: data.get("phone"),
-          model: selectedModel,
+          model: formModel,
           quantity: data.get("quantity"),
           address: data.get("address"),
           postalCode: data.get("postalCode"),
@@ -248,13 +252,12 @@ function OrderRequestModal({ product, onClose }: { product: Product; onClose: ()
               <div className="order-form__grid">
                 <label>Nome e cognome *<input name="name" required autoComplete="name" /></label>
                 <label>Email *<input name="email" type="email" required autoComplete="email" /></label>
-                <label>Telefono<input name="phone" type="tel" autoComplete="tel" /></label>
-                <label>Modello desiderato *<span className="order-form__select-wrap"><select name="model" defaultValue={product.name} required><option value="Panarius Pro Wheels">Panarius Pro Wheels</option><option value="Panarius Pro">Panarius Pro</option><option value="Panarius Lite Wheels">Panarius Lite Wheels</option><option value="Panarius Lite">Panarius Lite</option></select><ChevronDown size={17} aria-hidden="true" /></span></label>
+                <label>Modello desiderato *<span className="order-form__select-wrap"><input type="hidden" name="model" value={selectedModel} /><button className="order-form__select-trigger" type="button" aria-haspopup="listbox" aria-expanded={modelMenuOpen} onClick={() => setModelMenuOpen((open) => !open)}>{selectedModel}<ChevronDown size={17} aria-hidden="true" /></button>{modelMenuOpen && <span className="order-form__select-menu" role="listbox">{modelOptions.map((model) => <button className={`order-form__select-option${model === selectedModel ? " order-form__select-option--selected" : ""}`} type="button" role="option" aria-selected={model === selectedModel} key={model} onClick={() => { setSelectedModel(model); setModelMenuOpen(false); }}>{model}{model === selectedModel && <Check size={16} aria-hidden="true" />}</button>)}</span>}</span></label>
                 <label>Quantità *<input name="quantity" type="number" min="1" defaultValue="1" required /></label>
-                <label>Provincia *<input name="province" required autoComplete="address-level1" /></label>
                 <label className="order-form__full">Indirizzo e numero civico *<input name="address" required autoComplete="street-address" /></label>
                 <label>CAP *<input name="postalCode" required inputMode="numeric" autoComplete="postal-code" /></label>
-                <label>Comune *<input name="city" required autoComplete="address-level2" /></label>
+                <label>Provincia *<input name="province" required autoComplete="address-level1" /></label>
+                <label>Telefono *<input name="phone" type="tel" required autoComplete="tel" /></label>
                 <label className="order-form__full">Note<textarea name="notes" rows={3} /></label>
               </div>
               <details className="order-form__privacy-details">
